@@ -1,0 +1,10 @@
+Id: TheCursor
+Title: "カーソルどこ？"
+Genre: "ゲーム"
+ScreenshotPath: "カーソルどこ？.png"
+ExecutablePath: "カーソルどこ？.exe"
+Argument: 
+SourcePath: src\
+TimeLimit: 00:00:00
+Description: "カーソルが見当たらない苛立ちを、追体験できるゲームです。"
+IsLate: false

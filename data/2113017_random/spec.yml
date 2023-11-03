@@ -1,0 +1,10 @@
+Id: random_choice
+Title: "抽選くん"
+Genre: "ツール"
+ScreenshotPath: "スクショ.png"
+ExecutablePath: bin\Release\random_choice.exe
+Argument: 
+SourcePath: src\
+TimeLimit: 00:00:00
+Description: "発表の順番決め、ゲームの順番決め、お題決め、いけにえ選定など多彩な用途で使うことが出来ます。\r\n詳しい使い方はREADMEをチェック！(ソースコードの表示より見れます)"
+IsLate: false

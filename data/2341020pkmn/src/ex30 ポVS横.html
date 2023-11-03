@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>最終課題</title>
+<script type="text/javascript">
+let enemyhp = 350;
+let myhp = 10000000;
+
+function poke() {
+  alert("ひかえのポケモンはいないよ");
+}
+//このバトルは横浜キャンパスがかつようにできている
+let enemywaza = ["チェンソー","チェーン","なみだめ","ほえる"];
+let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+
+function tenmann() {
+  alert("東京都市大学(横浜キャンパスのすがた)のはかいこうせん！ 4000000ダメージ！");
+  enemyhp -= 4000000
+  alert("反動で25%のダメージをうけた！")
+  myhp *= 0.75
+if (hangeki ===　"チェンソー"){
+  alert("ポチタのチェンソー！　70ダメージ！")
+  myhp -= 70;
+
+}
+else if (hangeki ===　"チェーン"){
+  alert("ポチタのチェーン！　50ダメージ！")
+  myhp -= 50;
+}
+
+else if (hangeki ===　"なみだめ"){
+  alert("ポチタのチェンソー！　50ダメージ！")
+  myhp -= 50;
+}
+
+else if (hangeki ===　"ほえる"){
+  alert("ポチタのチェーン！　40ダメージ！")
+  myhp -= 40;
+}
+hpkannri();
+checkvictry();
+checklose();
+
+}
+
+function boru() {
+  let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+  enemyhp -= 3000000;
+  alert("東京都市大学(横浜キャンパスのすがた)のボディプレス！　3000000ダメージ！");
+
+if (hangeki ===　"チェンソー"){
+  alert("ポチタのチェンソー！　70ダメージ！")
+  myhp -= 70;
+
+}
+else if (hangeki ===　"チェーン"){
+  alert("ポチタのチェーン！　50ダメージ！")
+  myhp -= 50;
+}
+
+else if (hangeki ===　"なみだめ"){
+  alert("ポチタのチェンソー！　50ダメージ！")
+  myhp -= 50;
+}
+
+else if (hangeki ===　"ほえる"){
+  alert("ポチタのチェーン！　40ダメージ！")
+  myhp -= 40;
+}
+hpkannri();
+checkvictry();
+checklose();
+
+}
+
+function akubi() {
+  let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+  enemyhp *= 0.75;
+  alert("東京都市大学(横浜キャンパスのすがた)のみずびだし！");
+  alert("東京都市大学(等々力キャンパスのすがた)にビオトープのみずをぶちまけた！　てきのHPが25%へった！");
+
+if (hangeki ===　"チェンソー"){
+  alert("ポチタのチェンソー！　70ダメージ！")
+  myhp -= 70;
+
+}
+else if (hangeki ===　"チェーン"){
+　alert("ポチタのチェーン！　50ダメージ！")
+　myhp -= 50;
+}
+
+else if (hangeki ===　"なみだめ"){
+  alert("ポチタのチェンソー！　50ダメージ！")
+  myhp -= 50;
+}
+
+else if (hangeki ===　"ほえる"){
+  alert("ポチタのチェーン！　40ダメージ！")
+  myhp -= 40;
+}
+hpkannri();
+checkvictry();
+checklose();
+
+}
+
+function denko() {
+  let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+  myhp += 8000000;
+  alert("東京都市大学(横浜キャンパスのすがた)は1にちまるごと休講した！　8000000HPかいふくした！");
+
+if (hangeki ===　"チェンソー"){
+  alert("ポチタのチェンソー！　70ダメージ！")
+  myhp -= 70;
+
+}
+else if (hangeki ===　"チェーン"){
+  alert("ポチタのチェーン！　50ダメージ！")
+  myhp -= 50;
+}
+
+else if (hangeki ===　"なみだめ"){
+  alert("ポチタのチェンソー！　50ダメージ！")
+  myhp -= 50;
+}
+
+else if (hangeki ===　"ほえる"){
+  alert("ポチタのチェーン！　40ダメージ！")
+  myhp -= 40;
+}
+hpkannri();
+checkvictry();
+checklose();
+
+}
+
+function checkvictry() {
+  if (enemyhp <= 0) {
+  alert("ポチタはたおれた！");
+  window.location.href = "ex22 世VS横.html";
+}
+}
+
+function checklose() {
+  if (myhp <= 0) {
+  alert("東京都市大学(横浜キャンパスのすがた)はたおれた！");
+  alert("このメッセージはありえない！")
+}
+}
+
+function checkdraw() {
+  if (myhp <= 0 && enemyhp <= 0) {
+  alert("東京都市大学(世田谷キャンパスのすがた)はたおれた！");
+  alert("東京都市大学(横浜キャンパスのすがた)もたおれた！");
+  alert("このメッセージはありえない！")
+}
+}
+
+function hpkannri() {
+  document.getElementById("enemyhp").innerText = enemyhp + "/350";
+  document.getElementById("myhp").innerText = myhp + "/10000000";
+}
+</script>
+</head>
+<body bgcolor="#eee8aa">
+<h3><p style="padding-left:30px">ポチタ:L50</p></h3>
+<h3><img src="ポチタ.jpg" width="200" style="padding-left:30px"></img></h3>
+<h3><p style="padding-left:30px" id="enemyhp">350/350</p></h3><br>
+<h3><p style="padding-left:900px">東京都市大学(横浜キャンパスのすがた):L50</p></h3>
+<h3><img src="横浜キャンパス.png" width="350" style="padding-left:900px"></img></h3>
+<h3><p style="padding-left:900px" id="myhp">10000000/10000000</p></h3><br>
+
+<table border="1">
+<tr>
+<th>たたかう</th>
+<th><button onclick="tenmann()" id="a">はかいこうせん</button></th>
+<th><button onclick="boru()" id="b">ボディプレス</button></th>
+<th><button onclick="akubi()" id="c">みずびだし</button></th>
+<th><button onclick="denko()" id="d">休講</button></th>
+</tr>
+<tr>
+<th>　　</th>
+<th><button onclick="poke()" id="f">ポケモン</button></th>
+<th><button onclick="run()" id="g"><a href="ex18 とおせんぼ.html">にげる</a></button></th>
+<th><button onclick="esc()" id="h"><a href="ex17 TVSぴ.html">やりなおす</a></button></th>
+</tr>
+</table>
+</body>
+</html>

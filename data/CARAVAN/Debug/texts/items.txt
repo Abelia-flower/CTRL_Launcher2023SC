@@ -1,0 +1,376 @@
+
+[sharpKnife]
+{
+ [name]{鋭い包丁}
+ [flavor]{これさえあればどんな食べ物もスイスイ斬れる}
+ [texture]{sharpKnife}
+ [health]{50}
+ [attack]{50}
+}
+
+[bigPot]
+{
+ [name]{大きな鍋}
+ [flavor]{お鍋で飯を作れば力がつくってものだ}
+ [texture]{bigpot}
+ [health]{50}
+ [shield]{50}
+}
+[distiller]
+{
+ [name]{蒸留器}
+ [flavor]{飲み水が潤沢であれば心が潤う}
+ [texture]{distiller}
+ [health]{50}
+ [heal]{50}
+}
+[clothesline]
+{
+ [name]{物干しざお}
+ [flavor]{服をしっかり乾かせないと風邪をひいてしまう}
+ [texture]{clothesline}
+ [health]{50}
+ [FI]{50}
+}
+[weightStone]
+{
+ [name]{漬物石}
+ [flavor]{色々おいしく漬けられる。あと、座れる}
+ [texture]{weightStone}
+ [health]{50}
+ [WET]{50}
+}
+[goodSleepPillow]
+{
+ [name]{安眠枕}
+ [flavor]{嫌な夢を見れなくなる枕}
+ [texture]{goodSleepPillow}
+ [health]{50}
+ [LD]{50}
+}
+
+[greedyBowl]
+{
+ [name]{強欲お椀}
+ [flavor]{これ一つで食事が終わるほどの大きさ}
+ [texture]{greedyBowl}
+ [health]{100}
+}
+
+
+[bookOfAttack]
+{
+ [name]{攻撃の実践書}
+ [flavor]{"仲間が倒れようとも進み続けろ。そうすればだいたい勝てる"}
+ [texture]{bookOfattack}
+ [attack]{100}
+}
+[bookOfHeal]
+{
+ [name]{回復の実践書}
+ [flavor]{"結局のところ、癒し続ければ負けることはないのだ"}
+ [texture]{bookOfHeal}
+ [heal]{100}
+}
+[bookOfShield]
+{
+ [name]{盾の実践書}
+ [flavor]{"防御があるということは攻撃する余裕があるということだ"}
+ [texture]{bookOfShield}
+ [shield]{100}
+}
+
+
+[telescope]
+{
+ [name]{望遠鏡}
+ [flavor]{遠くの景色や星を眺めるためのもの}
+ [texture]{telescope}
+ [attack]{50}
+ [shield]{50}
+}
+[travelDiary]
+{
+ [name]{旅日記}
+ [flavor]{旅の過程が綴られ続けている}
+ [texture]{travelDiary}
+ [attack]{50}
+ [heal]{50}
+}
+
+[weatherGauge]
+{
+ [name]{天候計}
+ [flavor]{温度、湿度、気圧、風向きを図ることができる器具}
+ [texture]{weatherGauge}
+ [attack]{50}
+ [FI]{50}
+}
+[magicMap]
+{
+ [name]{魔法の地図}
+ [flavor]{好きな位置を好きな拡大率で見ることができる地図}
+ [texture]{magicMap}
+ [attack]{50}
+ [WET]{50}
+}
+[cleanMirror]
+{
+ [name]{曇りなき鏡}
+ [flavor]{くっきりと物事を映せる鏡}
+ [texture]{cleanMirror}
+ [attack]{50}
+ [LD]{50}
+}
+[sacredTriangle]
+{
+ [name]{聖なる三角}
+ [flavor]{頂点が神・預言者・民を表し、辺が神託・言葉・信仰を示している}
+ [texture]{sacredTriangle}
+ [attack]{33}
+ [shield]{33}
+ [heal]{33}
+ [FI]{33}
+ [WET]{33}
+ [LD]{33}
+}
+[fairDice]
+{
+ [name]{公正なダイス}
+ [flavor]{どの面も同様に確からしい}
+ [texture]{fairDice}
+ [health]{33}
+ [attack]{33}
+ [shield]{33}
+ [heal]{33}
+}
+[wellHammock]
+{
+ [name]{すやすやハンモック}
+ [flavor]{揺れとふかふかの毛布によってぐっすりと眠れる}
+ [texture]{wellHammock}
+ [health]{33}
+ [shield]{33}
+ [heal]{33}
+ [FI]{33}
+ [WET]{33}
+ [LD]{33}
+}
+[stackOfCards]
+{
+ [name]{カードの束}
+ [flavor]{遊びにも占いにも使える56枚の絵札の束}
+ [texture]{stackOfCards}
+ [health]{33}
+ [attack]{33}
+ [FI]{33}
+ [WET]{33}
+ [LD]{33}
+}
+[encyclopedia]
+{
+ [name]{百科事典}
+ [flavor]{多くの分野の知識が詰め込まれたとても重い本}
+ [texture]{encyclopedia}
+ [health]{25}
+ [attack]{25}
+ [shield]{25}
+ [heal]{25}
+ [FI]{25}
+ [WET]{25}
+ [LD]{25}
+}
+
+
+[eternalFire]
+{
+ [name]{消えない灯}
+ [flavor]{消えることなく燃え続ける炎が込められた瓶}
+ [texture]{eternalFire}
+ [FI]{100}
+}
+[coldColdShpere]
+{
+ [name]{冷たい、冷たい球}
+ [flavor]{触れていると熱が奪われてしまう球}
+ [texture]{coldColdShpere}
+ [FI]{100}
+}
+[stormCan]
+{
+ [name]{嵐の缶詰}
+ [flavor]{中に嵐を封じ込め、密封された缶}
+ [texture]{stormCan}
+ [WET]{100}
+}
+[unbreakableRock]
+{
+ [name]{砕けぬ岩}
+ [flavor]{何があろうとも決して砕けない岩}
+ [texture]{unbreakableRock}
+ [WET]{100}
+}
+[solidThunder]
+{
+ [name]{雷の塊}
+ [flavor]{魔術によって固形化された雷}
+ [texture]{solidThunder}
+ [WET]{100}
+}
+[emblemOfTheSun]
+{
+ [name]{太陽の紋章}
+ [flavor]{太陽の戦士から祝福を受けた紋章}
+ [texture]{emblemOfTheSun}
+ [LD]{100}
+}
+[cursedBook]
+{
+ [name]{呪われた本}
+ [flavor]{闇の魔力が漂う本}
+ [texture]{cursedBook}
+ [LD]{100}
+}
+[miss]
+{
+ [name]{はずれ}
+ [flavor]{ごみの象徴。ランクによる能力上昇以外何もなし}
+ [texture]{miss}
+}
+[curseThing]
+{
+ [name]{呪いの何か}
+ [flavor]{強力な恨みが込められた何か}
+ [texture]{curseThing}
+ [attack]{-50}
+ [shield]{-50}
+ [heal]{-50}
+ [FI]{-50}
+ [WET]{-50}
+ [LD]{-50}
+}
+[badRuby]
+{
+ [name]{不幸の宝玉}
+ [flavor]{美しさの代わりに災いをもたらすと言われている}
+ [texture]{badRuby}
+ [attack]{-100}
+ [shield]{-100}
+ [heal]{-100}
+ [FI]{-100}
+ [WET]{-100}
+ [LD]{-100}
+}
+
+[luckyCoin]
+{
+ [name]{幸運のコイン}
+ [flavor]{どこの国のものかはわからないが、広く流通している硬貨}
+ [texture]{luckyCoin}
+ [health]{50}
+ [Hrecast]{50}
+}
+[hornAmulet]
+{
+ [name]{角のお守り}
+ [flavor]{狩の成功と感謝を込めて作られている}
+ [texture]{hornAmulet}
+ [attack]{50}
+ [Arecast]{50}
+}
+[metronomeOfLife]
+{
+ [name]{命のメトロノーム}
+ [flavor]{生きとし生けるもののリズムを刻んでいる}
+ [texture]{metronomeOfLife}
+ [heal]{50}
+ [Drecast]{50}
+}
+
+[brightJewel]
+{
+ [name]{輝く宝石}
+ [flavor]{光を複雑に反射し、きらきらと輝く}
+ [texture]{brightJewel}
+ [shield]{50}
+ [Drecast] {50}
+}
+[bookOfFI]
+{
+ [name]{火氷の教本}
+ [flavor]{"炎は命であり、氷は死である"}
+ [texture]{bookOfFI}
+ [FI]{50}
+ [Erecast]{50}
+}
+[bookOfWET]
+{
+ [name]{風地雷の教本}
+ [flavor]{"物質の運動と風、地、雷の魔法には深い関係がある"}
+ [texture]{bookOfWET}
+ [WET]{50}
+ [Erecast]{50}
+}
+[bookOfLD]
+{
+ [name]{光闇の教本}
+ [flavor]{"光は強力な力であり、闇は繊細な力である。これが大衆に光が好まれる所以であろう"}
+ [texture]{bookOfLD}
+ [LD]{50}
+ [Erecast]{50}
+}
+
+[ancientArrowhead]
+{
+ [name]{古代の矢じり}
+ [flavor]{何やら魔法が刻み込まれているが、解明はできない}
+ [texture]{ancientArrowhead}
+ [attack]{200}
+ [health]{-150}
+}
+[ancientFlute]
+{
+ [name]{古代の笛}
+ [flavor]{何やら魔法が刻み込まれているが、解明はできない}
+ [texture]{ancientFlute}
+ [shield]{200}
+ [heal]{200}
+ [health]{-150}
+}
+[ancientKey]
+{
+ [name]{古代の鍵}
+ [flavor]{何やら魔法が刻み込まれているが、解明はできない}
+ [texture]{ancientKey}
+ [FI]{200}
+ [WET]{200}
+ [LD]{200}
+ [health]{-150}
+}
+
+{
+[attackDown]
+ [name]{攻撃低下}
+ [flavor]{攻撃力が低下する縛りプレイ}
+ [texture]{attackDown}
+ [attack]{-100}
+}
+
+{
+[defenceDown]
+ [name]{防御低下}
+ [flavor]{防御力が低下する縛りプレイ}
+ [texture]{defenceDown}
+ [shield]{-100}
+ [heal]{-100}
+}
+
+{
+[elementDown]
+ [name]{属性低下}
+ [flavor]{属性力が低下する縛りプレイ}
+ [texture]{elementDown}
+ [FI]{-100}
+ [WET]{-100}
+ [LD]{-100}
+}

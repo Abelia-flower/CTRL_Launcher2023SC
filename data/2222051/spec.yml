@@ -1,0 +1,10 @@
+Id: 2222051
+Title: "アンナのお菓子な大冒険"
+Genre: "ゲーム"
+ScreenshotPath: image.png
+ExecutablePath: "bin\\アンナのお菓子な大冒険.exe"
+Argument: 
+SourcePath: src\
+TimeLimit: 00:00:00
+Description: "チームで制作中のゲームです！\r\nまだ未完成ですが、ぜひ遊んでみてください！"
+IsLate: false

@@ -1,0 +1,3507 @@
+
+出身は80,天気は50?会合は10?
+[config]
+{
+ [yoshino]
+ {
+   [inname]{@size@=*0.12}
+    [inkakko]{}
+    [format]
+   {
+     [character:yoshino]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+ [tact]
+ {
+   [inname]{@size@=*0.10}
+    [inkakko]{}
+    [format]
+   {
+     [character:tact]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+ [kaito]
+ {
+   [inname]{@size@=*0.105}
+    [inkakko]{}
+    [format]
+   {
+     [character:kaito]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[monika]
+ {
+   [inname]{@size@=*0.09}
+    [inkakko]{}
+    [format]
+   {
+     [character:monika]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[penny]
+ {
+   [inname]{@size@=*0.09}
+    [inkakko]{}
+    [format]
+   {
+     [character:penny]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[yuu]
+ {
+   [inname]{@size@=*0.102}
+    [inkakko]{}
+    [format]
+   {
+     [character:yuu]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[maniya]
+ {
+   [inname]{@size@=*0.085}
+    [inkakko]{}
+    [format]
+   {
+     [character:maniya]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[maniyasword]
+ {
+   [inname]{@num@=0:@size@=*0.4}
+    [inkakko]{}
+    [format]
+   {
+     [texture:maniya/wep@num@]
+     {
+       [KscaleWH]{@size@:-1}
+  	[setTXY]{0.2:0.5}
+     }
+   }
+  } 
+[sisyo]
+ {
+   [inname]{@size@=*0.09}
+    [inkakko]{}
+    [format]
+   {
+     [character:sisyo]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[era]
+ {
+   [inname]{@size@=*0.112}
+    [inkakko]{}
+    [format]
+   {
+     [character:era]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[jakusu]
+ {
+   [inname]{@size@=*0.092}
+    [inkakko]{}
+    [format]
+   {
+     [character:jakusu]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[anna]
+ {
+   [inname]{@size@=*0.075}
+    [inkakko]{}
+    [format]
+   {
+     [character:anna]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[inami]
+{
+ [inname]{@size@=*0.11}
+    [inkakko]{}
+    [format]
+   {
+     [character:inami]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+}
+[tutitukumo]
+{
+ [inname]{@size@=*0.11}
+    [inkakko]{}
+    [format]
+   {
+     [character:tutitukumo]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+}
+ [namebox]
+ {
+   [inname]{}
+   [inkakko]{@name@=お前の脾臓:@kazu@=*12}
+   [format]{
+ [texture:window/namebox]
+  {
+   [message:LC]{@name@:@kazu@}
+   [KscaleW]{0.15:}
+   [KscaleH]{:0.075}
+   [spot]{0.25:0.6:0:1}
+   [z]{10000}
+  }
+ }
+}
+[nameboxR]
+ {
+   [inname]{}
+   [inkakko]{@name@=彼の扁桃腺:@kazu@=*12}
+   [format]{
+ [texture:window/namebox]
+  {
+   [message:LC]{@name@:@kazu@}
+   [KscaleW]{0.15:}
+   [KscaleH]{:0.075}
+   [spot]{0.75:0.6:1:1}
+   [z]{10000}
+  }
+ }
+}
+ [textbox]
+ {
+   [inname]{}
+   [inkakko]{@text@=アタシの胆のう:@kazu@=/40:@speed@=/1.88}
+   [format]{
+ [texture:window/textbox]
+ {
+  [message]{@text@:@kazu@:@speed@}
+  [KscaleW]{0.5:}
+  [KscaleH]{:0.4}
+  [spot]{0.25:0.6:0:0}
+  [z]{11000}
+  }
+ }
+ 
+ }
+}
+
+
+
+
+[10:penny:anna]
+{
+
+[0]
+{
+ [penny]
+ {
+  [pose]{penny/yobikake:0}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{20:0.5}
+  }
+ 
+ [namebox]
+ {
+ ペニー
+ }
+ [textbox:0]
+ {
+ヤッホー！:1.5
+ }
+}
+
+[1]
+{ 
+[penny]
+ {
+  [pose]{penny/yobikake:0}
+  [texchange]{head:def}
+  [spot]{0.125:1.0:0.5:1}
+
+ }
+  [anna]
+ {
+  [pose]{anna/okoru:0}
+  [texchange]{head:ake}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [slidein]{15:-0.5}
+ }
+ 
+ [nameboxR]
+ {
+ アンナ
+ }
+ [textbox]
+ {
+ヤッホーなのじゃ！:1.7
+
+ }
+}
+[2]
+{ 
+[penny]
+ {
+  [pose]{penny/yobikake}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{penny/nobi}
+ }
+  [anna]
+ {
+  [pose]{anna/okoru:0}
+  [texchange]{head:def}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  
+ }
+ 
+ [namebox]
+ {
+ ペニー
+ }
+ [textbox]
+ {
+それじゃ、一緒に遊びに行こうか！:1.2
+ }
+}
+[3]
+{ 
+[penny]
+ {
+  [pose]{penny/nobi:0}
+  [spot]{0.125:1.0:0.5:1}
+
+ }
+  [anna]
+ {
+  [pose]{anna/okoru}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [motion]{anna\gimon}
+ }
+ 
+ [nameboxR]
+ {
+ アンナ
+ }
+ [textbox]
+ {
+今日は何を賭けるのじゃ？
+ }
+}
+[4]
+{ 
+[penny]
+ {
+  [pose]{penny/nobi}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{penny/asoko:1.6}
+  
+
+ }
+  [anna]
+ {
+  [pose]{anna/gimon:0}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+ }
+ 
+ [namebox]
+ {
+ ペニー
+ }
+ [textbox]
+ {
+夕飯の準備で！:1.5
+ }
+}
+[5]
+{ 
+[penny]
+ {
+  [pose]{penny/asoko:0}
+  [spot]{0.125:1.0:0.5:1}
+
+ }
+  [anna]
+ {
+  [pose]{anna/gimon:1}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [motion]{anna/taiki}
+  [texchange]{head:nikkori}
+ }
+ 
+ [nameboxR]
+ {
+ アンナ
+ }
+ [textbox]
+ {
+ま、我が負けるわけないから、なんだっていいのじゃ！:1.2
+ }
+}
+[6]
+{ 
+[penny]
+ {
+  [pose]{penny/asoko:0}
+  [wait:10]{[motion]{penny/tameiki}
+  [texchange]{head:def}}
+  [spot]{0.125:1.0:0.5:1}
+  [wait:20]{[slide]{35:1.4}}
+
+ }
+  [anna]
+ {
+  [pose]{anna/taiki:1}
+  [spot]{0.875:1.0:0.5:1}
+  [motion]{anna/X:2}
+  [wait:5]{[slide]{50:1.2}}
+ }
+ 
+}
+
+ペニー「ヤッホー！ アンナ「ヤッホーなのじゃ！ ペニー「それじゃ、一緒に遊びに行こうか！ アンナ「今日は何を賭けるのじゃ？  ペニー「夕飯の準備で！ アンナ「ま、我が負けるわけないから、なんだっていいのじゃ！
+
+
+}
+
+
+
+[10:anna:yoshino]
+{
+
+[0]
+{
+ [anna]
+ {
+  [pose]{anna/okoru:0}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{20:0.5}
+  }
+ 
+ [namebox]
+ {
+ アンナ
+ }
+ [textbox:0]
+ {
+ヨシノ！\n我に音楽を教えるのじゃ！:1.4
+ }
+}
+
+[1]
+{ 
+[anna]
+ {
+  [pose]{anna/okoru:0}
+  [wait:55]{[texchange]{head:def}}
+  [spot]{0.125:1.0:0.5:1}
+
+ }
+  [yoshino]
+ {
+  [pose]{yoshino/akire:0}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [slidein]{15:-0.5}
+  [wait:35]{[motion]{yoshino/taiki}[texchange]{head:def}}
+ }
+ 
+ [nameboxR]
+ {
+ ヨシノ
+ }
+ [textbox]
+ {
+なによ急に             \nまあ、いいけど    で、何がいい？
+ }
+}
+[2]
+{ 
+[anna]
+ {
+  [pose]{anna/okoru}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{anna/gimon}
+ }
+  [yoshino]
+ {
+  [pose]{yoshino/taiki:0}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  
+ }
+ 
+ [namebox]
+ {
+ アンナ
+ }
+ [textbox]
+ {
+う～ん、じゃあ簡単なのを頼むのじゃ
+ }
+}
+[3]
+{ 
+[anna]
+ {
+  [pose]{anna/gimon:0}
+  [spot]{0.125:1.0:0.5:1}
+
+ }
+  [yoshino]
+ {
+  [pose]{yoshino/taiki}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [motion]{yoshino/kakage}
+ }
+ 
+ [nameboxR]
+ {
+ ヨシノ
+ }
+ [textbox]
+ {
+ま、ヴァイオリン以外持ってないから  簡単なのないけどね
+ }
+}
+[4]
+{ 
+[anna]
+ {
+  [pose]{anna/gimon}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{anna/naku:1.4}
+
+ }
+  [yoshino]
+ {
+  [pose]{yoshino/kakage:0}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+ }
+ 
+ [namebox]
+ {
+ アンナ
+ }
+ [textbox]
+ {
+え～そんな～ひどいのじゃ！
+ }
+}
+[5]
+{ 
+[anna]
+ {
+  [pose]{anna/naku:0}
+  [wait:100]{[texchange]{head:def}}
+  [spot]{0.125:1.0:0.5:1}
+
+ }
+  [yoshino]
+ {
+  [pose]{yoshino/kakage:1}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [motion]{yoshino/toridasi}
+ }
+ 
+ [nameboxR]
+ {
+ ヨシノ
+ }
+ [textbox]
+ {
+なにも音楽ってのは楽器だけじゃないわ。 歌ったり踊ったり、手拍子したり  \n体一つあればできることはいっぱいあるわ
+ }
+}
+
+[6]
+{ 
+[anna]
+ {
+  [pose]{anna/naku}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{anna/dance}
+ }
+  [yoshino]
+ {
+  [pose]{yoshino/toridasi:0}
+  [texchange]{head:odoroki}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [wait:50]{[texchange]{head:sleep}}
+ }
+ 
+ [nameboxR]
+ {
+ アンナ
+ }
+ [textbox]
+ {
+じゃあ我は踊るのじゃ！:1.5
+ }
+}
+アンナ「ヨシノ！我に楽器を教えるのじゃ！　ヨシノ「なによ急に。まあ、いいけど。で、何がいい？ アンナ「う～ん、じゃあ簡単なのを頼むのじゃ ヨシノ「ま、ヴァイオリン以外持ってないから教えるも何もないけどね  アンナ「え～そんな～ひどいのじゃ！  ヨシノ「なにも音楽ってのは楽器だけじゃないわ。歌ったり踊ったり、手拍子したり。体一つあればできることはいっぱいあるわ　アンナ「じゃあ踊るのじゃ！ 　ヨシノ「(ニッコリ)
+
+}
+
+
+
+[80:anna:volcano]
+{
+[0]
+{
+ [anna]
+ {
+  [pose]{anna/gimon:0}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{7.5:0.2}
+  
+ }
+ 
+ [namebox]
+ {
+ アンナ
+ }
+ [textbox:0]
+ {
+何じゃ？  楽しそうって
+ }
+}
+
+[1]
+{
+ [anna]
+ {
+  [pose]{anna\gimon}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{anna/syokai}
+  
+ }
+ [namebox]
+ {
+ アンナ
+ }
+ [textbox]
+ {
+ああ、我はよくここで遊んでるのじゃ
+ }
+
+}
+[2]
+{
+ [anna]
+ {
+  [pose]{anna/gimon}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{anna/omoihaseru}
+  
+ }
+ [namebox]
+ {
+ アンナ
+ }
+ [textbox]
+ {
+投げやすい岩もいっぱいあるし、洞窟もあるのがいいとこなのじゃ
+ }
+ [texture:tikei/volcano/kusa1]
+ {
+  
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fadein]{40:5}
+ }
+}
+[3]
+{
+[anna]
+ {
+  [pose]{anna/omoihaseru}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{anna/X}
+  
+ }
+ [namebox]
+ {
+ アンナ
+ }
+ [textbox]
+ {
+我が僕も暗いところは好きじゃからな
+ }
+ [texture:effects/tikei/volcano/kusa1]
+ {
+  
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fade]{40:0}
+ }
+[texture:anna/bat]
+ {
+  
+  [KscaleWH]{0.15:-1}
+  [spot]{0.5:0.4:0.5:0.5:}
+  [slidein]{40:1}
+ }
+[texture:anna/bat:0]
+ {
+  
+  [KscaleWH]{0.12:-1}
+  [spot]{0.55:0.35:0.5:0.5:}
+  [slidein]{40:1}
+ }
+[texture:anna/bat:1]
+ {
+  
+  [KscaleWH]{0.10:-1}
+  [spot]{0.56:0.44:0.5:0.5:}
+  [slidein]{40:1}
+ }
+
+}
+[4]
+{
+[anna]
+ {
+  [pose]{anna/X}
+  [texchange]{head:nikkori}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{anna/motiage:2}
+  
+ }
+ [namebox]
+ {
+ アンナ
+ }
+ [textbox]
+ {
+よし！    \nじゃあキャッチボールするのじゃ！:1.2
+ }
+[texture:anna/bat]
+ {
+  
+  [KscaleWH]{0.15:-1}
+  [spot]{0.5:0.4:0.5:0.5:}
+  [slide]{40:1}
+ }
+[texture:anna/bat:0]
+ {
+  
+  [KscaleWH]{0.12:-1}
+  [spot]{0.55:0.35:0.5:0.5:}
+  [slide]{40:1}
+ }
+[texture:anna/bat:1]
+ {
+  
+  [KscaleWH]{0.10:-1}
+  [spot]{0.56:0.44:0.5:0.5:}
+  [slide]{40:1}
+ }
+ [texture:tikei/volcano/kusa2]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.04:0.42:0.5:0.5:20}
+  [fadein]{40:15}
+ }
+
+}
+何じゃ？楽しそうって  ああ、我はよくここで遊んでるのじゃ 投げやすい岩もいっぱいあるし、洞窟があるのがいいとこなのじゃ  我が僕も暗いところは好きじゃからな よし！じゃあキャッチ―ボールするのじゃ！
+
+}
+
+
+
+[80:jakusu:setugen]
+{
+[0]
+{
+ [jakusu]
+ {
+  [pose]{jakusu/udekumi:0}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{7.5:0.2}
+  
+ }
+ 
+ [namebox]
+ {
+ ジャクス
+ }
+ [textbox:0]
+ {
+う～寒い寒い   \n訓練時代を思い出しますねぇ
+ }
+}
+
+[1]
+{
+ [jakusu]
+ {
+  [pose]{jakusu/udekumi}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{jakusu/omoihaseru}
+  
+ }
+ [namebox]
+ {
+ ジャクス
+ }
+ [textbox]
+ {
+辛すぎて嫌だったんで、 とにかく上官をボコボコにして 階級を上げたあの日々が懐かしいです
+ }
+
+}
+[2]
+{
+ [jakusu]
+ {
+  [pose]{jakusu/omoihaseru}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{jakusu/akire:1}
+  
+ }
+ [namebox]
+ {
+ ジャクス
+ }
+ [textbox]
+ {
+いや、懐かしくはないですね   \n昼寝する暇もなかったですから
+ }
+
+}
+[3]
+{
+ [jakusu]
+ {
+  [pose]{jakusu/akire}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{jakusu/talk:1}
+  
+ }
+ [namebox]
+ {
+ ジャクス
+ }
+ [textbox]
+ {
+あんな最低な日々……:0.8:0.5
+ }
+
+}
+[4]
+{
+ [jakusu]
+ {
+  [pose]{jakusu/talk}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{jakusu/gimon:1}
+  
+ }
+ [namebox]
+ {
+ ジャクス
+ }
+ [textbox]
+ {
+いや、最低だったのかな    \nそうでもないか。
+ }
+
+}
+う～寒い寒い。訓練時代を思い出しますねぇ。辛すぎて嫌だったんでとにかく上官をボコボコにして階級を上げたあの日々が懐かしいです。いや、懐かしくはないですね。昼寝する暇もなかったですから、最低だったのかな。そうでもないか。
+
+}
+
+[10:era:monika]
+{
+
+[0]
+{
+ [era]
+ {
+  [pose]{era/me:0}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{20:0.5}
+  }
+ 
+ [namebox]
+ {
+ エラ
+ }
+ [textbox:0]
+ {
+今日はもう狩終わったの？
+ }
+}
+
+[1]
+{ 
+[era]
+ {
+  [pose]{era/me:0}
+  [spot]{0.125:1.0:0.5:1}
+
+ }
+  [monika]
+ {
+  [pose]{monika/taiki:0}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [slidein]{20:-0.5}
+ }
+ 
+ [nameboxR]
+ {
+ モニカ
+ }
+ [textbox]
+ {
+ああ、  さっきちょうど仕留めたよ
+ }
+}
+[2]
+{ 
+[era]
+ {
+  [pose]{era/me}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{era/mojimoji}
+ }
+  [monika]
+ {
+  [pose]{monika/taiki:0}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  
+ }
+ 
+ [namebox]
+ {
+ エラ
+ }
+ [textbox]
+ {
+じゃあさ、僕の作った野菜と一緒に晩御飯にしようよ   \nきっと美味しいよ～
+ }
+}
+[3]
+{ 
+[era]
+ {
+  [pose]{era/mojimoji:0}
+  [spot]{0.125:1.0:0.5:1}
+
+ }
+  [monika]
+ {
+  [pose]{monika/taiki}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [motion]{monika/udekumi}
+  [texchange]{head:talk}
+ }
+ 
+ [nameboxR]
+ {
+ モニカ
+ }
+ [textbox]
+ {
+ダメだ:1.5:0.8
+ }
+}
+[4]
+{ 
+[era]
+ {
+  [pose]{era/mojimoji}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{era/gimon:1.4}
+
+ }
+  [monika]
+ {
+  [pose]{monika/udekumi:0}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+ }
+ 
+ [namebox]
+ {
+ エラ
+ }
+ [textbox]
+ {
+え、 なんで？  \nこの前僕のキャベツ美味しそうに食べてたじゃない
+ }
+}
+[5]
+{ 
+[era]
+ {
+  [pose]{era/gimon:0}
+  [spot]{0.125:1.0:0.5:1}
+
+ }
+  [monika]
+ {
+  [pose]{monika/udekumi}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [motion]{monika/talk}
+ }
+ 
+ [nameboxR]
+ {
+ モニカ
+ }
+ [textbox]
+ {
+あれは私のものだ   \n狩もしてないお前にやる訳にはいかない
+ }
+}
+
+[6]
+{ 
+[era]
+ {
+  [pose]{era/gimon:0}
+  [spot]{0.125:1.0:0.5:1}
+  [wait:85]{ [texchange]{head:nikkori}}
+
+  [wait:90]{ [motion]{era/yorokobi}}
+ }
+  [monika]
+ {
+  [pose]{monika/talk}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [motion]{monika/taiki}
+ }
+ 
+ [nameboxR]
+ {
+ モニカ
+ }
+ [textbox]
+ {
+だから、 明日だ   \n明日、  一緒に狩をしよう     \n一緒に食べるというのなら まずはそれからだ
+ }
+}
+
+}
+
+[10:maniya:kaito]
+{
+
+[0]
+{
+ [maniya]
+ {
+  [pose]{maniya/warai:0}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{20:0.5}
+   
+ [maniyasword:0]
+ {
+  [spot]{0.18:0.3:::5}
+  [slidein]{20:0.8}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.10:0.20:::-5}
+  [slidein]{20:0.6}
+  }
+ [maniyasword:0:1]
+ {
+  [spot]{0.025:0.30:::10}
+  [slidein]{20:0.5}
+  }
+ }
+ 
+ [namebox]
+ {
+ マニヤ
+ }
+ [textbox:0]
+ {
+ねぇねぇ、  その短剣、  \nやっぱりカッコイイね！
+ }
+}
+
+[1]
+{ 
+[maniya]
+ {
+  [pose]{maniya/warai:0}
+  [spot]{0.125:1.0:0.5:1}
+[maniyasword:0]
+ {
+  [spot]{0.18:0.3:::5}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.10:0.20:::-5}
+  }
+ [maniyasword:0:1]
+ {
+  [spot]{0.025:0.30:::10}
+  }
+ }
+  [kaito]
+ {
+  [pose]{kaito/gimon2:0}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [slidein]{20:-0.5}
+ }
+ 
+ [nameboxR]
+ {
+ カイト
+ }
+ [textbox]
+ {
+そうか？
+
+ }
+}
+[2]
+{ 
+[maniya]
+ {
+  [pose]{maniya/warai}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{maniya/sore}
+  [texchange]{head:talk}
+[maniyasword:0]
+ {
+  [spot]{0.18:0.3:::5}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.10:0.20:::-5}
+  }
+ [maniyasword:0:1]
+ {
+  [spot]{0.025:0.30:::10}
+  }
+ }
+  [kaito]
+ {
+  [pose]{kaito/gimon2:0}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  
+ }
+ 
+ [namebox]
+ {
+ マニヤ
+ }
+ [textbox]
+ {
+しかもそれ、  \n魔術で切れ味をよくしてるでしょ？
+
+ }
+}
+[3]
+{ 
+[maniya]
+ {
+  [pose]{maniya/sore:0}
+  [texchange]{head:talk}
+  [spot]{0.125:1.0:0.5:1}
+[maniyasword:0]
+ {
+  [spot]{0.18:0.3:::5}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.10:0.20:::-5}
+  }
+ [maniyasword:0:1]
+ {
+  [spot]{0.025:0.30:::10}
+  }
+ }
+  [kaito]
+ {
+  [pose]{kaito/gimon2}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [motion]{kaito/knife}
+  [texchange]{head:talk}
+ }
+ 
+ [nameboxR]
+ {
+ カイト
+ }
+ [textbox]
+ {
+よくわかるな    \n氷の魔力さえあれば刻んだ魔術が自動で刃を整えてくれるんだ::0.9
+ }
+}
+[4]
+{ 
+[maniya]
+ {
+  [pose]{maniya/sore}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{maniya/happy2:1.4}
+[maniyasword:0]
+ {
+  [spot]{0.18:0.3:::5}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.10:0.20:::-5}
+  }
+ [maniyasword:0:1]
+ {
+  [spot]{0.025:0.30:::10}
+  }
+ }
+  [kaito]
+ {
+  [pose]{kaito/knife:0}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+ }
+ 
+ [namebox]
+ {
+ マニヤ
+ }
+ [textbox]
+ {
+やっぱり！  \nアタシじゃ使えないから奪わないであげるね！:1.05:0.9
+ }
+}
+[5]
+{ 
+[maniya]
+ {
+  [pose]{maniya/happy2:0}
+  [spot]{0.125:1.0:0.5:1}
+[maniyasword:0]
+ {
+  [spot]{0.18:0.3:::5}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.10:0.20:::-5}
+  }
+ [maniyasword:0:1]
+ {
+  [spot]{0.025:0.30:::10}
+  }
+ }
+  [kaito]
+ {
+  [pose]{kaito/knife}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [motion]{kaito/akire}
+ }
+ 
+ [nameboxR]
+ {
+ カイト
+ }
+ [textbox]
+ {
+それはどうも……:0.85:0.85
+
+ }
+}
+}
+
+[10:sisyo:kaito]
+{
+
+[0]
+{
+ [sisyo]
+ {
+  [pose]{sisyo/taiki:0}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{20:0.5}
+ }
+ 
+ [namebox]
+ {
+ シショー
+ }
+ [textbox:0]
+ {
+ようカイト！   \n調子どうだ？:1.2
+ }
+}
+
+[1]
+{ 
+[sisyo]
+ {
+  [pose]{sisyo/taiki:0}
+  [spot]{0.125:1.0:0.5:1}
+ }
+  [kaito]
+ {
+  [pose]{kaito/shop:0}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [slidein]{20:-0.5}
+  [texchange]{head:def}
+ }
+ 
+ [nameboxR]
+ {
+ カイト
+ }
+ [textbox]
+ {
+急にどうした？師匠   \n……まあ、いい方だよ::0.9
+
+ }
+}
+[2]
+{ 
+[sisyo]
+ {
+  [pose]{sisyo/taiki}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{sisyo/satori}
+ }
+  [kaito]
+ {
+  [pose]{kaito/shop:0}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  
+  [texchange]{head:def}
+ }
+ 
+ [namebox]
+ {
+ シショー
+ }
+ [textbox]
+ {
+ふむ、  じゃあ昔のように稽古をつけてやろう！
+
+ }
+}
+[3]
+{ 
+[sisyo]
+ {
+  [pose]{sisyo/satori:0}
+  [spot]{0.125:1.0:0.5:1}
+ }
+  [kaito]
+ {
+  [pose]{kaito/shop}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [motion]{kaito/akire}
+ }
+ 
+ [nameboxR]
+ {
+ カイト
+ }
+ [textbox]
+ {
+あの虐待を稽古と呼ぶのか？   \nさすがにもう勘弁してくれよ
+
+ }
+}
+[4]
+{ 
+[sisyo]
+ {
+  [pose]{sisyo/satori}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{sisyo/omoihaseru:1.1}
+ }
+  [kaito]
+ {
+  [pose]{kaito/akire:0}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [texchange]{head:def}
+ }
+ 
+ [namebox]
+ {
+ シショー
+ }
+ [textbox]
+ {
+俺はお前の成長のことを考えてるんだ    \n師匠の気持ちを無碍にするなよ
+
+ }
+}
+[5]
+{ 
+[sisyo]
+ {
+  [pose]{sisyo/omoihaseru:0}
+  [spot]{0.125:1.0:0.5:1}
+ }
+  [kaito]
+ {
+  [pose]{kaito/akire}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [motion]{kaito/talk}
+  [texchange]{head:akire}
+ }
+ 
+ [nameboxR]
+ {
+ カイト
+ }
+ [textbox]
+ {
+嘘だ。   暇なだけだろう
+
+ }
+}
+[6]
+{ 
+[sisyo]
+ {
+  [pose]{sisyo/omoihaseru}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{sisyo/shop:2}
+ }
+  [kaito]
+ {
+  [pose]{kaito/talk}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [motion]{kaito/nayami:1.2}
+ }
+ 
+ [namebox]
+ {
+ シショー
+ }
+ [textbox]
+ {
+正解！  さすが我が弟子！:1.2:0.75
+ }
+}
+}
+
+
+
+[80:maniya:desert]
+{
+
+[0]
+{
+ [maniya]
+ {
+  [pose]{maniya/talk:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{10}
+ }
+ 
+ [namebox]
+ {
+ マニヤ
+ }
+ [textbox:0]
+ {
+う～ん、  確かにここは故郷だけど、   \nアタシはあんまり思い入れないかな
+ }
+[maniyasword:0]
+ {
+  [spot]{0.2:0.35:::0}
+  [fadein]{10}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.15:0.20:::0}
+  [fadein]{10}
+  }
+ [maniyasword:2]
+ {
+  [spot]{-0.1:0.30:::0}
+  [fadein]{10}
+  }
+}
+
+[1]
+{
+ [maniya]
+ {
+  [pose]{maniya/talk}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{maniya/shop:1}
+  
+ }
+ [namebox]
+ {
+ マニヤ
+ }
+ [textbox]
+ {
+長い間ここのコ達を助けてたんだけど、それだけだね
+
+ }
+[maniyasword:0]
+ {
+  [spot]{0.3:0.35:::50}
+   [slidein]{15:0.1:0:50}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.2:0.20:::45}
+   [slidein]{15:0.05:0:45}
+  }
+ [maniyasword:2]
+ {
+  [spot]{0.1:0.30:::30}
+   [slidein]{15:0.2:0:30}
+  }
+}
+[2]
+{
+ [maniya]
+ {
+  [pose]{maniya/shop}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{maniya/happy:1}
+  
+ }
+ [namebox]
+ {
+ マニヤ
+ }
+ [textbox]
+ {
+あ、 でもやっぱ帰ってくると嬉しいってコも結構いるみたい!:1.1
+ }
+[maniyasword:0]
+ {
+  [spot]{0.3:0.35:::50}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.2:0.20:::45}
+  }
+ [maniyasword:2]
+ {
+  [spot]{0.1:0.30:::30}
+  }
+ [maniyasword:0:1:1]
+ {
+  [spot]{0.15:0.30:::10}
+   [slidein]{15:0.4:0:30}
+  }
+ [maniyasword:0:1]
+ {
+  [spot]{0.05:0.30:::20}
+   [slidein]{15:0.4:0:30}
+  }
+
+}
+[3]
+{
+ [maniya]
+ {
+  [pose]{maniya/happy}
+  [spot]{0.125:1.0:0.5:1}
+  
+
+  [motion:0]{maniya/shop:1}
+  [texchange:0]{head:happy}
+}
+ [namebox]
+ {
+ マニヤ
+ }
+ [textbox]
+ {
+よかったね～
+ }
+[maniyasword:0]
+ {
+  [spot]{0.3:0.35:::50}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.2:0.20:::45}
+  }
+ [maniyasword:2]
+ {
+  [spot]{0.1:0.30:::30}
+  }
+ [maniyasword:0:1:1]
+ {
+  [spot]{0.15:0.30:::10}
+  }
+ [maniyasword:0:1]
+ {
+  [spot]{0.05:0.30:::20}
+  }
+
+}
+}
+
+[80:yuu:mountains]
+{
+
+[0]
+{
+ [yuu]
+ {
+ 
+  [pose]{yuu/talk:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{10}
+
+ }
+ 
+ [namebox]
+ {
+ ユウ
+ }
+ [textbox]
+ {
+実のところ、  俺はこの辺の裕福な家の生まれなんだ    \n周りも坊ちゃん嬢ちゃんだらけだった
+ }
+}
+
+[1]
+{
+ [yuu]
+ {
+  [pose:0]{yuu/talk}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion]{yuu/akire2talk}
+ }
+ [namebox]
+ {
+ ユウ
+ }
+ [textbox]
+ {
+ただ、  とてつもなく嫌だったんだよ   \n特にわけわからん力を振りかざすやつらがな
+ }
+
+}
+[2]
+{
+ [yuu]
+ {
+  [pose:0]{yuu/akire2talk}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{yuu/akiretalk:1}
+  
+ }
+ [namebox]
+ {
+ ユウ
+ }
+ [textbox]
+ {
+だから俺はここを出て、  単純な力がモノをいう世界に入ったんだ
+ }
+
+}
+[3]
+{
+ [yuu]
+ {
+  [pose:0]{yuu/akiretalk}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{yuu/youtoo:1.2}
+  
+ }
+ [namebox]
+ {
+ ユウ
+ }
+ [textbox]
+ {
+それが楽しくてさ   \n今でもこうして夢中って感じだ
+ }
+
+}
+[4]
+{
+ [yuu]
+ {
+  [pose:0]{yuu/youtoo}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{yuu/kennka:1.3}
+  
+ }
+ [namebox]
+ {
+ ユウ
+ }
+ [textbox]
+ {
+よし！  今日も戦ってこうぜ！:1.2
+ }
+
+}
+}
+
+[80:penny:countryofsuntree]
+{
+
+[0]
+{
+ [penny]
+ {
+ 
+  [pose]{penny/nobi:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{10}
+
+ }
+ 
+ [namebox]
+ {
+ ペニー
+ }
+ [textbox]
+ {
+う～ん安心する匂い、   故郷って感じだね～:0.8
+ }
+}
+
+[1]
+{
+ [penny]
+ {
+  [pose:0]{penny/nobi}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion]{penny/talk}
+ }
+ [namebox]
+ {
+ ペニー
+ }
+ [textbox]
+ {
+ここでは吹雪のせいで星が見えないんだ    \n太陽だってね
+ }
+
+}
+[2]
+{
+ [penny]
+ {
+  [pose:0]{penny/talk}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{penny/shop:1}
+  
+ }
+ [namebox]
+ {
+ ペニー
+ }
+ [textbox]
+ {
+だから僕は"外"に出て吹雪を越えたとき、初めて星を見たんだよ！:1.1:1.1
+ }
+
+}
+[3]
+{
+ [penny]
+ {
+  [pose:0]{penny/shop}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{penny/gimon2:1.2}
+  
+ }
+ [namebox]
+ {
+ ペニー
+ }
+ [textbox]
+ {
+あれも太陽なんだってね  \nじゃあここみたいな違う世界もあるのかな？
+ }
+
+}
+[4]
+{
+ [penny]
+ {
+  [pose:0]{penny/gimon2}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{penny/omoihaseru:1.3}
+  
+ }
+ [namebox]
+ {
+ ペニー
+ }
+ [textbox]
+ {
+いつか行ってみたいなぁ…………:0.9:0.7
+ }
+
+}
+}
+
+[80:sisyo:pureland]
+{
+
+[0]
+{
+ [sisyo]
+ {
+ 
+  [pose]{sisyo/yasume:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{10}
+
+ }
+ 
+ [namebox]
+ {
+ シショー
+ }
+ [textbox]
+ {
+この辺で40年前かな？  \n俺は目覚めたんだ
+ }
+}
+
+[1]
+{
+ [sisyo]
+ {
+  [pose:0]{sisyo/yasume}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion]{sisyo/omoihaseru:0.1}
+ }
+ [namebox]
+ {
+ シショー
+ }
+ [textbox]
+ {
+人っ子一人いない不気味な場所で  \n自分が誰か分からないことを理解した::0.8
+ }
+
+}
+[2]
+{
+ [sisyo]
+ {
+  [pose:0]{sisyo/omoihaseru}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{sisyo/talk:1}
+  
+ }
+ [namebox]
+ {
+ シショー
+ }
+ [textbox]
+ {
+不安な俺は当然自分探し回るわけだ  \n結果的に大陸中を廻ったが、  \nなぜか覚えていた学問のおかげで金には困らなかったよ
+ }
+
+}
+[2.5]
+{
+ [sisyo]
+ {
+  [pose:0]{sisyo/talk}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{sisyo/yasume:0.4}
+  
+ }
+ [namebox]
+ {
+ シショー
+ }
+ [textbox]
+ {
+自分について知る者はどこにもいなかった   \n記憶も何も戻らなかった::0.9
+ }
+
+}
+[2.8]
+{
+ [sisyo]
+ {
+  [pose:0]{sisyo/yasume}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{sisyo/omamori:1}
+  [texchange]{head:talk}
+  
+ }
+ [namebox]
+ {
+ シショー
+ }
+ [textbox]
+ {
+だが、このお守りや、名前を貰った
+ }
+
+}
+[3]
+{
+ [sisyo]
+ {
+  [pose:0]{sisyo/omamori}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{sisyo/yasume:0.1}
+  
+  [texchange]{head:sleep}
+ }
+ [namebox]
+ {
+ シショー
+ }
+ [textbox]
+ {
+それで気づいたんだ   \nせっかく授かった人生 楽しんでやろうって::0.9
+ }
+
+}
+}
+
+[80:era:flowergarden]
+{
+[0]
+{
+ [era]
+ {
+  [pose]{era/happy:0}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{7.5:0.2}
+  
+ }
+ 
+ [namebox]
+ {
+ エラ
+ }
+ [textbox:0]
+ {
+ただいま！ 
+ }
+}
+
+[1]
+{
+ [era]
+ {
+  [pose]{era/happy}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{era/nikkoritalk}
+  
+ }
+ [namebox]
+ {
+ エラ
+ }
+ [textbox]
+ {
+ん？そうだよ   \nこの花畑は僕が作ったんだ
+ }
+
+}
+[2]
+{
+ [era]
+ {
+  [pose]{era/nikkoritalk}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{era/shop:1}
+  
+ }
+ [namebox]
+ {
+ エラ
+ }
+ [textbox]
+ {
+う～ん……     \n300年くらいかかったかな？
+ }
+
+}
+[3]
+{
+ [era]
+ {
+  [pose]{era/shop}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{era/mojimoji:1}
+  
+ }
+ [namebox]
+ {
+ エラ
+ }
+ [textbox]
+ {
+かなりがんばったから、   \nあと150年くらいは手入れもほとんどいらないんだ
+ }
+
+}
+[4]
+{
+ [era]
+ {
+  [pose]{era/mojimoji}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{era/happy:1.5}
+  
+ }
+ [namebox]
+ {
+ エラ
+ }
+ [textbox]
+ {
+すごいでしょ！:1.5
+}
+
+}
+ただいま！  ん？そうだよ。この花畑は僕が作ったんだ  う～ん300年くらいかかったかな？  かなりがんばったから、手入れもほとんどいらないんだ  すごいでしょ！
+
+}
+[80:monika;mori]
+{
+
+[0]
+{
+ [monika]
+ {
+  [pose]{monika/talk:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{10}
+
+ }
+ 
+ [namebox]
+ {
+ モニカ
+ }
+ [textbox]
+ {
+もう昔の話だが、   \n私はこの周辺の森をナワバリに狩をしていた
+ }
+}
+
+[1]
+{
+ [monika]
+ {
+  [pose:0]{monika/talk}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion]{monika/kamae:1}
+  [texchange]{head:katame}
+ }
+ [namebox]
+ {
+ モニカ
+ }
+ [textbox]
+ {
+時々森の外からやってくる奴らもいてな   \n退屈はしてなかったさ
+ }
+
+}
+[2]
+{
+ [monika]
+ {
+  [pose:0]{monika/talk}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{monika/gimon:1}
+  
+ }
+ [namebox]
+ {
+ モニカ
+ }
+ [textbox]
+ {
+本来、  ここに足を踏み入れた時点で全員私の得物なんだが、 　\nもう離れてるしな…… だが……:1:0.9
+ }
+
+}
+[3]
+{
+ [monika]
+ {
+  [pose:0]{monika/gimon}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{monika/taiki:1}
+  
+ }
+ [namebox]
+ {
+ モニカ
+ }
+ [textbox]
+ {
+……ここは我慢しよう   \n仲間を狩るわけにはいかないしな:0.8:0.8
+ }
+
+}
+}
+
+
+[80:kaito:mori]
+{
+
+[0]
+{
+ [kaito]
+ {
+  [pose]{kaito/talk:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{10}
+
+ }
+ 
+ [namebox]
+ {
+ カイト
+ }
+ [textbox]
+ {
+懐かしいな、    \nこの辺の集落で俺は育ったんだ
+ }
+}
+
+[1]
+{
+ [kaito]
+ {
+  [pose:0]{kaito/talk}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion]{kaito/gimon2:1}
+  
+ }
+ [namebox]
+ {
+ カイト
+ }
+ [textbox]
+ {
+もうほとんど覚えていないが、  \nとにかく師匠に出会ってからすべてが始まった
+ }
+
+}
+[2]
+{
+ [kaito]
+ {
+  [pose:0]{kaito/gimon2}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{kaito/gimon:1}
+  
+ }
+ [namebox]
+ {
+ カイト
+ }
+ [textbox]
+ {
+修行したり、  街に繰り出したり……
+ }
+
+}
+[3]
+{
+ [kaito]
+ {
+  [pose:0]{kaito/gimon}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{kaito/akire:1}
+  
+ }
+ [namebox]
+ {
+ カイト
+ }
+ [textbox]
+ {
+まあ、  何度も死にかけたけど、  \nいい思い出だよ
+ }
+
+}
+[4]
+{
+ [kaito]
+ {
+  [pose:0]{kaito/akire}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{kaito/happy:1}
+  [texchange:0]{head:def}
+ }
+ [namebox]
+ {
+ カイト
+ }
+ [textbox]
+ {
+そのおかげで今の俺があるからな
+ }
+
+}
+}
+
+
+
+[80:yoshino:believerscapital]
+{
+
+[0]
+{
+ [yoshino]
+ {
+  [pose]{yoshino/talk:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{10}
+
+ }
+ 
+ [namebox]
+ {
+ ヨシノ
+ }
+ [textbox:0]
+ {
+ええ、  私はこの国の出身よ
+ }
+}
+
+[1]
+{
+ [yoshino]
+ {
+  [pose:0]{yoshino/talk}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion]{yoshino/think:1}
+  [texchange]{head:itai:}
+  
+ }
+ [namebox]
+ {
+ ヨシノ
+ }
+ [textbox]
+ {
+でも、    \nあんまりいい思い出はないわね:0.9
+ }
+
+}
+[2]
+{
+ [yoshino]
+ {
+  [pose:0]{yoshino/think}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{yoshino/toridasi:1}
+  [texchange]{head:turai1:}
+  
+ }
+ [namebox]
+ {
+ ヨシノ
+ }
+ [textbox]
+ {
+聖楽隊としてやってたんだけど、  \n嫌になって逃げ出してきたのよ:0.8
+ }
+
+}
+[3]
+{
+ [yoshino]
+ {
+  [pose:0]{yoshino/toridasi}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{yoshino/onsa:1}
+  
+ }
+ [namebox]
+ {
+ ヨシノ
+ }
+ [textbox]
+ {
+そうそう、   \nこれも抜け出すときに拝借した音叉なのよ    \n今は武器として使ってるけどね
+ }
+
+}
+[4]
+{
+ [yoshino]
+ {
+  [pose:0]{yoshino/onsa}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{yoshino/syokai:1}
+  
+ }
+ [namebox]
+ {
+ ヨシノ
+ }
+ [textbox]
+ {
+戦うのは大変だけど、   \nあの頃と比べると今の方が断然楽しいわね
+ }
+
+}
+[5]
+{
+ [yoshino]
+ {
+  [pose:0]{yoshino/syokai}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{yoshino/taiki2:1.5}
+  
+ }
+ [namebox]
+ {
+ ヨシノ
+ }
+ [textbox]
+ {
+音楽はまず、   \n自分たちのものじゃなくっちゃね:1.05
+ }
+
+}
+}
+
+[80:jakusu:setugen]
+{
+[0]
+{
+ [jakusu]
+ {
+  [pose]{jakusu/udekumi:0}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{7.5:0.2}
+  
+ }
+ 
+ [namebox]
+ {
+ ジャクス
+ }
+ [textbox:0]
+ {
+う～寒い寒い   \n訓練時代を思い出しますねぇ
+ }
+}
+
+[1]
+{
+ [jakusu]
+ {
+  [pose]{jakusu/udekumi}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{jakusu/omoihaseru}
+  
+ }
+ [namebox]
+ {
+ ジャクス
+ }
+ [textbox]
+ {
+辛すぎて嫌だったんで、 とにかく上官をボコボコにして 階級を上げたあの日々が懐かしいです
+ }
+
+}
+[2]
+{
+ [jakusu]
+ {
+  [pose]{jakusu/omoihaseru}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{jakusu/akire:1}
+  
+ }
+ [namebox]
+ {
+ ジャクス
+ }
+ [textbox]
+ {
+いや、懐かしくはないですね   \n昼寝する暇もなかったですから
+ }
+
+}
+[3]
+{
+ [jakusu]
+ {
+  [pose]{jakusu/akire}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{jakusu/talk:1}
+  
+ }
+ [namebox]
+ {
+ ジャクス
+ }
+ [textbox]
+ {
+あんな最低な日々……:0.8:0.5
+ }
+
+}
+[4]
+{
+ [jakusu]
+ {
+  [pose]{jakusu/talk}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{jakusu/gimon:1}
+  
+ }
+ [namebox]
+ {
+ ジャクス
+ }
+ [textbox]
+ {
+いや、最低だったのかな    \nそうでもないか
+ }
+
+}
+う～寒い寒い。訓練時代を思い出しますねぇ。辛すぎて嫌だったんでとにかく上官をボコボコにして階級を上げたあの日々が懐かしいです。いや、懐かしくはないですね。昼寝する暇もなかったですから、最低だったのかな。そうでもないか。
+
+}
+
+
+[50:maniya:snow]
+{
+[0]
+{
+ [maniya]
+ {
+  [pose]{maniya/odoroki:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{10}
+ }
+ 
+ [namebox]
+ {
+ マニヤ
+ }
+ [textbox:0]
+ {
+え、私が寒そうだって？
+ }
+[maniyasword:0]
+ {
+  [spot]{0.2:0.2:::20}
+  [fadein]{10}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.05:0.20:::0}
+  [fadein]{10}
+  }
+ [maniyasword:2]
+ {
+  [spot]{-0.025:0.30:::-20}
+  [fadein]{10}
+  }
+}
+
+[1]
+{
+ [maniya]
+ {
+  [pose]{maniya/odoroki}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{maniya/shop:1}
+  
+ }
+ [namebox]
+ {
+ マニヤ
+ }
+ [textbox]
+ {
+大丈夫だよ   \n雪はこのコ達が防いでくれるし……:0.95
+
+ }
+[maniyasword:0]
+ {
+  [spot]{0.2:0.2:::20}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.05:0.20:::0}
+  }
+ [maniyasword:2]
+ {
+  [spot]{-0.025:0.30:::-20}
+  }
+}
+[2]
+{
+ [maniya]
+ {
+  [pose]{maniya/shop}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{maniya/irezumi:1}
+  
+ }
+ [namebox]
+ {
+ マニヤ
+ }
+ [textbox]
+ {
+アタシの入れ墨が体温を調節してくれるんだ   \nもともとは砂漠の熱に耐えるためのものだがね
+ }
+[maniyasword:0]
+ {
+  [spot]{0.2:0.2:::20}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.05:0.20:::0}
+  }
+ [maniyasword:2]
+ {
+  [spot]{-0.025:0.30:::-20}
+  }
+
+}
+[3]
+{
+ [maniya]
+ {
+  [pose]{maniya/irezumi}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{maniya/warai:1.5}
+  
+ }
+ [namebox]
+ {
+ マニヤ
+ }
+ [textbox]
+ {
+っ てことで、 そう心配しなくていいぞ！:1.1
+ }
+[maniyasword:0]
+ {
+  [spot]{0.2:0.2:::20}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.05:0.20:::0}
+  }
+ [maniyasword:2]
+ {
+  [spot]{-0.025:0.30:::-20}
+  }
+
+}
+}
+
+[50:penny:rain]
+{
+[0]
+{
+ [penny]
+ {
+  [pose]{penny/tameiki:0}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{10:0.2:0}
+ }
+ 
+ [namebox]
+ {
+ ペニー:8
+ }
+ [textbox:0]
+ {
+はぁ、  今日は雨かぁ:0.8
+ }
+}
+
+[1]
+{
+ [penny]
+ {
+  [pose]{penny/tameiki}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{penny/gimon:1}
+  
+ }
+ [namebox]
+ {
+ ペニー
+ }
+ [textbox]
+ {
+濡れるのって嫌なんだよねぇ……:0.9
+ }
+
+}
+[2]
+{
+ [penny]
+ {
+  [pose]{penny/gimon}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{penny/yobikake:2}
+  
+ }
+ [namebox]
+ {
+ ペニー
+ }
+ [textbox]
+ {
+誰か～～  乾かして～～～:1.4
+ }
+
+}
+}
+
+[yoshinokanyu]
+{
+[0]
+{
+ [yoshino]
+ {
+  [pose]{yoshino/taiki}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{10:0.2:0}
+
+ }
+ 
+ [namebox]
+ {
+ ???
+ }
+ [textbox:0]
+ {
+初めまして、私はヨシノ
+ }
+}
+
+[1]
+{
+ [yoshino]
+ {
+  [pose:0]{yoshino/taiki}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion]{yoshino/sinasadame:1}
+  
+ }
+ [namebox]
+ {
+ ヨシノ
+ }
+ [textbox]
+ {
+私、曲のアイデアを探していろいろ旅してるんだけど、   \nあなた最高にいい格好してるわね
+ }
+
+}
+[2]
+{
+ [yoshino]
+ {
+  [pose:0]{yoshino/sinasadame}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{yoshino/syokai:1}
+  
+ }
+ [namebox]
+ {
+ ヨシノ
+ }
+ [textbox]
+ {
+指揮者でしょ？    \n戦う時もやってくれるし、ビビッと来たわ
+ }
+
+}
+[3]
+{
+ [yoshino]
+ {
+  [pose:0]{yoshino/taiki}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{yoshino/happy:1}
+  
+ }
+ [namebox]
+ {
+ ヨシノ
+ }
+ [textbox]
+ {
+一緒に旅しましょ！   \nよろしくね！:1.2
+ }
+
+}
+
+
+}
+
+
+[kaitokanyu]
+{
+[0]
+{
+ [kaito]
+ {
+  [pose]{kaito/whoareyou:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{20}
+
+ }
+ 
+ [namebox]
+ {
+ カイト
+ }
+ [textbox:0]
+ {
+初対面でアレだが、   \nお前は何だ？
+ }
+}
+
+[1]
+{
+ [kaito]
+ {
+  [pose]{kaito/whoareyou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{kaito/gimon:1.5}
+  
+ }
+ [namebox]
+ {
+ カイト
+ }
+ [textbox]
+ {
+触れられない、喋らない、  \nでも意思は伝えられる
+ }
+
+}
+[1.5]
+{
+ [kaito]
+ {
+  [pose]{kaito/gimon}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{kaito/gimon2:1}
+  
+ }
+ [namebox]
+ {
+ カイト
+ }
+ [textbox]
+ {
+そして、明らかに何か違うものが見えている……
+ }
+
+}
+[2]
+{
+ [kaito]
+ {
+  [pose]{kaito/gimon2}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{kaito/syokai:1}
+  
+ }
+ [namebox]
+ {
+ カイト
+ }
+ [textbox]
+ {
+まあ、なんだっていい\nちょうど旅の同行者を探していたんだ
+ }
+
+}
+[3]
+{
+  [kaito]
+ {
+  [pose]{kaito/syokai}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{kaito/yorosiku:1}
+  
+ }
+ [namebox]
+ {
+ カイト
+ }
+ [textbox]
+ {
+お前についていくよ  \nよろしくな
+ }
+
+}
+}
+[monikakanyu]
+{
+[0]
+{
+ [monika]
+ {
+  [pose]{monika/taiki:0}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{10:0.2}
+
+ }
+ 
+ [namebox]
+ {
+ モニカ
+ }
+ [textbox:0]
+ {
+おい、  お前はこれからも旅を続けるんだろう？
+ }
+}
+
+[1]
+{
+ [monika]
+ {
+  [pose]{monika/taiki}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{monika/shop:1.5}
+  
+ }
+ [namebox]
+ {
+ モニカ
+ }
+ [textbox]
+ {
+私も連れていけ   \nお前とは目的が違うだろうが……
+ }
+
+}
+[2]
+{
+ [monika]
+ {
+  [pose]{monika/shop}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{monika/udekumi:1}
+  
+ }
+ [namebox]
+ {
+ モニカ
+ }
+ [textbox]
+ {
+やはり狩は協力するに限る
+ }
+
+}
+[3]
+{
+ [monika]
+ {
+  [pose]{monika/udekumi}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{monika/syokai:1}
+  
+ }
+ [namebox]
+ {
+ モニカ
+ }
+ [textbox]
+ {
+私はきっといい成果を上げる  \n約束するぞ
+ }
+
+}
+
+
+}
+[pennykanyu]
+{
+[0]
+{
+ [penny]
+ {
+  [pose]{penny/happy:0}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{7.5:0.2}
+  
+ }
+ 
+ [namebox]
+ {
+ ???
+ }
+ [textbox:0]
+ {
+ヤッホー！  僕はペニー！
+ }
+}
+
+[1]
+{
+ [penny]
+ {
+  [pose]{penny/happy}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{penny/talk:1.5}
+  
+ }
+ [namebox]
+ {
+ ペニー
+ }
+ [textbox]
+ {
+キミはなかなか面白い体してるね！  \n気になっちゃう！
+ }
+
+}
+[2]
+{
+ [penny]
+ {
+  [pose]{penny/talk}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{penny/shop:1}
+  
+ }
+ [namebox]
+ {
+ ペニー
+ }
+ [textbox]
+ {
+ちょうど僕も旅してたんだ！   \nせっかくだし、一緒にしちゃおうよ！
+ }
+
+}
+[3]
+{
+ [penny]
+ {
+  [pose]{penny/shop:0}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{penny/patt:1}
+  
+ }
+ [namebox]
+ {
+ ペニー
+ }
+ [textbox]
+ {
+次はあっちの方行ってみない！？:1.2
+ }
+
+}
+}
+[yuukanyu]
+{
+[0]
+{
+ [yuu]
+ {
+  [pose]{yuu/taiki:0}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{7.5:0.2}
+  
+ }
+ 
+ [namebox]
+ {
+ ユウ
+ }
+ [textbox:0]
+ {
+よう！   \nお前はなかなか危険な旅をしてるみたいだな
+ }
+}
+
+[1]
+{
+ [yuu]
+ {
+  [pose]{yuu/taiki}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{yuu/kennka:1.5}
+  
+ }
+ [namebox]
+ {
+ ユウ
+ }
+ [textbox]
+ {
+俺はさ、道行く魔物共に喧嘩打って、 \n最強を目指してるんだ！
+ }
+
+}
+[2]
+{
+ [yuu]
+ {
+  [pose]{yuu/kennka}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{yuu/youtoo:1}
+  
+ }
+ [namebox]
+ {
+ ユウ
+ }
+ [textbox]
+ {
+お前も そうなんだろ？
+ }
+
+}
+[3]
+{
+ [yuu]
+ {
+  [pose]{yuu/youtoo}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{yuu/sakebi:1}
+  
+ }
+ [namebox]
+ {
+ ユウ
+ }
+ [textbox]
+ {
+このオレがいたら百人力だ！  \nさあ！行こうぜ！:1.5
+ }
+
+}
+}
+[maniyakanyu]
+{
+[0]
+{
+ [maniya]
+ {
+  [pose]{maniya/out}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{10}
+  [motion]{maniya/out:0.8}
+ }
+ 
+ [namebox]
+ {
+ ???
+ }
+ [textbox:0]
+ {
+ハーイ   \nアタシはマニヤ
+ }
+}
+
+[1]
+{
+ [maniya]
+ {
+  [pose]{maniya/out}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{maniya/X:1}
+  
+ }
+ [namebox]
+ {
+ マニヤ
+ }
+ [textbox]
+ {
+そしてこのコたちが   \n大切な家族！:1.5
+ }
+ [maniyasword:0]
+ {
+  [spot]{0.4:0.3:::-20}
+  [slidein]{30:0.8}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.25:0.20:::-5}
+  [slidein]{20:0.6}
+  }
+ [maniyasword:2]
+ {
+  [spot]{0.125:0.30:::10}
+  [slidein]{10:0.5}
+  }
+
+}
+[2]
+{
+ [maniya]
+ {
+  [pose]{maniya/X}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{maniya/shop:1}
+  
+ }
+ [namebox]
+ {
+ マニヤ
+ }
+ [textbox]
+ {
+そうそう、このコ達も旅してみたいってことだし\nアタシもいろんなコと出会いたいし……:0.9
+ }
+[maniyasword:0]
+ {
+  [spot]{0.4:0.3:::-20}
+  [slide]{10:0:0:30}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.25:0.20:::-5}
+  [slide]{15:0:0:30}
+  }
+ [maniyasword:2]
+ {
+  [spot]{0.125:0.30:::10}
+  [slide]{20:0:0:30}
+  }
+
+}
+[3]
+{
+ [maniya]
+ {
+  [pose]{maniya/shop}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{maniya/happy:1}
+  
+ }
+ [namebox]
+ {
+ マニヤ
+ }
+ [textbox]
+ {
+アンタについてくよ! よろしく！:1.1
+ }
+ [maniyasword:0]
+ {
+  [spot]{0.4:0.3:::10}
+  [slide]{10:-0.15:0:-140}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.25:0.20:::25}
+  [slide]{12:-0.15:0:-150}
+  }
+ [maniyasword:2]
+ {
+  [spot]{0.125:0.30:::40}
+  [slide]{11:-0.15:0:-160}
+  }
+
+}
+}
+[sisyokanyu]
+{
+[0]
+{
+ [sisyo]
+ {
+  [pose]{sisyo/taiki}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{15}
+ }
+ 
+ [namebox]
+ {
+ シショー
+ }
+ [textbox:0]
+ {
+  　シど\n  でシう\n  すョも\n  　｜:1:1.5
+ }
+}
+
+[1]
+{
+ [sisyo]
+ {
+  [pose]{sisyo/taiki}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{sisyo/me:2}
+  
+ }
+ [namebox]
+ {
+ シショー
+ }
+ [textbox]
+ {
+フフフ……今の言葉……  \n理解できただろ？
+ }
+
+}
+[2]
+{
+ [sisyo]
+ {
+  [pose]{sisyo/me}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{sisyo/yasume:1.5}
+  
+ }
+ [namebox]
+ {
+ シショー
+ }
+ [textbox]
+ {
+お前についていけば退屈はしなさそうだ
+ }
+
+}
+[3]
+{
+ [sisyo]
+ {
+  [pose]{sisyo/yasume}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{sisyo/satori:1}
+  
+ }
+ [namebox]
+ {
+ シショー
+ }
+ [textbox]
+ {
+嫌だと言っても絶対ついてくぞ   \nよろぴく！:1.1 
+ }
+
+}
+}
+[erakanyu]
+{
+[0]
+{
+ [era]
+ {
+  [pose]{era/taiki:0}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{7.5:0.2}
+  
+ }
+ 
+ [namebox]
+ {
+ ???
+ }
+ [textbox:0]
+ {
+こんにちは。 僕はエラ  \nよろしくね
+ }
+}
+
+[1]
+{
+ [era]
+ {
+  [pose]{era/taiki}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{era/me}
+  
+ }
+ [namebox]
+ {
+ エラ
+ }
+ [textbox]
+ {
+僕は見ての通り、  農家だ
+ }
+
+}
+[2]
+{
+ [era]
+ {
+  [pose]{era/me}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{era/nikkoritalk:1}
+  
+ }
+ [namebox]
+ {
+ エラ
+ }
+ [textbox]
+ {
+僕もまだ 勉強しなきゃと思ってね  \nいろんな土地の生態系を見て回ってるんだ
+ }
+
+}
+[3]
+{
+ [era]
+ {
+  [pose]{era/nikkoritalk}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{era/mojimoji:1}
+  
+ }
+ [namebox]
+ {
+ エラ
+ }
+ [textbox]
+ {
+だから、僕も連れてってくれると嬉しいな
+ }
+
+}
+こんにちは。僕はエラ\nよろしくね  僕は見ての通り、農家してるんだ  でも、勉強しなきゃと思ってね。いろんな土地の植物を見て回ってるんだ  だから、僕も連れてってくれると嬉しいな
+
+}
+[jakusukanyu]
+{
+[0]
+{
+ [jakusu]
+ {
+  [pose]{jakusu/taiki:0}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{7.5:0.2}
+  
+ }
+ 
+ [namebox]
+ {
+ ジャクス
+ }
+ [textbox:0]
+ {
+こんにちは
+ }
+}
+
+[1]
+{
+ [jakusu]
+ {
+  [pose]{jakusu/taiki}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{jakusu/tohoho}
+  
+ }
+ [namebox]
+ {
+ ジャクス
+ }
+ [textbox]
+ {
+僕、  行く当てがないんですよね　
+ }
+
+}
+[2]
+{
+ [jakusu]
+ {
+  [pose]{jakusu/tohoho}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{jakusu/akire:1}
+  
+ }
+ [namebox]
+ {
+ ジャクス
+ }
+ [textbox]
+ {
+まあ、  特に困ることではありませんが
+ }
+
+}
+[3]
+{
+ [jakusu]
+ {
+  [pose]{jakusu/akire}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{jakusu/talk:1}
+  
+ }
+ [namebox]
+ {
+ ジャクス
+ }
+ [textbox]
+ {
+暇なのでついてきますね　  \nよろしく
+ }
+
+}
+こんにちは　僕、行く当てがないんですよね　まあ、特にやりたいこともないですが、暇なのでついてきますね　よろしく
+}
+
+[annakanyu]
+{
+[0]
+{
+ [anna]
+ {
+  [pose]{anna/taiki:0}
+  [texchange]{head:ake}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{7.5:0.2}
+  
+ }
+ 
+ [namebox]
+ {
+ ???
+ }
+ [textbox:0]
+ {
+我はアンナじゃ！:2
+ }
+}
+
+[1]
+{
+ [anna]
+ {
+  [pose]{anna\taiki}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{anna/syokai}
+  
+ }
+ [namebox]
+ {
+ アンナ
+ }
+ [textbox]
+ {
+オマエ、なかなか見どころがある   \n我の下僕にしてやるのじゃ
+ }
+
+}
+[2]
+{
+ [anna]
+ {
+  [pose]{anna/syokai}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{anna/gimon:1}
+  
+ }
+ [namebox]
+ {
+ アンナ
+ }
+ [textbox]
+ {
+ん？   何か文句があるのか？
+ }
+
+}
+[3]
+{
+ [anna]
+ {
+  [pose]{anna/gimon}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{anna/X:1.5}
+  
+ }
+ [namebox]
+ {
+ アンナ
+ }
+ [textbox]
+ {
+つべこべ言わずついて来い！\n返事はYESじゃ！:1.5
+ }
+
+}
+我はアンナじゃ！   オマエ、なかなか見どころがある\n我の下僕にしてやるのじゃ！
+ん？何か文句があるのか？  つべこべ言わずついて来い！返事はYESじゃ！
+
+}
+
+
+
+

@@ -1,0 +1,10 @@
+Id: 2013064-r4-8bitpc
+Title: "8ビットパソコン"
+Genre: "その他"
+ScreenshotPath: 883.png
+ExecutablePath: bin\run.bat
+Argument: 
+SourcePath: src\
+TimeLimit: 00:00:00
+Description: "誰が何と言おうとパーソナルコンピュータ。"
+IsLate: false

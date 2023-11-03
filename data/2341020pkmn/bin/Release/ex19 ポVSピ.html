@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>最終課題</title>
+<script type="text/javascript">
+let enemyhp = 250;
+let myhp = 100;
+//でんこうせっ火を使えば真エンディングにいける可能性がある
+function poke(){
+  alert("ひかえのポケモン：ル力リオ　東京都市大学(横浜キャンパスのすがた)");
+}
+
+let enemywaza = ["チェンソー","チェーン","なみだめ","ほえる"];
+let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+
+function tenmann() {
+  enemyhp -= 10;
+  let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+  alert("ピカチュウの10まんボルト！ こうかはいまひとつだ・・・　10ダメージ！")
+  if (hangeki ===　"チェンソー"){
+  alert("ポチタのチェンソー！　50ダメージ！")
+  myhp -= 50;
+}
+
+else if (hangeki ===　"チェーン"){
+  alert("ポチタのチェーン！　40ダメージ！")
+  myhp -= 40;
+}
+
+else if (hangeki ===　"なみだめ"){
+  alert("ポチタのなみだめ！")
+  alert("ピカチュウになみだはつうじない！")
+}
+
+else if (hangeki ===　"ほえる"){
+  alert("ポチタのほえる！")
+  alert("ピカチュウはびっくりした！　10ダメージ！")
+  myhp -= 10;
+}
+hpkannri();
+checkvictry();
+checklose();
+    }
+
+function boru() {
+  enemyhp -= 20;
+  let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+  alert("ピカチュウのボルテッカー！ 20ダメージ！")
+  if (hangeki ===　"チェンソー"){
+  alert("ポチタのチェンソー！　50ダメージ！")
+  myhp -= 50;
+}
+
+else if (hangeki ===　"チェーン"){
+  alert("ポチタのチェーン！　40ダメージ！")
+  myhp -= 40;
+}
+
+else if (hangeki ===　"なみだめ"){
+  alert("ポチタのなみだめ！")
+  alert("ピカチュウになみだはつうじない！")
+}
+
+else if (hangeki ===　"ほえる"){
+  alert("ポチタのほえる！")
+  alert("ピカチュウはびっくりした！　10ダメージ！")
+  myhp -= 10;
+}
+hpkannri();
+checkvictry();
+checklose();
+}
+
+function akubi() {
+alert("ピカチュウのあくび！")
+alert("ピカチュウはねむくなった！")
+enemyhp -= 0;
+let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+
+if (hangeki ===　"チェンソー"){
+  alert("ポチタのチェンソー！　50ダメージ！")
+  myhp -= 50;
+}
+
+else if (hangeki ===　"チェーン"){
+  alert("ポチタのチェーン！　40ダメージ！")
+  myhp -= 40;
+}
+
+else if (hangeki ===　"なみだめ"){
+  alert("ポチタのなみだめ！")
+  alert("ピカチュウになみだはつうじない！")
+}
+
+else if (hangeki ===　"ほえる"){
+  alert("ポチタのほえる！")
+  alert("ピカチュウはびっくりした！　10ダメージ！")
+  myhp -= 10;
+}
+hpkannri();
+checkvictry();
+checklose();
+}
+
+function denko() {
+  enemyhp -= 90;
+  alert("ピカチュウのでんこうせっ火！　こうかはばつぐんだ！　90ダメージ！")
+  let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+if (hangeki ===　"チェンソー"){
+  alert("ポチタのチェンソー！　50ダメージ！")
+  myhp -= 50;
+}
+
+else if (hangeki ===　"チェーン"){
+  alert("ポチタのチェーン！　40ダメージ！")
+  myhp -= 40;
+}
+
+else if (hangeki ===　"なみだめ"){
+  alert("ポチタのなみだめ！")
+  alert("ピカチュウになみだはつうじない！")
+}
+
+else if (hangeki ===　"ほえる"){
+  alert("ポチタのほえる！")
+  alert("ピカチュウはびっくりした！　10ダメージ！")
+  myhp -= 10;
+}
+hpkannri();
+checkvictry();
+checklose();
+}
+
+function checkvictry() {
+if(enemyhp <= 0){
+  alert("ポチタはたおれた！")
+  alert("ピカチュウはポチタをたべてげんきになった！")
+  alert("敵は東京都市大学(世田谷キャンパスのすがた)をくりだした！")
+  window.location.href = "ex28 世VSピ.html";
+}
+}
+
+function checklose(){
+if(myhp <= 0){
+  alert("ピカチュウはたおれた！")
+  alert("ポチタはピカチュウをたべてげんきになった！")
+  alert("いけっ！ルカリオ！")
+  window.location.href = "ex21 ポVSル.html";
+}
+}
+
+function checkdraw(){
+if(myhp <= 0 && enemyhp <= 0){
+  alert("ポチタはたおれた！")
+  alert("ピカチュウもたおれた！")
+  alert("敵は東京都市大学(世田谷キャンパスのすがた)をくりだした！")
+  alert("いけっ！ルカリオ！")
+  window.location.href = "ex27 世VSル.html";
+}
+}
+
+function hpkannri() {
+  document.getElementById("enemyhp").innerText = enemyhp + "/250";
+  document.getElementById("myhp").innerText = myhp + "/100";
+}
+
+</script>
+</head>
+<body bgcolor="#eee8aa">
+<h3><p style="padding-left:30px">ポチタ:L50</p></h3>
+<h3><img src="ポチタ.jpg" width="200" style="padding-left:30px"></img></h3>
+<h3><p style="padding-left:30px" id="enemyhp">250/250</p></h3><br>
+<h3><p style="padding-left:900px">ピカチュウ:L50</p></h3>
+<h3><img src="ピカチュウ.png" width="200" style="padding-left:900px"></img></h3>
+<h3><p style="padding-left:900px" id="myhp">100/100</p></h3><br>
+
+<table border="1">
+<tr>
+<th>たたかう</th>
+<th><button onclick="tenmann()" id="a">10まんボルト</th>
+<th><button onclick="boru()" id="b">ボルテッカー</th>
+<th><button onclick="akubi()" id="c">あくび</th>
+<th><button onclick="denko()" id="d">でんこうせっ火</th>
+</tr>
+<tr>
+<th>　　</th>
+<th><button onclick="poke()" id="f">ポケモン</th>
+<th><button onclick="run()" id="g"><a href="ex18 とおせんぼ.html">にげる</a></th>
+<th><button onclick="esc()" id="h"><a href="ex17 TVSぴ.html">やりなおす</a></th>
+
+</tr>
+</table>
+</body>
+</html>

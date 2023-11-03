@@ -1,0 +1,10 @@
+Id: 2341020pkmn
+Title: "ポケ○ンバトル"
+Genre: "ゲーム"
+ScreenshotPath: "スクリーンショット 2023-09-11 152123.png"
+ExecutablePath: "bin\\Release\\ex15 スタート画面.html"
+Argument: 
+SourcePath: src\
+TimeLimit: 00:00:00
+Description: 
+IsLate: false

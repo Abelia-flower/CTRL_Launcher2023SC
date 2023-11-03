@@ -1,0 +1,385 @@
+//大きさ,speed,time(turn基準),R,G,B -1or未記入で標準
+// 1 , 1.5 , 0.75, 0,0,0
+
+#region:shopper
+shopped0:ひやかしかい
+shopped1:まいど！
+shopped2:まいどあり～～～
+shopped3:ほくほくだぁ！
+buy:買う
+back:帰る
+
+#region:yoshino
+attack:Strike!
+#attack: 2
+
+Kattack:Take this!
+#Kattack: 2.5
+
+defence:Let's defence
+Kdefence:Listen this song!
+#Kdefence: 2.5,0, -1,0,0,0.8
+
+element:Sound bomb!
+#element:1.5,-1,-1
+
+Aelement:Ssss...
+#Aelemnt:0.8,0.5,0.3
+
+Delement:Let's Groove Tonight！
+#Delement: 2.5,1.5, -1,0,0,0.8
+
+Ahissatu:Roar!
+#Ahissatu: 4.5
+
+Dhissatu:Echo!
+#Dhissatu: 4.5
+
+dodge:Pyoon
+charge:Fortissimo
+dance:Let's dance!
+#dance: 1.5
+
+dead:oh my……
+deaded:I'll take care of the rest!
+#deaded:5
+None:Can't move……
+syutugeki:Let's go
+shop:What I should buy……
+hiyakasi:Oh, we out of money
+result0:Well, that was easy
+result1:That was bit denger
+result2:Managed to win, but …….
+result3:That was a mistake……
+//////////////////////////////////////////////////////////////////////////////////
+#region:kaito
+attack:Cut it down!
+#attack: 2
+
+Kattack:I'll go
+
+defence:Get defensive
+Kdefence:Stay back!
+#Kdefence: 2.5,0, -1, 0, 0.8, 0.8
+
+element:It's cold today
+
+Aelement:Plenty of ammo left
+#Aelemnt:-1,1
+
+Delement:Watch overhead
+
+Ahissatu:you so slow
+#Ahissatu: 1
+
+Dhissatu:oh dear……
+#Dhissatu: 1,-1,-1,0 ,0.8 , 0.8
+
+dodge:Jump!
+#dodge: 1.5, 0
+charge:Prepare for next
+dance:Just make noise!
+#dance:1.5
+
+dead:this is where i ends……?
+deaded:I will avenge
+#deaded:2.2
+None:I can't Now
+syutugeki:Oh, time to I'm on?
+shop:What shall I buy……
+hiyakasi:No money……
+result0:No problem
+result1:It was bad way
+result2:We need to improve tactics
+result3:A complete lose……
+//////////////////////////////////////////////////////////////////////////////////
+#region:monika
+attack:Shot arrow
+#attack: 1
+
+Kattack:Shot and shot！
+#Kattack: 1.5
+
+defence:Aim hard……
+Kdefence:arrow shield
+
+element:Focus……
+#element:0.8
+
+Aelement:Like rains
+
+Delement:Bigger one
+
+Ahissatu:Meteor it down!
+#Ahissatu: 5,0.5
+
+Dhissatu:Shoot down all
+#Dhissatu: 2,1
+
+dodge:Like beasts
+#dodge: 1.2, 0
+charge:Focus! Focus!
+#charge:1.5
+dance:Thank for lives
+#dance:1.5
+
+dead:I'm screwed
+deaded:I'm burning up
+#deaded:2,2
+None:Don't you see it?
+syutugeki:The smell of prey……
+shop:I don't like business but……
+hiyakasi:I guess it's called poverty.
+result0:That was weak
+result1:Wasn't ideal
+result2:I was looking for this!
+#result3:3
+result3:I'll hunt you……
+//////////////////////////////////////////////////////////////////////////////////
+#region:penny
+attack:jump iiiin
+#attack: 1.5
+
+Kattack:charrrrge!
+#Kattack: 2.5, -1, -1, 0, 0.8, 0
+
+defence:Behind me!
+#defence:2.0, -1, -1, 0.8, 0.8, 0
+Kdefence:defensive one!
+#Kdefence:2.5, -1, -1
+
+element:don't miss it……
+#element:1.3
+
+Aelement:BoooooM!
+#Aelement:2.8
+
+Delement:Then, doesn't hurt!
+#Delement:3.0, -1, -1, 0.8, 0.8, 0
+
+
+Ahissatu:I'll Go into!
+#Ahissatu: 5,0.5
+
+Dhissatu:Flame On!
+#Dhissatu: 5
+
+dodge:Feels good Wind～
+charge:Power On！
+#charge:2.5
+dance:Yeah～
+#dance:1.5
+
+dead:paiiin……
+#dead:0.8
+deaded:How dare to My Friend!
+#deaded:5, 1
+None:I can't Mooove
+#None:2.5
+syutugeki:Yay!  \nOuting!
+#syutugeki:1.5
+shop:Shopping!
+#shop:2.0
+hiyakasi:Expensive!
+#hiyakasi:2.0
+result0:So Fun!
+#result0:1.5
+result1:So Fun!!!
+#result1:2.5
+result2:So Fun!!!!!!
+#result2:3.5
+result3:So fuuun
+#result3:1.5
+////////////////////////////////////////////////////////////////////////////////////////////
+#region:yuu
+attack:Punch!
+#attack: 2.0
+
+Kattack:Uppercut!
+#Kattack: 2.0
+
+defence:Sprit!
+#defence:2.0, -1, -1, 0.8, 0, 0
+Kdefence:Burn! the Heart!
+#Kdefence:5, 0, -1,0.8, 0, 0
+
+element:Flame Punch!
+#element:2, -1, -1, 0.8, 0, 0
+
+Aelement:Back Draft!
+#Aelement:2.5, -1, -1, 0.8, 0, 0
+
+Delement:Frame Tornade!
+#Delement:3.0, -1, -1, 0.8, 0, 0
+
+Ahissatu:Here comes the sun!
+#Ahissatu: 5
+
+Dhissatu:Blow all up!
+#Dhissatu: 5
+
+dodge:Flight!
+#dodge:1.5
+charge:Uhoooooooooo!
+#charge:2.5
+dance:Fire up Soul!
+#dance:2.5
+
+dead:I…can more……
+#dead:0.8
+deaded:Fire of revenge!！
+#deaded:3
+None:C, Can't Move……
+#None:-1,2
+syutugeki:Where's the strong one?
+shop:Which one……？
+hiyakasi:just look at the item……
+result0:I know I'm Stronger
+#result1.5
+result1:Good feeling
+result2:Farewell, my rival
+result3:It's training too……
+////////////////////////////////////////////////////////////////////////////////////////////
+#region:maniya
+attack:gooo
+#attack:1.2
+
+Kattack:Couple Cross!
+#Kattack: 1.8
+
+defence:Wait there!
+#defence:1.5
+Kdefence:Sword but shield!
+#Kdefence:2.2
+
+element:Mix them all!
+#element:1.6
+
+Aelement:Simultaneous attack!
+#Aelement:2.5
+
+Delement:Come back guy!
+#Delement:3.0
+
+Ahissatu:Giant guy!
+#Ahissatu: 4
+
+Dhissatu:Together!
+#Dhissatu: 4
+
+dodge:floating～～
+charge:hee hee hee……
+#charge:1.1
+dance:Happy Dance!
+#dance:2.5
+
+dead:Sorry Kids……
+#dead:1.1
+deaded:oh my
+#deaded:1.2
+None:Can't move, kids?
+syutugeki:Will I meet nice guy?
+shop:What do you like? guys?
+hiyakasi:seeing only seeing only……
+result0:There's no way can compete with us～
+result1:You guys did a good job
+result2:Thanks to all!
+#result2:2
+result3:painful～
+///////////////////////////////////////////////////////////////////////////////////////////////////
+#region:sisyo
+attack:Taake it eaasyyー
+#attack:1.2
+
+Kattack:You can't dodge～
+#Kattack: 1.8
+
+defence:here your heal
+#defence:1.5
+Kdefence:Aim this plz～
+#Kdefence:1.4
+
+element:Both Both Both!
+#element:2.2
+
+Aelement:Fun Cross Time!
+#Aelement:2.5
+
+Delement:Go on, you guys
+#Delement:1.6
+
+Ahissatu:Bit concentration……
+#Ahissatu: 3
+
+Dhissatu:Let's get bit serious……
+#Dhissatu: 3
+
+dodge:zzZZZ
+charge:Get into IT! ORAAA!
+#charge:4
+dance:wired move!
+#dance:3.2
+
+dead: the Ascen sion 
+#dead:3,10
+deaded:You're not training well～
+#deaded:1.5
+None:A desire to move 
+syutugeki:Okay, I'm fkin free 
+shop:What!? I'm not allowed to rob them!
+#shop:1.5
+hiyakasi:I want to rob them all～
+
+result0:looooser♥
+result1:loooser♤
+result2:looser♦
+result3:loooooooooser♧
+////////////////////////////////////////////////////////////////////////////////////////////////////
+#region:tutitukumo
+attack:Poi Poi
+Kattack:Goooon……
+#Kattack:-1,5
+
+defence:kikiki……
+#defence:-1,5
+
+Kdefence:guruguru
+#Kdefence:-1,-1,-1,0,0,1
+
+element:papapa
+Aelement:I love bowling!
+Delement:dododoo……
+#Delement:-1,5
+
+Ahissatu:guragura……
+#Ahissatu:1.5,5
+
+Dhissatu:
+dodge:
+charge:
+dance:gerreeeen
+dead:…………
+None:
+////////////////////////////////////////////////////////////////////////////////////////////////////
+#region:jotto
+attack:UhoUho
+Kattack:guhehe
+
+defence:Kora!
+
+Kdefence:Guoooooon!
+
+element:kxaaaaa
+Aelement:Suuuu
+Delement:I'm gonna blow you away……
+#Delement:1,2
+
+Ahissatu:GuruGuru
+#Ahissatu:1.5,3
+
+Dhissatu:
+dodge:GoriGori
+charge:
+dance:Guhohhohho
+dead:Uho……
+None:

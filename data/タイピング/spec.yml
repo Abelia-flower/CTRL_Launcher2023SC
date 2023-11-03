@@ -1,0 +1,10 @@
+Id: typing
+Title: "Il|タイピング"
+Genre: "ゲーム"
+ScreenshotPath: "タイピング.png"
+ExecutablePath: "タイピング.exe"
+Argument: 
+SourcePath: src\
+TimeLimit: 00:00:00
+Description: "I(大文字アイ)　l(小文字エル)　|(バーティカルバー)のみで構成されたタイピングゲームです。\r\nI(アイ)と|(バーティカルバー)のときShiftを忘れないでね。"
+IsLate: false

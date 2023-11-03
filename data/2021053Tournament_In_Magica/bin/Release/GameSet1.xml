@@ -1,0 +1,1719 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GameSet1</name>
+    </assembly>
+    <members>
+        <member name="T:GameSet1.benriUI.bennriUI">
+            <summary>
+            便利なUIの元。
+            要件としてあるのはstart,endで開始終了ができ、frameでhyojimanのcamがずれても対応できるってこと。
+            </summary>
+        </member>
+        <member name="F:GameSet1.benriUI.bennriUI.hyo">
+            <summary>
+            表示マン
+            </summary>
+        </member>
+        <member name="M:GameSet1.benriUI.bennriUI.#ctor(Charamaker2.hyojiman)">
+            <summary>
+            
+            </summary>
+            <param name="hyo"></param>
+        </member>
+        <member name="M:GameSet1.benriUI.bennriUI.start">
+            <summary>
+            開始時のメソッド
+            </summary>
+        </member>
+        <member name="M:GameSet1.benriUI.bennriUI.zure(System.Single,System.Single)">
+            <summary>
+            UIをずらすメソッド
+            </summary>
+        </member>
+        <member name="M:GameSet1.benriUI.bennriUI.frame(System.Single)">
+            <summary>
+            フレームメソッド
+            </summary>
+        </member>
+        <member name="M:GameSet1.benriUI.bennriUI.end">
+            <summary>
+            終了メソッド
+            </summary>
+        </member>
+        <member name="T:GameSet1.benriUI.buttoninterface">
+            <summary>
+            クリック+キーで移動アンドセレクトできる便利めのインターフェース
+            start,frame忘れずに！！
+            </summary>
+        </member>
+        <member name="F:GameSet1.benriUI.buttoninterface.selecter">
+            <summary>
+            指す奴
+            </summary>
+        </member>
+        <member name="M:GameSet1.benriUI.buttoninterface.#ctor(Charamaker2.hyojiman,System.Int32,Charamaker2.picture,System.Collections.Generic.List{Charamaker2.picture},Charamaker2.Shapes.Shape)">
+            <summary>
+            普通のコンストラクタ
+            </summary>
+            <param name="hyo">表示マン</param>
+            <param name="nowindex">最初に選択するボタンの番号</param>
+            <param name="selecter">選択中を表すカーソル</param>
+            <param name="buttons">左から右の順番にしてほしい</param>
+            <param name="buttonkata">ボタンの形(x,y,w,h,radは関係ないよ)</param>
+        </member>
+        <member name="M:GameSet1.benriUI.buttoninterface.#ctor(Charamaker2.hyojiman,System.Int32,Charamaker2.Character.character,System.Collections.Generic.List{Charamaker2.Character.character},Charamaker2.Shapes.Shape)">
+            <summary>
+            普通のコンストラクタ
+            </summary>
+            <param name="hyo">表示マン</param>
+            <param name="nowindex">最初に選択するボタンの番号</param>
+            <param name="selecter">選択中を表すカーソル</param>
+            <param name="buttons">左から右の順番にしてほしい</param>
+            <param name="buttonkata">ボタンの形(x,y,w,h,radは関係ないよ)</param>
+        </member>
+        <member name="M:GameSet1.benriUI.buttoninterface.frame(System.Single)">
+            <summary>
+            フレームで呼び出す奴
+            </summary>
+            <param name="cl"></param>
+        </member>
+        <member name="M:GameSet1.benriUI.buttoninterface.start">
+            <summary>
+            UIの開始
+            </summary>
+        </member>
+        <member name="M:GameSet1.benriUI.buttoninterface.end">
+             <summary>
+            UIを破壊するときに呼び出せば？
+             </summary>
+        </member>
+        <member name="M:GameSet1.benriUI.buttoninterface.clickeds(System.Single,System.Single)">
+            <summary>
+            クリックで選択したボタンを全部返す
+            </summary>
+            <param name="x">クリック位置</param>
+            <param name="y">クリック位置</param>
+            <returns>クリックしたボタン</returns>
+        </member>
+        <member name="M:GameSet1.benriUI.buttoninterface.selected">
+            <summary>
+            選択中のボタンを返す
+            </summary>
+            <returns>選択中のボタン(1だけどこっちのが便利だろ？)</returns>
+        </member>
+        <member name="M:GameSet1.benriUI.buttoninterface.select(Charamaker2.Character.character)">
+            <summary>
+            選んでる奴をセットする
+            </summary>
+            <param name="p">選ぶ奴</param>
+            <returns>選べたか</returns>
+        </member>
+        <member name="M:GameSet1.benriUI.buttoninterface.selectsaikinbosi(System.Boolean,System.Boolean)">
+            <summary>
+            最もそれらしいボタンに移動する
+            </summary>
+            <param name="plus">プラスか</param>
+            <param name="y">y方向か</param>
+        </member>
+        <member name="T:GameSet1.benriUI.rolling">
+            <summary>
+            キャラクターがローリングするUI
+            </summary>
+        </member>
+        <member name="F:GameSet1.benriUI.rolling.charas">
+            <summary>
+            キャラクター共
+            </summary>
+        </member>
+        <member name="F:GameSet1.benriUI.rolling.adds">
+            <summary>
+            選択はできないエフェクト系のキャラクター
+            startしたのちに追加するのであればresethyojiは別途呼び出してくれ
+            </summary>
+        </member>
+        <member name="M:GameSet1.benriUI.rolling.addcharas(Charamaker2.Character.character)">
+            <summary>
+            名前通り
+            </summary>
+            <param name="c"></param>
+        </member>
+        <member name="M:GameSet1.benriUI.rolling.removecharas(Charamaker2.Character.character)">
+            <summary>
+            名前通り
+            </summary>
+            <param name="c"></param>
+        </member>
+        <member name="F:GameSet1.benriUI.rolling.now">
+            <summary>
+            セレクトキャラクタ-
+            </summary>
+        </member>
+        <member name="P:GameSet1.benriUI.rolling.nowidx">
+            <summary>
+            インデックス
+            
+            </summary>
+        </member>
+        <member name="M:GameSet1.benriUI.rolling.getchara(System.Int32)">
+             <summary>
+            i番目のキャラクターを返す
+             </summary>
+             <param name="i"></param>
+             <returns></returns>
+        </member>
+        <member name="M:GameSet1.benriUI.rolling.getchara">
+            <summary>
+            全てのキャラクターを返す
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameSet1.benriUI.rolling.#ctor(Charamaker2.hyojiman,System.Int32,System.Single,System.Collections.Generic.List{Charamaker2.Character.character},Charamaker2.Shapes.Shape,System.Collections.Generic.List{Charamaker2.Character.character})">
+            <summary>
+            普通のコンストラクタ
+            </summary>
+            <param name="hyo">表示マン</param>
+            <param name="time">回転時間</param>
+            <param name="nowindex">最初に選択するボタンの番号</param>
+            <param name="buttons">左から右の順番にしてほしい</param>
+            <param name="buttonkata">ボタンの形(x,y,w,h,radは関係ないよ)</param>
+        </member>
+        <member name="M:GameSet1.benriUI.rolling.frame(System.Single)">
+            <summary>
+            フレームで呼び出す奴
+            </summary>
+            <param name="cl"></param>
+        </member>
+        <member name="M:GameSet1.benriUI.rolling.start">
+            <summary>
+            UIの開始
+            </summary>
+        </member>
+        <member name="M:GameSet1.benriUI.rolling.end">
+             <summary>
+            UIを破壊するときに呼び出せば？
+             </summary>
+        </member>
+        <member name="M:GameSet1.benriUI.rolling.clickeds(System.Single,System.Single)">
+            <summary>
+            クリックで選択したボタンを全部返す
+            </summary>
+            <param name="x">クリック位置</param>
+            <param name="y">クリック位置</param>
+            <returns>クリックしたボタン</returns>
+        </member>
+        <member name="M:GameSet1.benriUI.rolling.selected">
+            <summary>
+            選択中のボタンを返す
+            </summary>
+            <returns>選択中のボタン(1だけどこっちのが便利だろ？)</returns>
+        </member>
+        <member name="M:GameSet1.benriUI.rolling.select(Charamaker2.Character.character)">
+            <summary>
+            選んでる奴をセットする
+            </summary>
+            <param name="p">選ぶ奴</param>
+            <returns>選べたか</returns>
+        </member>
+        <member name="M:GameSet1.benriUI.rolling.idou(Charamaker2.Character.character)">
+            <summary>
+            指定したキャラクターに移動
+            </summary>
+            <param name="c"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameSet1.benriUI.rolling.idou(System.Int32)">
+            <summary>
+            指定した距離移動
+            </summary>
+            <param name="c"></param>
+            <param name="d"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameSet1.benriUI.rolling.roll(System.Single)">
+            <summary>
+            キャラクターたちを回転させたりするメソッド
+            </summary>
+            <param name="cl"></param>
+        </member>
+        <member name="T:GameSet1.EEventArgs">
+            <summary>
+            あれよGameSet1のイベントあーぎゅメンツよ
+            </summary>
+        </member>
+        <member name="M:GameSet1.EEventArgs.#ctor(GameSet1.Entity,GameSet1.Entity,System.Single)">
+            <summary>
+            普通のコンストラクタ
+            </summary>
+            <param name="e">Eventerの元</param>
+            <param name="tag">効果先</param>
+            <param name="cl">クロック</param>
+        </member>
+        <member name="F:GameSet1.EEventArgs.ent">
+            <summary>
+            Eventerの仕えるエンテティ
+            </summary>
+        </member>
+        <member name="F:GameSet1.EEventArgs.tag">
+            <summary>
+            効果先のエンテティ
+            </summary>
+        </member>
+        <member name="F:GameSet1.EEventArgs.cl">
+            <summary>
+            クロック
+            </summary>
+        </member>
+        <member name="T:GameSet1.EEventer">
+            <summary>
+            エンテティに付属するイベント管理官
+            </summary>
+        </member>
+        <member name="F:GameSet1.EEventer.e">
+            <summary>
+            元のエンテティ
+            </summary>
+        </member>
+        <member name="M:GameSet1.EEventer.#ctor(GameSet1.Entity)">
+            <summary>
+            普通のコンストラクタ。
+            </summary>
+            <param name="E">仕えるエンテティ</param>
+        </member>
+        <member name="E:GameSet1.EEventer.added">
+            <summary>
+            addされたときのイベント
+            </summary>
+        </member>
+        <member name="E:GameSet1.EEventer.removed">
+            <summary>
+            removeされたときのイベント
+            </summary>
+        </member>
+        <member name="E:GameSet1.EEventer.framed">
+            <summary>
+            frameされたときのイベント
+            </summary>
+        </member>
+        <member name="E:GameSet1.EEventer.hansyad">
+            <summary>
+            反射されたときのイベント
+            </summary>
+        </member>
+        <member name="M:GameSet1.EEventer.frame(System.Object,System.Single)">
+            <summary>
+            フレームしたときに呼び出されるやつ。
+            </summary>
+            <param name="sender">呼び出し元</param>
+            <param name="cl">クロック</param>
+        </member>
+        <member name="M:GameSet1.EEventer.add(System.Object)">
+            <summary>
+            addしたときに呼び出されるやつ。
+            </summary>
+            <param name="sender">呼び出し元</param>
+        </member>
+        <member name="M:GameSet1.EEventer.remove(System.Object)">
+            <summary>
+            removeしたときに呼び出されるやつ。
+            </summary>
+            <param name="sender">呼び出し元</param>
+        </member>
+        <member name="M:GameSet1.EEventer.hansya(System.Object,GameSet1.Entity)">
+            <summary>
+            反射したときに呼び出される
+            </summary>
+            <param name="sender">呼び出し元</param>
+            <param name="tag">あたり先</param>
+        </member>
+        <member name="T:GameSet1.Entity">
+            <summary>
+            移動速度、加速度、とか持ってる奴。体力とかはオーバライドしてね。
+            </summary>
+        </member>
+        <member name="F:GameSet1.Entity._c">
+            <summary>
+            エンテティのもとになるキャラクター
+            そのものが物理判定なのよ
+            </summary>
+        </member>
+        <member name="F:GameSet1.Entity._ab">
+            <summary>
+            キャラクターに当たり判定(図形を付与する)
+            </summary>
+        </member>
+        <member name="F:GameSet1.Entity._pab">
+            <summary>
+            キャラクターに当たり判定(図形を付与する)
+            </summary>
+        </member>
+        <member name="F:GameSet1.Entity._bif">
+            <summary>
+            空気抵抗とかの物理のインフォメーションとか
+            </summary>
+        </member>
+        <member name="P:GameSet1.Entity.onEM">
+            <summary>
+            EMに乗ってるかどうか
+            </summary>
+        </member>
+        <member name="M:GameSet1.Entity.setNewAtariBinding(GameSet1.ABrecipie)">
+            <summary>
+            新しく辺りバインディングを設定する。pabもリセットするし
+            </summary>
+            <param name="recipie">レシピ。コピーされたものが使われる</param>
+        </member>
+        <member name="M:GameSet1.Entity.setNewAtariBinding(GameSet1.buturiinfo)">
+            <summary>
+            新しく辺りバインディングを設定する。pabもリセットするし
+            </summary>
+            <param name="info">レシピ。コピーされたものが使われる</param>
+        </member>
+        <member name="P:GameSet1.Entity.ab">
+            <summary>
+            今のフレームのあたり判定。
+            </summary>
+        </member>
+        <member name="P:GameSet1.Entity.pab">
+            <summary>
+            前回のフレームのあたり判定
+            </summary>
+        </member>
+        <member name="P:GameSet1.Entity.bif">
+             <summary>
+            空気抵抗とかの物理のインフォメーションとか
+            ちなみに回転は全く物理に含まれてないよ
+             </summary>
+        </member>
+        <member name="P:GameSet1.Entity.c">
+            <summary>
+            キャラクター。物理のあたり判定はキャラクターにバインドされてる図形で判定される。
+            </summary>
+        </member>
+        <member name="P:GameSet1.Entity.atariable">
+            <summary>
+            物理的にぶつかるかどうか。""という節を作るときに指定したか
+            </summary>
+        </member>
+        <member name="P:GameSet1.Entity.Acore">
+            <summary>
+            今の物理的なあたり判定に使うやーつ
+            </summary>
+        </member>
+        <member name="P:GameSet1.Entity.PAcore">
+            <summary>
+            昔の物理的なあたり判定に使うやーつ
+            </summary>
+        </member>
+        <member name="F:GameSet1.Entity._EEV">
+            <summary>
+            イベントを司るもの。継承したやつ使うならsetEEventerをオーバーライドしろ
+            </summary>
+        </member>
+        <member name="P:GameSet1.Entity.EEV">
+            <summary>
+            イベントを司るもの
+            </summary>
+        </member>
+        <member name="M:GameSet1.Entity.setEEventer">
+            <summary>
+            EEventerをセットする。 EEventerが継承した奴ならオーバーライドしろ
+            </summary>
+        </member>
+        <member name="M:GameSet1.Entity.#ctor(Charamaker2.Character.character,GameSet1.ABrecipie,GameSet1.buturiinfo)">
+            <summary>
+            普通のコンストラクタ
+            </summary>
+            <param name="chara">キャラクター</param>
+            <param name="recipie">あたり判定のレシピ。コピーされたものが使われる</param>
+            <param name="ai">物理とかの情報。コピーされたものが使われる</param>
+        </member>
+        <member name="M:GameSet1.Entity.#ctor(GameSet1.Entity)">
+            <summary>
+            コピーするためのコンストラクタ。当たりバインディングはリセットされる
+            </summary>
+            <param name="E">コピー元</param>
+        </member>
+        <member name="M:GameSet1.Entity.frame(System.Single)">
+            <summary>
+            フレーム処理
+            </summary>
+            <param name="cl">フレームの長さ</param>
+        </member>
+        <member name="M:GameSet1.Entity.endframe(System.Single)">
+            <summary>
+            エンテティが、物理的に移動した後に起こるフレーム
+            </summary>
+            <param name="cl">クロックの長さ</param>
+        </member>
+        <member name="M:GameSet1.Entity.setpab">
+            <summary>
+            今で、昔のあたり判定をセットする
+            </summary>
+        </member>
+        <member name="M:GameSet1.Entity.setab(System.Boolean)">
+            <summary>
+            今のあたり判定をセットする。初期とかワープしたときとかは呼び出してね
+            </summary>
+        </member>
+        <member name="F:GameSet1.Entity._EM">
+            <summary>
+            追加されてるエンテティマネージャー。仕様上一個しか無理なんだ。ごめんね
+            </summary>
+        </member>
+        <member name="P:GameSet1.Entity.EM">
+            <summary>
+            エンテティマネージャー。hyojimanとかもここからとれる
+            </summary>
+        </member>
+        <member name="P:GameSet1.Entity.hyoji">
+            <summary>
+            便利ショトカ。表示マン
+            </summary>
+        </member>
+        <member name="M:GameSet1.Entity.add(GameSet1.EntityManager,System.Boolean)">
+            <summary>
+            エンテティマネージャー―に追加したいときに呼ぶメソッド。
+            </summary>
+            <param name="e">追加する奴。同時に複数のマネージャーには追加しちゃいけない。ごめんね</param>
+            <param name="add">先頭に入れたいならfalse</param>
+            <returns>追加されたか。trueならついでにonAddが呼び出される。</returns>
+        </member>
+        <member name="M:GameSet1.Entity.remove">
+            <summary>
+            エンテティマネージャーから削除したいときに呼び出すメソッド。
+            </summary>
+            <returns>削除されたかtrueならついでにonRemoveが呼び出される。</returns>
+        </member>
+        <member name="M:GameSet1.Entity.onAdd">
+            <summary>
+            add()がtrueだったら呼び出されるメソッド
+            標準ではabのリセットとキャラの表示
+            </summary>
+        </member>
+        <member name="M:GameSet1.Entity.onRemove">
+            <summary>
+            remove()がtrueだったら呼び出されるメソッド
+            </summary>
+        </member>
+        <member name="F:GameSet1.Entity._wazas">
+            <summary>
+            技のリスト
+            </summary>
+        </member>
+        <member name="P:GameSet1.Entity.wazas">
+            <summary>
+            技のリストのコピーをもらえる
+            </summary>
+        </member>
+        <member name="M:GameSet1.Entity.getwazalis(System.Type)">
+            <summary>
+            タイプで絞り込んで技のリストを取得する
+            </summary>
+            <param name="t">技のタイプ</param>
+            <returns>新しいリスト</returns>
+        </member>
+        <member name="M:GameSet1.Entity.getwazalis``1">
+            <summary>
+            タイプで絞り込んで技のリストを取得する
+            </summary>
+            <typeparam name="T">タイプ</typeparam>
+            <returns>技のリスト</returns>
+        </member>
+        <member name="M:GameSet1.Entity.addWaza(GameSet1.Waza)">
+            <summary>
+            技を追加する。基本Waza.add(e)で呼び出せ
+            </summary>
+            <param name="w">追加する技</param>
+            <returns>追加できた</returns>
+        </member>
+        <member name="M:GameSet1.Entity.removeWaza(GameSet1.Waza)">
+            <summary>
+            技を削除する。基本Waza.remove(e)で呼び出せ
+            </summary>
+            <param name="w">削除する技</param>
+            <returns>削除できた</returns>
+        </member>
+        <member name="M:GameSet1.Entity.zurentekiyou(System.Collections.Generic.List{GameSet1.Entity},Charamaker2.Shapes.Shape,Charamaker2.Shapes.Shape,System.Boolean)">
+            <summary>
+            この瞬間にずれさせる。
+            </summary>
+            <param name="tekiyous">ずれを適用する奴ら。</param>
+            <param name="sugekae">あたり判定をすげかえるんだったらこれ</param>
+            <param name="Psugekae">これも前のすでに同じエンテティの当たりバインディングにある奴を使和ナイト機能しない</param>
+            <param name="hansya">ついでに反射もさせるか</param>
+            <returns>ヒットしたエンテティ</returns>
+        </member>
+        <member name="T:GameSet1.ABrecipie">
+            <summary>
+            あたり判定を構築するレシピというか
+            </summary>
+        </member>
+        <member name="F:GameSet1.ABrecipie.names">
+            <summary>
+            あたり判定の対象の名前
+            </summary>
+        </member>
+        <member name="F:GameSet1.ABrecipie.shapes">
+            <summary>
+            あたり判定の対象の図形の種類（）
+            </summary>
+        </member>
+        <member name="M:GameSet1.ABrecipie.#ctor(System.Collections.Generic.List{System.String},System.Collections.Generic.List{Charamaker2.Shapes.Shape})">
+            <summary>
+            普通のコンストラクタ
+            </summary>
+            <param name="setunames">対象の節の名前""でキャラクターそのもの</param>
+            <param name="shapetemples">図形のテンプレート大きさとか座標は気にしない</param>
+        </member>
+        <member name="M:GameSet1.ABrecipie.#ctor(GameSet1.ABrecipie)">
+            <summary>
+            コピーするためのコンストラクタ。当たりバインディングに追加するときとか呼び出される
+            </summary>
+            <param name="rec">コピー元</param>
+        </member>
+        <member name="T:GameSet1.ataribinding">
+            <summary>
+            キャラクターと図形を結び付けてあたり判定と化させるためのクラス
+            </summary>
+        </member>
+        <member name="F:GameSet1.ataribinding.rec">
+            <summary>
+            レシピ
+            </summary>
+        </member>
+        <member name="P:GameSet1.ataribinding.RECIPIE">
+            <summary>
+            あたり判定のレシピ
+            </summary>
+        </member>
+        <member name="F:GameSet1.ataribinding.c">
+            <summary>
+            結び付けてるキャラクター
+            </summary>
+        </member>
+        <member name="F:GameSet1.ataribinding.set">
+            <summary>
+            結び付けられてる節共
+            </summary>
+        </member>
+        <member name="F:GameSet1.ataribinding._core">
+            <summary>
+            物理的判定をするあたり判定
+            </summary>
+        </member>
+        <member name="P:GameSet1.ataribinding.core">
+            <summary>
+            物理的判定をするあたり判定
+            </summary>
+        </member>
+        <member name="M:GameSet1.ataribinding.coresugekae(Charamaker2.Shapes.Shape)">
+            <summary>
+            あたり判定を行うコアをすげかえる。コレは一時的なものなので、必ず戻すように。
+            frameでも揃えられるわけじゃないし、setuListに追加されるわけでもない。
+            一時的に物理判定を使いたいときとかに使ってね。
+            </summary>
+            <param name="tmp">入れ替える奴</param>
+            <returns>入れ替え前の奴</returns>
+        </member>
+        <member name="M:GameSet1.ataribinding.getatari(System.String)">
+            <summary>
+            あたり判定を得る
+            </summary>
+            <param name="name">節の名前</param>
+            <returns>無かったらnull</returns>
+        </member>
+        <member name="M:GameSet1.ataribinding.getallatari">
+            <summary>
+            あたり判定の全てのリストを得る
+            </summary>
+            <returns>順番は保証する。しかしnullが混じっているかも</returns>
+        </member>
+        <member name="M:GameSet1.ataribinding.getatari(System.String[])">
+            <summary>
+            あたり判定のリストを得る
+            </summary>
+            <param name="name">名前共</param>
+            <returns>順番は保証する。しかしnullが混じっているかも</returns>
+        </member>
+        <member name="M:GameSet1.ataribinding.getatari(System.Collections.Generic.List{System.String})">
+            <summary>
+            あたり判定のリストを得る
+            </summary>
+            <param name="name">名前共</param>
+            <returns>順番は保証する。しかしnullが混じっているかも</returns>
+        </member>
+        <member name="M:GameSet1.ataribinding.#ctor(Charamaker2.Character.character,GameSet1.ABrecipie)">
+            <summary>
+            普通のコンストラクタ
+            </summary>
+            <param name="c">バインドするキャラクター</param>
+            <param name="recipie">バインドのレシピ</param>
+        </member>
+        <member name="M:GameSet1.ataribinding.charaset">
+            <summary>
+            キャラクターを物理用のあたり判定の方に合わせる
+            </summary>
+        </member>
+        <member name="M:GameSet1.ataribinding.frame">
+            <summary>
+            あたり判定である図形共をキャラクターに合わせる。
+            </summary>
+        </member>
+        <member name="T:GameSet1.buturiinfo">
+            <summary>
+            物理をやるインフォメーション
+            </summary>
+        </member>
+        <member name="F:GameSet1.buturiinfo.vx">
+            <summary>
+            御存じ速度加速度
+            </summary>
+        </member>
+        <member name="F:GameSet1.buturiinfo.vy">
+            <summary>
+            御存じ速度加速度
+            </summary>
+        </member>
+        <member name="F:GameSet1.buturiinfo.ax">
+            <summary>
+            御存じ速度加速度
+            </summary>
+        </member>
+        <member name="F:GameSet1.buturiinfo.ay">
+            <summary>
+            御存じ速度加速度
+            </summary>
+        </member>
+        <member name="P:GameSet1.buturiinfo.speed">
+            <summary>
+            物体の速度
+            </summary>
+        </member>
+        <member name="P:GameSet1.buturiinfo.speedvec">
+            <summary>
+            スピードの方向
+            </summary>
+        </member>
+        <member name="F:GameSet1.buturiinfo._hanpatu">
+            <summary>
+            反発係数？
+            </summary>
+        </member>
+        <member name="P:GameSet1.buturiinfo.hanpatu">
+            <summary>
+            反発係数0~1
+            </summary>
+        </member>
+        <member name="F:GameSet1.buturiinfo._teikou">
+            <summary>
+            空気抵抗？
+            </summary>
+        </member>
+        <member name="P:GameSet1.buturiinfo.teikou">
+            <summary>
+            空気抵抗0~1
+            </summary>
+        </member>
+        <member name="F:GameSet1.buturiinfo._masatu">
+            <summary>
+            摩擦係数というか鉛直速度1あたりの摩擦パワー
+            </summary>
+        </member>
+        <member name="P:GameSet1.buturiinfo.masatu">
+            <summary>
+            摩擦係数というか鉛直速度1あたりの摩擦パワー　0~+inf
+            </summary>
+        </member>
+        <member name="F:GameSet1.buturiinfo._wei">
+            <summary>
+            重さ？
+            </summary>
+        </member>
+        <member name="F:GameSet1.buturiinfo.MW">
+            <summary>
+            重さの最大値
+            </summary>
+        </member>
+        <member name="P:GameSet1.buturiinfo.wei">
+            <summary>
+            重さ 0＜＜MW
+            -1でMW
+            </summary>
+        </member>
+        <member name="P:GameSet1.buturiinfo.ovw">
+            <summary>
+            重さが最大かどうか
+            </summary>
+        </member>
+        <member name="F:GameSet1.buturiinfo.atag">
+            <summary>
+            あたり判定の分類
+            </summary>
+        </member>
+        <member name="M:GameSet1.buturiinfo.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.String[])">
+            <summary>
+            普通のコンストラクタ
+            </summary>
+            <param name="wei">重さ</param>
+            <param name="tik">空気抵抗</param>
+            <param name="hanp">反射係数</param>
+            <param name="mas">摩擦係数</param>
+            <param name="vx">速度</param>
+            <param name="vy">速度</param>
+            <param name="ax">加速度</param>
+            <param name="ay">加速度</param>
+            <param name="atag">あたり判定の分類</param>
+        </member>
+        <member name="M:GameSet1.buturiinfo.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Collections.Generic.List{System.String})">
+            <summary>
+            普通のコンストラクタ
+            </summary>
+            <param name="wei">重さ</param>
+            <param name="tik">空気抵抗</param>
+            <param name="hanp">反射係数</param>
+            <param name="mas">摩擦係数</param>
+            <param name="vx">速度</param>
+            <param name="vy">速度</param>
+            <param name="ax">加速度</param>
+            <param name="ay">加速度</param>
+            <param name="atag">あたり判定の分類</param>
+        </member>
+        <member name="M:GameSet1.buturiinfo.kasoku(System.Single,System.Single,System.Single)">
+            <summary>
+            重さに応じて加速できたりする
+            </summary>
+            <param name="vx">x方向の加速度</param>
+            <param name="vy">y方向の加速度</param>
+            <param name="weight">加速の重さ。0以下でvxyをそのままぶち込む</param>
+        </member>
+        <member name="M:GameSet1.buturiinfo.kasoku(GameSet1.Entity,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            重さに応じて加速できたりする。こちらは加速度として処理する。（つまりaxみたいに毎フレーム呼び出される奴はこっち使え）
+            </summary>
+            <param name="e">二度手間だけどお願い。そういう仕組みなんだ</param>
+            <param name="vx">x方向の加速度</param>
+            <param name="vy">y方向の加速度</param>
+            <param name="weight">加速の重さ。0以下でvxyをそのままぶち込む</param>
+            <param name="cl">今何フレーム経過してんのよ</param>
+        </member>
+        <member name="M:GameSet1.buturiinfo.#ctor(GameSet1.buturiinfo)">
+            <summary>
+            コピーするためのコンストラクタ。いがいとEntityを作るときにも呼び出されてる
+            </summary>
+            <param name="i">コピー元</param>
+        </member>
+        <member name="M:GameSet1.buturiinfo.contains(System.String)">
+            <summary>
+            タグを持っているか
+            </summary>
+            <param name="tag"></param>
+            <returns>もってるならtrue</returns>
+        </member>
+        <member name="M:GameSet1.buturiinfo.different(GameSet1.buturiinfo)">
+            <summary>
+            タグが全く異なっているか
+            </summary>
+            <param name="a">相手のインフォメーション</param>
+            <returns>少しでも一致してたらfalse</returns>
+        </member>
+        <member name="M:GameSet1.buturiinfo.frame(System.Single,Charamaker2.Character.character)">
+            <summary>
+            フレーム処理。移動したり速度したり
+            </summary>
+            <param name="cl">クロックの長さ</param>
+            <param name="c">対象のキャラクター</param>
+        </member>
+        <member name="M:GameSet1.buturiinfo.zuren(GameSet1.Entity,GameSet1.Entity)">
+            <summary>
+            相手と自分をなんか計算してずらす！
+            ちなみにここでは大丈夫だけどataribinding.coreを動かしたらcharasetしないと移動が反映されないからちうい
+            </summary>
+            <param name="thiis">自分。重ね重ねっちゃうけどお願い</param>
+            <param name="e">相手</param>
+            <returns>ずらしたかどうか</returns>
+        </member>
+        <member name="M:GameSet1.buturiinfo.hansya(GameSet1.Entity,GameSet1.Entity)">
+            <summary>
+            自分と対象ので反射を引き起こす。回転は考慮に入ってないつらいから
+            </summary>
+            <param name="thiis">自分。重ね重ねっちゃうけどお願い</param>
+            <param name="e">あいて</param>
+            <returns>反射が起きたかどうか</returns>
+        </member>
+        <member name="T:GameSet1.EntityDataBase">
+            <summary>
+            エンテティマネージャーのためのデータベース。Entityを継承した場合はEntityManagerからタイプを変えてくれや
+            </summary>
+        </member>
+        <member name="F:GameSet1.EntityDataBase.Entities">
+            <summary>
+            直接扱うときは注意。getから呼べばコピーが出るよ。
+            </summary>
+        </member>
+        <member name="M:GameSet1.EntityDataBase.entadd(GameSet1.Entity,System.Boolean)">
+            <summary>
+            エンテティをデータベースにぶち込むメソッド。
+            一生変わらない特性はここで振り分ける
+            </summary>
+            <param name="e"></param>
+            <param name="add">先頭に入れるならfalse</param>
+            <returns>既に追加されていなかったか</returns>
+        </member>
+        <member name="M:GameSet1.EntityDataBase.entremove(GameSet1.Entity)">
+            <summary>
+            エンテティをデータベースからぶち消す
+            一生変わらない特性はここでリストから削除しとく
+            </summary>
+            <param name="e"></param>
+            <returns>既に追加されていなかったか</returns>
+        </member>
+        <member name="M:GameSet1.EntityDataBase.ARhuri(GameSet1.Entity)">
+            <summary>
+            追加されるときにCEDBに振り分けるためのメソッド
+            </summary>
+            <param name="e">振り分けるエンテティ</param>
+            <returns>どのCEDBに入れるか</returns>
+        </member>
+        <member name="M:GameSet1.EntityDataBase.#ctor">
+            <summary>
+            普通のコンストラクタ
+            </summary>
+        </member>
+        <member name="M:GameSet1.EntityDataBase.add(System.String,System.Boolean)">
+            <summary>
+            新しいデータ列を追加する
+            </summary>
+            <param name="c">コンスタントのか（毎フレームごとの検査は必要ない奴のこと）</param>
+            <param name="name">その名前</param>
+        </member>
+        <member name="M:GameSet1.EntityDataBase.setDB">
+            <summary>
+            コンストラクタで呼び出されるデータ列セットマン
+            </summary>
+        </member>
+        <member name="M:GameSet1.EntityDataBase.sets(System.String,System.Collections.Generic.List{GameSet1.Entity})">
+            <summary>
+            データ列にリストを登録し、フラグをtrueにする
+            </summary>
+            <param name="name">名前</param>
+            <param name="lis">そのリスト</param>
+        </member>
+        <member name="M:GameSet1.EntityDataBase.frame">
+            <summary>
+            フレーム処理の時に呼び出す奴
+            フラグをfalseにするだけ
+            </summary>
+        </member>
+        <member name="M:GameSet1.EntityDataBase.getTypeEnts``1">
+            <summary>
+            タイプ別にエンテティを取得する
+            </summary>
+            <typeparam name="T">Entity、もしくは継承したクラス</typeparam>
+            <returns>リストだよ</returns>
+        </member>
+        <member name="M:GameSet1.EntityDataBase.getTypeEnts(System.Type)">
+            <summary>
+            タイプ別にエンテティを取得する
+            </summary>
+            <param name="T">タイプ</param>
+            <returns>リストだよ</returns>
+        </member>
+        <member name="M:GameSet1.EntityDataBase.get(System.String)">
+            <summary>
+            なにかしら呼び出す
+            </summary>
+            <param name="name">なまえentsで全部</param>
+            <returns>そっちでキャストしてくれ～い</returns>
+        </member>
+        <member name="M:GameSet1.EntityDataBase.seton(System.String)">
+            <summary>
+            名前によってデータベーにつける。ここで振り分けとかする
+            </summary>
+            <param name="name">名前</param>
+        </member>
+        <member name="M:GameSet1.EntityDataBase.already(System.String)">
+            <summary>
+            既にフラグがtrueの奴はそのまま返す奴
+            </summary>
+            <param name="name">名前</param>
+            <returns>フラグがtrueのやつ</returns>
+        </member>
+        <member name="T:GameSet1.EntityManager">
+            <summary>
+            エンテティをまとめて物理をしてくれるやーつ
+            </summary>
+        </member>
+        <member name="P:GameSet1.EntityManager.hyoji">
+            <summary>
+            結び付けられてる表示マン
+            </summary>
+        </member>
+        <member name="F:GameSet1.EntityManager.EDB">
+            <summary>
+            エンテティをまとめてるやつ
+            </summary>
+        </member>
+        <member name="M:GameSet1.EntityManager.#ctor(Charamaker2.hyojiman)">
+            <summary>
+            普通のコンストラクタ
+            </summary>
+            <param name="hyou"></param>
+        </member>
+        <member name="P:GameSet1.EntityManager.ents">
+            <summary>
+            エンテティのリスト
+            </summary>
+        </member>
+        <member name="P:GameSet1.EntityManager.moves">
+            <summary>
+            物理的に当たれる中の動くというか重さが限界じゃないやつら
+            </summary>
+        </member>
+        <member name="P:GameSet1.EntityManager.overweights">
+            <summary>
+            物理的に当たれる中の重さが限界に達してる奴ら
+            </summary>
+        </member>
+        <member name="P:GameSet1.EntityManager.atarerus">
+            <summary>
+            物理的に当たれる奴ら
+            </summary>
+        </member>
+        <member name="P:GameSet1.EntityManager.atarens">
+            <summary>
+            物理的に当たれないやつら
+            </summary>
+        </member>
+        <member name="M:GameSet1.EntityManager.getTypeEnts``1">
+            <summary>
+            タイプ別にエンテティを取得する
+            </summary>
+            <typeparam name="T">Entity、もしくは継承したクラス</typeparam>
+            <returns>リストだよ</returns>
+        </member>
+        <member name="M:GameSet1.EntityManager.getTypeEnts(System.Type)">
+            <summary>
+            タイプ別にエンテティを取得する
+            </summary>
+            <param name="T">タイプ</param>
+            <returns>リストだよ</returns>
+        </member>
+        <member name="M:GameSet1.EntityManager.istyped(System.Type,GameSet1.Entity)">
+            <summary>
+            エンテティのタイプがどうとか返す
+            </summary>
+            <param name="T">タイプ</param>
+            <param name="e">調査対象</param>
+            <returns>当てはまってら</returns>
+        </member>
+        <member name="M:GameSet1.EntityManager.add(GameSet1.Entity,System.Boolean)">
+            <summary>
+            エンテティをマネージャーにぶち込む。基本ENtity.addを呼べ
+            表示もしてくれる
+            </summary>
+            <param name="e">ぶち込むやつ</param>
+            <param name="add">先頭に加えたい場合はfalse</param>
+            <returns>もうぶち込まれてたらfalse</returns>
+        </member>
+        <member name="M:GameSet1.EntityManager.remoeve(GameSet1.Entity)">
+            <summary>
+            エンテティをを削除する。基本ENtity.REmoveを呼べ
+            </summary>
+            <param name="e">削除する奴</param>
+            <returns>そもそも存在していなかったらfalse</returns>
+        </member>
+        <member name="M:GameSet1.EntityManager.reset">
+            <summary>
+            リセットなんだけどnew ENtityManagerの方が正確かな
+            </summary>
+        </member>
+        <member name="F:GameSet1.EntityManager.atalis">
+            <summary>
+            当たったよっていうなんかデータ
+            </summary>
+        </member>
+        <member name="M:GameSet1.EntityManager.atattao(GameSet1.Entity,GameSet1.Entity)">
+            <summary>
+            これがこれに当たったよ！というお知らせ
+            </summary>
+            <param name="korega">これが</param>
+            <param name="koreni">これに</param>
+        </member>
+        <member name="M:GameSet1.EntityManager.atattano(GameSet1.Entity,GameSet1.Entity)">
+            <summary>
+            これがこれに当たっているのかを知る
+            </summary>
+            <param name="korega">これが</param>
+            <param name="koreni">これに</param>
+            <returns>当たったの？</returns>
+        </member>
+        <member name="F:GameSet1.EntityManager.hansyasu">
+            <summary>
+            反射のなんかデータ
+            </summary>
+        </member>
+        <member name="M:GameSet1.EntityManager.hansyao(GameSet1.Entity,GameSet1.Entity)">
+            <summary>
+            反射処理をおこなったかを記憶させる
+            </summary>
+            <param name="korega">これが</param>
+            <param name="koreni">これに反射した</param>
+        </member>
+        <member name="M:GameSet1.EntityManager.hansyano(GameSet1.Entity)">
+            <summary>
+            反射処理をやったのかを知る
+            </summary>
+            <param name="korega">これ</param>
+            <returns></returns>
+        </member>
+        <member name="M:GameSet1.EntityManager.frame(System.Single)">
+            <summary>
+            フレーム処理
+            </summary>
+            <param name="cl">クロック時間</param>
+        </member>
+        <member name="T:GameSet1.FP">
+            <summary>
+            キャラクターの攻撃力とかセリフとかをテキストファイルから読み込んだりするクラス
+            名前:
+            で行末までパラメータになる
+            </summary>
+        </member>
+        <member name="M:GameSet1.FP.loadtext(System.String)">
+            <summary>
+            テキストファイルを普通に読み込む
+            </summary>
+            <param name="path">読み込むパス</param>
+            <returns>読み込んだテキスト</returns>
+        </member>
+        <member name="M:GameSet1.FP.entitysimulate``1(``0,System.Single,System.Single)">
+            <summary>
+            エンテティの未来の位置を予測する。空気抵抗ががばがばなの許して。
+            </summary>
+            <typeparam name="T">このタイプへとコピーする</typeparam>
+            <param name="e">コピー元エンテティ</param>
+            <param name="time">何秒後か</param>
+            <param name="cl">時間の精度になるね</param>
+            <returns>何秒か動いたエンテティ</returns>
+        </member>
+        <member name="M:GameSet1.FP.entitysimulate``1(``0,System.Single,System.Single,System.Single,System.Single,System.Single,System.Int32)">
+            <summary>
+            エンテティが飛んでいくとして、その狙った地点に当てるためにはどの角度で打ち出せばいいかを教えてくれる。。
+            </summary>
+            <summary>
+            エンテティが飛んでいくとして、その狙った地点に当てるためにはどの角度で打ち出せばいいかを教えてくれる。。
+            </summary>
+            <typeparam name="T">このタイプへとコピーする</typeparam>
+            <param name="e">コピー元エンテティ</param>
+            <param name="x">目標x</param>
+            <param name="y">目標y</param>
+            <param name="speed">与えたい速度</param>
+            <param name="time">何秒後までか</param>
+            <param name="cl">精度になるね</param>
+            <param name="kuri">何回繰り返しシミュレートするか</param>
+            <returns>いい角度</returns>
+        </member>
+        <member name="M:GameSet1.FP.zuresaseEntity(GameSet1.Entity,GameSet1.EntityManager,Charamaker2.Shapes.Shape,System.Single,System.Single,System.String,System.Int32)">
+            <summary>
+            エンテティを一方向に動かして地形でずらすメソッド
+            </summary>
+            <param name="e">対象</param>
+            <param name="EM">地形を入れたマネージャー</param>
+            <param name="s">どの形でやるか(クローンされるから安心！)</param>
+            <param name="zure1x">Xずらす</param>
+            <param name="zure1y">Yずらす</param>
+            <param name="tais">ずらす形のもと(""でキャラクターそのもの)</param>
+            <param name="mode">0でxy両方、1でxのみ、-1でyのみ変化</param>
+        </member>
+        <member name="F:GameSet1.FP.texts">
+            <summary>
+            特殊なシーケンスを使うときとかだけ参照してね。(\nは標準で変換されるよ)
+            </summary>
+        </member>
+        <member name="F:GameSet1.FP.param">
+            <summary>
+            あんま参照しないでね。
+            </summary>
+        </member>
+        <member name="M:GameSet1.FP.PR(System.String,System.Int32)">
+            <summary>
+            パラメータを取得する
+            </summary>
+            <param name="name">パラメータの名前</param>
+            <param name="i">パラメータのi番目(name+i)されるだけ</param>
+            <returns>floatで帰ってくる無い場合は死ぬ</returns>
+        </member>
+        <member name="M:GameSet1.FP.GT(System.String,System.Collections.Generic.List{Charamaker2.input.IPC},System.Single[])">
+            <summary>
+            テキストを取得する
+            </summary>
+            <param name="name">テキストの名前</param>
+            <param name="ipcs">入力の変換([Key:Q],[Mus:Left]をへんかん)</param>
+            /// <param name="percents">数値の変換([print:%f]をへんかん)</param>
+            <returns>stringで帰ってくる無い場合は変な文字列</returns>
+        </member>
+        <member name="M:GameSet1.FP.nulltext(System.String)">
+            <summary>
+            テキストがnullかどうかを判定する
+            </summary>
+            <param name="text">そのテキスト</param>
+            <returns>text=="テキストがないよって昨日ママに言われたんだ……"</returns>
+        </member>
+        <member name="M:GameSet1.FP.seting(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
+            <summary>
+            ファイルを読み込む。[名前:パラメータとか　改行]のフォーマットで頼む。エラーで変なことになるからちうい！
+            </summary>
+            <param name="paramn">パラメータのファイル群(floatになる) health:10.0　ってな感じで</param>
+            <param name="textsn">テキストのファイル群  serif1:やあ\n兄の仇！ ってな感じで</param>
+        </member>
+        <member name="M:GameSet1.FP.resetrandomn(System.UInt32)">
+            <summary>
+            クッソ適当に作った乱数のリセット
+            </summary>
+            <param name="seed">シード</param>
+        </member>
+        <member name="M:GameSet1.FP.originalrandom">
+            <summary>
+            クッソ適当に作った乱数の取得。全然正規分布じゃないし意味はあまりない。
+            </summary>
+            <returns>filemanのとは違ってシード値がリセットの奴だけ</returns>
+        </member>
+        <member name="M:GameSet1.FP.Scos(System.Single)">
+            <summary>
+            三角波的コサイン
+            </summary>
+            <param name="sita">角度-1~1</param>
+            <returns>コサイン</returns>
+        </member>
+        <member name="M:GameSet1.FP.Ssin(System.Single)">
+            <summary>
+            三角波的サイン
+            </summary>
+            <param name="sita">角度-1~1</param>
+            <returns>サイン</returns>
+        </member>
+        <member name="T:GameSet1.sankakuha">
+            <summary>
+            三角波を回せるクラス。
+            角度は-1~1
+            </summary>
+        </member>
+        <member name="P:GameSet1.sankakuha.Time">
+            <summary>
+            時間、横軸
+            </summary>
+        </member>
+        <member name="P:GameSet1.sankakuha.C">
+            <summary>
+            コサインバージョン
+            </summary>
+        </member>
+        <member name="P:GameSet1.sankakuha.S">
+            <summary>
+            サインバージョン
+            </summary>
+        </member>
+        <member name="T:GameSet1.SceneManager">
+            <summary>
+            シーンの変更のためのバッファー的な奴
+            </summary>
+        </member>
+        <member name="F:GameSet1.SceneManager.s">
+            <summary>
+            ここに好きなシーンが入る！そしてs.frame()
+            </summary>
+        </member>
+        <member name="T:GameSet1.haikeiseiser">
+             <summary>
+            背景をランダム生成するためのピース 
+             </summary>
+        </member>
+        <member name="F:GameSet1.haikeiseiser.name">
+            <summary>
+            テクスチャーの名前
+            </summary>
+        </member>
+        <member name="F:GameSet1.haikeiseiser.size">
+             <summary>
+            基本のサイズ 
+             </summary>
+        </member>
+        <member name="F:GameSet1.haikeiseiser.sizebure">
+            <summary>
+            サイズのブレ
+            </summary>
+        </member>
+        <member name="F:GameSet1.haikeiseiser.scrollwarix">
+            <summary>
+            スクロール割合x
+            </summary>
+        </member>
+        <member name="F:GameSet1.haikeiseiser.scrollwariy">
+            <summary>
+            スクロール割合y
+            </summary>
+        </member>
+        <member name="F:GameSet1.haikeiseiser.scrollwarixbure">
+            <summary>
+            スクロール割合xのブレ
+            </summary>
+        </member>
+        <member name="F:GameSet1.haikeiseiser.scrollwariybure">
+            <summary>
+            スクロール割合yのブレ
+            </summary>
+        </member>
+        <member name="F:GameSet1.haikeiseiser.rad">
+            <summary>
+            角度
+            </summary>
+        </member>
+        <member name="F:GameSet1.haikeiseiser.radbure">
+            <summary>
+            角度のブレ
+            </summary>
+        </member>
+        <member name="F:GameSet1.haikeiseiser.opa">
+            <summary>
+            不透明度
+            </summary>
+        </member>
+        <member name="F:GameSet1.haikeiseiser.opabure">
+            <summary>
+            不透明度のブレ
+            </summary>
+        </member>
+        <member name="M:GameSet1.haikeiseiser.#ctor(System.String,System.Single,System.Single,System.Single,System.Single,System.Double,System.Single,System.Single,System.Single,System.Double,System.Single)">
+            <summary>
+            普通のコンストラクタ
+            </summary>
+            <param name="texnm">テクスチャーの名前</param>
+            <param name="si">基本の大きさ</param>
+            <param name="bure">大きさのブレ(+-)</param>
+            <param name="scx">スクロール割合x</param>
+            <param name="scy">スクロール割合y</param>
+            <param name="scxbure">スクロール割合xのブレ</param>
+            <param name="scybure">スクロール割合yのブレ</param>
+            <param name="rad">角度</param>
+            <param name="radbure">角度のブレ</param>
+            <param name="opa">不透明度</param>
+            <param name="opabure">不透明度のブレ</param>
+        </member>
+        <member name="T:GameSet1.Scene">
+            <summary>
+            シーンだお
+            </summary>
+        </member>
+        <member name="F:GameSet1.Scene.sm">
+            <summary>
+            SceneManager
+            </summary>
+        </member>
+        <member name="F:GameSet1.Scene.hyo">
+            <summary>
+            表示マン
+            </summary>
+        </member>
+        <member name="F:GameSet1.Scene.next">
+            <summary>
+            次のシーン
+            </summary>
+        </member>
+        <member name="M:GameSet1.Scene.#ctor(GameSet1.SceneManager,GameSet1.Scene)">
+            <summary>
+            普通のコンストラクタ
+            </summary>
+            <param name="s">シーンマネージャ</param>
+            <param name="next">次のシーン</param>
+        </member>
+        <member name="P:GameSet1.Scene.started">
+            <summary>
+            start(),end()が複数回発動しないようにするフラグ。startでtrueになる。
+            直接いじってもいいけどstart,endで変えてくれるんだけど
+            </summary>
+        </member>
+        <member name="M:GameSet1.Scene.start">
+            <summary>
+            シーンを開始したいときに発動してね。
+            smにこれが代入されてnextがない時は何かしらを代入しておくといい
+            </summary>
+        </member>
+        <member name="M:GameSet1.Scene.onstart">
+            <summary>
+            シーンの正しきスタート時に呼び出される。標準では何もしない
+            </summary>
+        </member>
+        <member name="M:GameSet1.Scene.frame(Charamaker2.input.inputin,System.Single)">
+            <summary>
+            画面の描画。標準は画面表示だけよ
+            </summary>
+            <param name="i">入力情報</param>
+            <param name="cl">クロック時間</param>
+        </member>
+        <member name="M:GameSet1.Scene.end">
+            <summary>
+            標準はnextをスタートしてstartedをfalseにするだけ
+            </summary>
+        </member>
+        <member name="M:GameSet1.Scene.onend">
+            <summary>
+            シーンの正しきエンド時に呼び出される。標準では何もしない
+            </summary>
+        </member>
+        <member name="M:GameSet1.Scene.haikeiseiser(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Collections.Generic.List{GameSet1.haikeiseiser},System.Boolean)">
+            <summary>
+            背景を生成するいい感じに
+            </summary>
+            <param name="yline">生成するyの中心地</param>
+            <param name="ybure">生成するyのブレ(+-)</param>
+            <param name="sx">生成するxの始点</param>
+            <param name="ex">生成するxの終点</param>
+            <param name="ikutu">一度にいくつ画像を生成するか</param>
+            <param name="kaisuu">何度画像生成を行うか</param>
+            <param name="haikeis">生成する背景のリスト</param>
+            <param name="assyuku">背景のスクロール割合に応じて生成位置を圧縮するか(太陽とか意外はやったほうがいい)</param>
+        </member>
+        <member name="T:GameSet1.SD">
+            <summary>
+            セーブデータのクラス。標準で画質や音量のデータを搭載
+            </summary>
+        </member>
+        <member name="M:GameSet1.SD.setup``1(System.String)">
+            <summary>
+            最初のセーブデータロードするよ
+            </summary>
+            <param name="savefile"></param>
+            <typeparam name="T">セーブデータのタイプ</typeparam>
+        </member>
+        <member name="P:GameSet1.SD.S">
+            <summary>
+            現在ロードしてるセーブデータ
+            </summary>
+        </member>
+        <member name="F:GameSet1.SD._S">
+            <summary>
+            ロードされたセーブデータ。
+            </summary>
+        </member>
+        <member name="P:GameSet1.SD.mvol">
+            <summary>
+            マスターボリューム
+            </summary>
+        </member>
+        <member name="P:GameSet1.SD.kvol">
+            <summary>
+            効果音のボリューム
+            </summary>
+        </member>
+        <member name="P:GameSet1.SD.bvol">
+            <summary>
+            BGMのボリューム
+            </summary>
+        </member>
+        <member name="P:GameSet1.SD.gsit">
+            <summary>
+            画質。こればかりは起動時にfileman.setingupに代入する
+            </summary>
+        </member>
+        <member name="M:GameSet1.SD.#ctor">
+            <summary>
+            普通のコンストラクタ
+            </summary>
+        </member>
+        <member name="F:GameSet1.SD.converts">
+            <summary>
+            キーコンフィグ
+            </summary>
+        </member>
+        <member name="M:GameSet1.SD.resetIPC">
+            <summary>
+            キーコンフィグのリセット
+            </summary>
+        </member>
+        <member name="M:GameSet1.SD.setvols">
+            <summary>
+            ボリュームを設定する
+            </summary>
+        </member>
+        <member name="M:GameSet1.SD.onsave">
+            <summary>
+            セーブしたときに呼び出されるメソッド
+            </summary>
+        </member>
+        <member name="M:GameSet1.SD.onload">
+            <summary>
+            ロードしたときに呼び出されるメソッド
+            </summary>
+        </member>
+        <member name="M:GameSet1.SD.savesave``1(System.String)">
+            <summary>
+            セーブする
+            </summary>
+            <param name="name">ファイルの名前</param>
+            <typeparam name="T">セーブデータのタイプ</typeparam>
+        </member>
+        <member name="M:GameSet1.SD.loadsave``1(System.String)">
+            <summary>
+            セーブデータをロードする
+            </summary>
+            <param name="file">ファイルの名前</param>
+            <typeparam name="T">セーブデータのタイプ</typeparam>
+        </member>
+        <member name="T:GameSet1.Waza">
+            <summary>
+            エンテティに追加していろいろ動作させるクラス
+            </summary>
+        </member>
+        <member name="E:GameSet1.Waza.added">
+            <summary>
+            Wazaがaddされたときのイベント
+            </summary>
+        </member>
+        <member name="E:GameSet1.Waza.removed">
+            <summary>
+            Wazaがremoveされたときのイベント
+            </summary>
+        </member>
+        <member name="E:GameSet1.Waza.framed">
+            <summary>
+            Wazaがframeされたときのイベント
+            </summary>
+        </member>
+        <member name="P:GameSet1.Waza.EM">
+            <summary>
+            便利ショトカeのEM
+            </summary>
+        </member>
+        <member name="P:GameSet1.Waza.hyoji">
+            <summary>
+            便利ショトカeのEMのhyoji
+            </summary>
+        </member>
+        <member name="F:GameSet1.Waza.timer">
+            <summary>
+            現在時間
+            </summary>
+        </member>
+        <member name="P:GameSet1.Waza.nokori">
+            <summary>
+            技の残り時間
+            </summary>
+        </member>
+        <member name="F:GameSet1.Waza.end">
+            <summary>
+            終了時間
+            </summary>
+        </member>
+        <member name="M:GameSet1.Waza.#ctor(System.Single)">
+            <summary>
+            普通のコンストラクタ
+            </summary>
+            <param name="end">終了時間</param>
+        </member>
+        <member name="P:GameSet1.Waza.e">
+            <summary>
+            この技が追加されてるエンテティ
+            </summary>
+        </member>
+        <member name="M:GameSet1.Waza.add(GameSet1.Entity)">
+            <summary>
+            技をエンテティに追加する。複数のに追加しないでね
+            追加できたらOnaddを呼び出す。
+            </summary>
+            <param name="e">追加するエンテティ</param>
+            <returns>追加されたかどうか</returns>
+        </member>
+        <member name="M:GameSet1.Waza.remove">
+            <summary>
+            技をエンテティから削除する。
+            削除できたらonRemoveを呼び出す
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameSet1.Waza.nokoritime(System.Single)">
+            <summary>
+            残りの消費できる時間を算出する
+            </summary>
+            <param name="cl">このぐらい消費したいです！</param>
+            <returns>消費できる時間</returns>
+        </member>
+        <member name="M:GameSet1.Waza.frame(System.Single)">
+            <summary>
+            フレーム処理。
+            Onframeを呼び出した後にタイマーが進められる
+            </summary>
+            <param name="cl">クロック時間</param>
+        </member>
+        <member name="M:GameSet1.Waza.onFrame(System.Single)">
+            <summary>
+            フレーム処理の時に呼び出されるメソッド
+            オーバーライドしてね
+            </summary>
+            <param name="cl">クロック時間</param>
+        </member>
+        <member name="M:GameSet1.Waza.onAdd">
+            <summary>
+            技がエンテティに追加されたときに発動するメソッド
+            オーバーライドしてね。
+            </summary>
+        </member>
+        <member name="M:GameSet1.Waza.onRemove">
+            <summary>
+            技がエンテティから削除されたときに発動するメソッド
+            オーバーライドしてね。
+            ここで自分を新しく追加するとかやったら無限ループするからやめてね。
+            </summary>
+        </member>
+        <member name="M:GameSet1.Waza.atafilter``1(System.Collections.Generic.List{``0},System.Collections.Generic.List{System.String},GameSet1.Entity,System.Collections.Generic.List{System.String},System.Boolean,System.Boolean)">
+            <summary>
+            ListEntityに対してあたり判定でフィルターを掛ける
+            </summary>
+            <param name="lis">フィルター対象</param>
+            <param name="lisataris">対象のあたり判定の節の名前群,nullでそれぞれ全部</param>
+            <param name="e">フィルターに使うエンテティ</param>
+            <param name="eataris">フィルターに使う奴の節の名前群,nullで全部</param>
+            <param name="pre">1フレーム前のも考慮するか</param>
+            <param name="not">当たっていないやつを残すことにする</param>
+        </member>
+        <member name="M:GameSet1.Waza.atafilter``1(System.Collections.Generic.List{``0},System.Collections.Generic.List{System.String},Charamaker2.Shapes.Shape,Charamaker2.Shapes.Shape,System.Boolean,System.Boolean)">
+            <summary>
+            ListEntityに対してあたり判定でフィルターを掛ける
+            </summary>
+            <param name="lis">フィルター対象</param>
+            <param name="lisataris">対象のあたり判定の節の名前群,nullでそれぞれ全部</param>
+            <param name="s">フィルターに使う図形</param>
+            <param name="pres">フィルターに使う図形の一フレーム前</param>
+            <param name="pre">1フレーム前のも考慮するか</param>
+            <param name="not">当たっていないやつを残すことにする</param>
+        </member>
+        <member name="M:GameSet1.Waza.atypefilter``1(System.Collections.Generic.List{``0},GameSet1.buturiinfo,System.Boolean)">
+            <summary>
+            ListEntityを当たりタイプでフィルターを掛ける
+            </summary>
+            <param name="b">フィルターを掛ける物理インフォメーション(atagのみ参照)</param>
+            <param name="lis">フィルターするリスト</param>
+            <param name="friend">当たらないやつを残す</param>
+        </member>
+        <member name="M:GameSet1.Waza.atarisfilter``1(System.Collections.Generic.List{``0},System.Int32,System.Boolean)">
+            <summary>
+            atarisをもとにフィルターを掛ける
+            </summary>
+            <param name="lis">フィルターをかける奴</param>
+            <param name="num">フィルターを掛けるatarisのナンバー</param>
+            <param name="exist">atarisにある場合リストに残すモード</param>
+        </member>
+        <member name="M:GameSet1.Waza.listfilter(System.Collections.Generic.List{GameSet1.Entity},System.Collections.Generic.List{GameSet1.Entity},System.Boolean)">
+            <summary>
+            リスト二つでフィルターを掛ける。両方被りがないことを想定。
+            </summary>
+            <param name="lis">フィルター対象</param>
+            <param name="filter">フィルター</param>
+            <param name="aru">フィルターにある奴を残す</param>
+        </member>
+        <member name="M:GameSet1.Waza.atarisconnectto(GameSet1.Waza)">
+            <summary>
+            atarisを他の技と共有
+            </summary>
+            <param name="w">共有元</param>
+        </member>
+        <member name="F:GameSet1.Waza.ataris">
+            <summary>
+            技を適用した奴を保存しておくリスト。
+            タイマーにも使える
+            </summary>
+        </member>
+        <member name="M:GameSet1.Waza.atarisAdd(GameSet1.Entity,System.Single,System.Int32)">
+            <summary>
+            atarisに追加する
+            </summary>
+            <param name="e">追加するエンテティ</param>
+            <param name="time">なにクロック時間残るか</param>
+            <param name="i">atarisナンバー</param>
+        </member>
+        <member name="M:GameSet1.Waza.atarisAddRange(System.Collections.Generic.List{GameSet1.Entity},System.Single,System.Int32)">
+            <summary>
+            atarisに追加する
+            </summary>
+            <param name="e">追加するエンテティ</param>
+            <param name="time">なにクロック時間残るか</param>
+            <param name="i">atarisナンバー</param>
+        </member>
+        <member name="M:GameSet1.Waza.atarisRemove(GameSet1.Entity,System.Int32)">
+            <summary>
+            atarisから消す
+            </summary>
+            <param name="e">消すエンテティ</param>
+            <param name="i">atarisナンバー</param>
+        </member>
+        <member name="M:GameSet1.Waza.atarisClear(System.Int32)">
+            <summary>
+            atarisをクリアする
+            </summary>
+            <param name="i">atarisナンバー</param>
+        </member>
+        <member name="M:GameSet1.Waza.atarisClearAll">
+            <summary>
+            atarisを完全に消す
+            </summary>
+        </member>
+        <member name="M:GameSet1.Waza.atarisAru(GameSet1.Entity,System.Int32)">
+            <summary>
+            atarisに存在するか調べる
+            </summary>
+            <param name="e">調べるエンテティ</param>
+            <param name="i">atarisナンバー</param>
+            <returns>あったのか？</returns>
+        </member>
+        <member name="M:GameSet1.Waza.atarislist(System.Int32)">
+            <summary>
+            atarisを持ってくる
+            </summary>
+            <param name="i">atarisナンバー</param>
+            <returns>りすと！</returns>
+        </member>
+        <member name="M:GameSet1.Waza.atarislistall">
+            <summary>
+            atarisの全てのリストを結合して持ってくる
+            </summary>
+            <returns>Entityが重複してるかもしれないリスト</returns>
+        </member>
+        <member name="M:GameSet1.Waza.atarisDorearu(GameSet1.Entity)">
+            <summary>
+            Entityがどこかしらのatarisにあるか調べる
+            </summary>
+            <param name="e">Entity</param>
+            <returns>ナンバー関係なくあるか</returns>
+        </member>
+        <member name="M:GameSet1.Waza.kugirin(System.Single)">
+            <summary>
+            timerが区切り時間以上かを調べる
+            </summary>
+            <param name="kugiriko">区切り時間</param>
+            <returns>区切り時間が-1かtimerが区切り時間未満だとfalse</returns>
+        </member>
+        <member name="T:GameSet1.jisatukun">
+            <summary>
+             addしたEntityを数秒後死に至らしめる劇毒
+            </summary>
+        </member>
+        <member name="M:GameSet1.jisatukun.#ctor(System.Single)">
+            <summary>
+            普通のコンストラクタ
+            </summary>
+            <param name="end"></param>
+        </member>
+        <member name="T:GameSet1.speedkakusoroe">
+            <summary>
+             addしたEntityの速度と角度を合わせる奴
+            </summary>
+        </member>
+        <member name="M:GameSet1.speedkakusoroe.#ctor(System.Single,System.Single)">
+            <summary>
+            普通のコンストラクタ
+            </summary>
+            <param name="end"></param>
+            <param name="basekaku">ベースの角度(°)</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,14 @@
+BGM,summer_hill3
+MOVE,2,roguelike,1
+ENEMY,ghost1,1
+ENEMY,ghost1-2,1
+ENEMY,ghost1-3,1
+ENEMY,ghost1-4,1
+ENEMY,ghost1-5,1
+ENEMY,ghost1-6,1
+ENEMY,ghost2,2
+ENEMY,ghost2-2,2
+ENEMY,ghost2-3,2
+ENEMY,ghost2-4,2
+ENEMY,ghost2-5,2
+ENEMY,ghost2-6,2

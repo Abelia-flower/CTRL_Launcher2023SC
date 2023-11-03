@@ -1,0 +1,10 @@
+Id: CARAVANinSetagaya
+Title: CARAVAN
+Genre: "ゲーム"
+ScreenshotPath: 2023_10_29_10_50_06.png
+ExecutablePath: Debug\Caravan.exe
+Argument: 
+SourcePath: Debug\texts\
+TimeLimit: 00:00:00
+Description: "世田谷祭用のCARAVAN!全然完成しなかったけど、一応終わりはあるよ！\r\n"
+IsLate: false

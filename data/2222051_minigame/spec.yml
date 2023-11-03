@@ -1,0 +1,10 @@
+Id: MiniGameCollection
+Title: "アンナのお菓子な冒険　ミニゲーム集"
+Genre: "ゲーム"
+ScreenshotPath: "スクリーンショット.png"
+ExecutablePath: "bin\\ミニゲーム集.exe"
+Argument: 
+SourcePath: src\
+TimeLimit: 00:00:00
+Description: "「アンナのお菓子な冒険」というゲームをチーム制作しています。\r\nそのゲーム内で使われる予定のミニゲーム集です。(まだ一部)"
+IsLate: false

@@ -1,0 +1,1080 @@
+//ベース,幅,ボスの幅倍率
+levelmoney:3,0.7,1.25
+
+//プレイヤー側のディフェンス
+defencedef:0.3,1
+
+//テストの時、敵が踊って回復する
+testdanceheal:1000,1
+
+//持続、回復割合、攻撃、クール割合、意志の倍率、属性、回復のターン
+deadbuf:4.5, 0.75, 0.75, 0.35,        2,        0.75,    1
+//凍った後凍りにくくなるターン,氷にくさ
+icegarder:3,0.75
+//敵が逃げる確率
+skipper:1.5
+
+//合体技が条件を満たしたとき発動する確率*ターン,マイナスターン,最低ターン
+gattaiwaza:5,10,-20
+
+
+//DPでの攻撃力上昇 1あたり
+DPattack:0
+//DPでの防御上昇 1あたり
+DPdefence:0.5
+//EPでのHrecast上昇1あたり
+EPHrecast:0.5
+
+//elementとか命令したときに確率がmaxAPとかで変わるでしょ。その倍率
+comkakubai:1.66
+
+//選んでないコマンドの方のリキャスト
+otherrecast:0.25
+//ドッジしたときのリキャスト(KA,KD,hissatuのほうのE)
+dogerecast:0.4
+
+//ドッジ可能距離max*
+dodge:2.2
+
+//チャージしたときのリキャスト(hissatuのほうのK)
+chargerecast:0
+
+//ダンスしたときのリキャスト(hissatu,E,K)
+dancerecast:2,1.0,0.5
+
+//敵キャラの見かけmhel倍率&バフのスコア倍率
+EHmhelbai:5.5
+
+#region:itembase
+//装備品のベースパワー
+health:100
+attack:0.1
+shield:0.1
+heal:0.1
+FI:0.1
+WET:0.1
+LD:0.1
+Arecast:0.5
+Drecast:0.5
+Erecast:0.5
+Hrecast:0.5
+defence:0.05
+AP:0.05
+DP:0.05
+EP:0.05
+
+#region:hatugen
+damage:1000
+sousai:700
+shield:1000
+heal:1250
+buf:1000
+debuf:1000
+nothen:0.15
+kakuritu:10
+enemyritu:6
+
+#region:bufkati
+turnadvantage:300
+//バフ効果を表示するときの大きさ倍率
+hyojibai:5
+//仕様の都合でプレイヤー側準拠の数字で
+iced:0.2,1
+winded:0.02,0.1
+thundered:0.2,1
+earthed:0.2,1
+lighted:0.02,0.1
+darked:0.02,0.1
+//味方の統計に使用したいため、1/5にしてる<-やーめた
+charged:0.20
+//defence,heal,shield,attack,FI,WET,LD,Areca,Dreca,Ereca,Hreca 
+powerup:0.1, 0.1, 0.2,  0.2,    0.06,0.06,0.06,0.02,  0.02,  0.02, 0.02
+
+
+
+
+
+#region:tact
+status: 10, 5, 1, 1, 1, 1, 1, 1,1, 0.1
+charge:1
+////////////////////////////////////////
+#region:yoshino
+status: 1000, 2, 1.1, 1.2, 1.1, 1, 1, 1, 1.2
+attack: -1, 50, 1, 1.2
+Kattack: -1, 75, 1, 1.2
+defence: -1, 40, 1, 1
+defenceDef:0.3,1
+//80じぞく=180
+Kdefence: 7, -10, 0.95 , 48
+//100持続
+element: 20, 15, 0.9, 6
+elementW: 0.08, 3
+Aelement: -1, 87.5, 0.6, 3
+AelementW: 0.16,2
+//wet,Arecast
+DelementP: 1 , 3, 0.25, 0.20 
+DelementH: 55 , 3
+Ahissatu: -1, 130, 0.9, 4 
+AhissatuW: 0.35 ,2
+Dhissatu: -1, 95, 0.95, 6
+DhissatuW: 0.5 ,2
+
+
+coanna: -1, 66, 0.7, 3
+coannaW: 0.12,2
+//////////////////////////////////////////////////////////
+#region:kaito
+status: 800, 5, 1.2, 1, 1, 1, 1, 1, 1.0
+//３発
+attack: -1, 20, 1, 1
+//dam ,n発
+Kattack: 21.5, 4
+//,bai,FI
+defence: 0.8, 2.5, 0.125, 0.125
+//最後のはnターン
+Kdefence: 1, 120, 1 , 1, 3.5
+//最後のはnターン
+element: 40, 10, 0.9, 6, 2
+elementI: 0.020
+//最後のはn発
+Aelement: -1, 14, 1, 1,6
+AelementI: 0.025
+
+//最後のはn発
+comaniya: -1, 14, 1, 1,4
+comaniyaI: 0.025
+
+//最後のはn発
+Delement: -1 , 10, 1, 1, 6 
+DelementI: 0.030
+//,回数
+Ahissatu: 17, 8 
+AhissatuI: 0.030 
+//全体
+Dhissatu: 30
+DhissatuI: 0.50 
+
+//*2,25持続
+cosisyo:7,40,0.6,5
+cosisyoI:0.05
+//////////////////////////////////////////////////////////
+#region:monika
+status: 400, 10, 0.9, 0.9, 0.9, 1, 1, 1, 1.1
+//5発
+attack: -1, 12, 1, 1
+//9発
+Kattack: -1, 10, 1, 1
+//3発
+defence: -1, 16.7, 1, 1
+//20発
+Kdefence: -1, 8, 1 , 1
+//power
+element: 1
+//最後のはn発
+Aelement: -1, 18, 1, 1,6
+coera:-1,13,1,1,6
+
+Delement: -1 , 80, 0.8, 4
+//最後のは4*n発
+Ahissatu: -1,9.4,0.5,2.5,4 
+//ダメージ,回数,同時にとる対象,持続ターン
+Dhissatu: 15,7,20,1.5
+//////////////////////////////////////////////////////////
+#region:penny
+status: 950, 3, 1.2, 1.2, 1.2, 1, 1, 1, 2.0
+//2発
+attack: -1, 25, 1, 1
+attackL:0.05, 2
+
+Kattack: -1, 80, 1, 1
+KattackW:0.1,2
+
+coanna: -1, 80, 1, 1
+coannaW:0.1,2
+
+//最後のはターン
+defence: -1, 75, 1, 1, 2.5
+//n回,生存時間
+Kdefence: 30, 15, 0.5 , 3 ,5 ,2
+KdefenceL:0.03,3
+//n回
+element: -1, 18, 1, 1, 3
+elementL:0.035, 3
+
+Aelement: -1, 92, 0.8, 3
+AelementL: 0.2,3
+
+//シールド
+Delement:100,3.5
+//
+Ahissatu: -1,110,0.8,3
+AhissatuL: 0.4, 3 
+
+
+//全体のパワー,ターン,def,heal,shield,dam,FI,WET,LD
+Dhissatu: 1,   4,     0.3,0.5,  0.5,   0.5,0.5,0.5,0.5
+//回復するKA,KD,AE,DEの割合
+DhissatuC:1,1,1,1
+DhissatuH:200,4
+//6000->50->120発 0.0085=50だめーじ
+/////////////////////////////////////////////////////////////////////////////
+#region:yuu
+status: 800, 6, 1.2, 1.0, 1.0, 1, 1, 1, 1.3
+
+attack: -1, 55, 1, 1
+
+Kattack: -1, 84, 1, 1
+//チャージ
+defence: 0.8
+//チャージユウ君に、みんなに
+Kdefence: 0.8,0.3
+
+element: -1, 30, 0.4, 3
+elementF:30, 2
+
+//7発
+Aelement: -1, 10, 0.5, 4
+AelementF: 5, 2
+
+//二つあるわけではない。75持続
+Delement:5, 10, 0.9, 10
+//一回だけヒット
+DelementF:70, 2
+//最後のはターン
+Ahissatu: 18,5,1,400,4
+AhissatuF: 5, 3 
+
+
+Dhissatu:-1,60,0.9,4
+DhissatuF:70,2
+/////////////////////////////////////////////////////////////////////////////
+#region:maniya
+//もうバランスわからんね。
+status: 500, 7, 0.9, 0.9, 0.9, 1, 1, 1,0.8
+//残るターン 標準の数 
+sword:15, 3
+//倍率、ターン 剣の威力強化と、s.shieldによる強化が重なりまっせ(ん)<-どっち？わからん
+shield:1.25, 4.5
+recommand:0.8
+//継続ターン
+attack: -1, 33, 1, 1
+cokaito:-1,33,1,1.5
+//二個
+Kattack: -1, 25, 1, 1
+
+defence: -1,26, 1, 1
+//二個生まれる
+Kdefence: -1,25 ,1 , 1
+KdefenceS: 55, 2.5
+
+//他にエレメントパワーの活躍の場所がないからここで。EP/2追加上昇
+element: -1, 33, 0.5, 3
+
+//elementSwordが標準搭載
+
+//二つある
+
+Ahissatu: -1,77,0.5,3
+
+//最後のは数 
+Dhissatu:-1,22,1,1,6
+DhissatuF:70,2
+
+/////////////////////////////////////////////////////////////////////////////
+#region:sisyo
+status: 450, 9, 1.1, 1.1, 1.3, 1, 1, 1, 0.8
+//3つ,おおきさ,速度
+attack: -1, 16, 1, 1 , 1.3,10 
+attackD: 0.04 ,2
+
+//数,大きさ
+Kattack: -1, 8, 1, 1, 10, 1.0
+KattackD: 0.02 ,2
+//,,人数
+defenceH: 27,1.5,4
+//じぞく,大きさ　残りがダメージに転換
+Kdefence: -1, 50, 0.95 , 3 ,2.5, 1.5
+//回数
+element: -1, 20, 1, 1, 4
+elementD: 0.01, 3
+elementH: -1, -27 ,1 ,1 
+
+Aelement: -1, 44, 0.5, 3
+AelementF: 20, 2
+AelementI: 0.1
+AelementW: 0.3, 3
+AelementE: 0.1, 2
+AelementT: 0.1, 2
+AelementL: 0.3, 3
+AelementD: 0.3, 3
+
+//power,turn,FI,WET,LD,Erecast
+DelementP: 1.5,3 , 0.2, 0.2, 0.2,0.20 
+DelementH: 33, 0.1
+
+AhissatuF: 50, 2
+AhissatuI: 0.1
+AhissatuW: 0.3, 3
+AhissatuE: 0.1, 2
+AhissatuT: 0.1, 2
+AhissatuL: 0.3, 3
+AhissatuD: 0.3, 3
+
+//120持続
+
+Dhissatu: 20, 10, 0.95, 18
+//215ぐらい
+DhissatuH: 20, -11, 0.95, 40
+
+DhissatuD: 0.1 ,3
+
+//////////////////////////////////////////////////////////
+#region:era
+status: 950, 3, 1.0, 1.2, 1.0, 1, 1, 1, 1.5
+
+attack: -1, 50, 1, 1
+
+Kattack: -1, 50, 0.75, 2
+comonika:-1,60,0.75,3.5
+//100持続
+defence: 20, 9, 0.95, 10
+//55持続, 最後のが花の持続ターン,そのつぎが花の速度
+Kdefence:20,1,1,9,3.5,1.4
+KdefenceFIWETLD:0.33,2.5
+KdefenceA:0.1,2.5
+KdefenceH:12.5,2.5
+KdefenceE:0.025,2.5
+//power,turn,dore,数
+element: 1,0,-1,8
+//最後のはn発
+Aelement: -1, 10, 1, 1, 6
+AelementE:0.025,2.5
+AelementP:2,0.5,-1
+Delement: -1, 10, 1, 1, 7
+DelementE:0.025,2.5
+DelementP0:1.0,0.25,4
+DelementP1:1.0,0.5,-1
+
+Ahissatu: -1,100,0.9,2.2
+AhissatuE:0.2,2.5
+//パワー,数
+DhissatuP: 1,20
+//////////////////////////////////////////////////////////
+#region:jakusu
+status: 750, 5, 1.0, 1.2, 1.0, 1, 1, 1, 1.1
+
+attack: -1, 45, 1, 1,17
+attackT:0.01,2
+//9発
+Kattack: -1, 65, 0.75, 2.5
+KattackT:0.025,2
+//+個数,持続
+defence: 20, 12, 0.5, 2,5,1.5
+//,持続
+Kdefence:20,50,0.6,8,2.5
+KdefenceK:-1,1,1,100
+KdefenceT:0.05,2.5
+//power,turn,attack,WET
+elementP: 1,2.5,0.075,0.05
+//最後のはn発
+Aelement: -1, 70, 0.5, 3
+AelementT:0.04,3
+//,ターン,kasoku
+Delement: 30, 30, 0.8, 20, 2,7
+DelementT:0.04,2
+
+Ahissatu: -1, 100, 0.75, 2.5
+AhissatuT:0.05,3
+
+Dhissatu:-1,30,0.9,666
+//,持続
+DhissatuS:-1,60,0.8,15,2.5
+DhissatuT:0.1,3 
+//////////////////////////////////////////////////////////////////////////////
+#region:anna
+status: 880, 4, 1.0, 1.1, 1.0, 1, 1, 1, 0.9
+//最大値,継続時間,上昇攻撃力,大きさ
+blood:88,3.5,0.075,0.3
+//,スピード
+attack: -1, 40, 0.5, 2,25
+//9発
+Kattack: -1, 60, 0.5, 2.5
+KattackW:0.1,2.5
+//+個数,持続
+defence: 30, 10, 0.925, 666,6,1.0
+
+KdefenceS:50,2.5
+//3回,bigs,sp(*bigs)
+element: 22,1,0.20
+//最後のはn発
+Aelement: -1, 65, 0.5, 3
+AelementE:0.1,3
+//,数,サイズ,速度（＊サイズ）
+Delement: -1, 33, 0.8, 2.5, 6,2,0.4
+
+Ahissatu: -1, 130, 0.95, 2.5
+
+//持続ターン
+Dhissatu:30,22,0.95,666,1.5
+//,持続
+DhissatuS:-1,60,0.8,15,2.5
+DhissatuT:0.1,3 
+
+coyoshino:-1,75,0.9,2.5
+
+copenny: -1, 90, 1, 1
+copennyW:0.075,2
+
+
+//////////////////////////////////////////////////////////////////////////////
+
+#region:tutitukumo
+status: 8000, 5,1.0, 1.2, 1.0, 1,1,1,30
+//+回数
+attack: -1, 33, 1, 1.2 ,8
+Kattack: -1, 200, 0.9, 6
+//持続 60
+defence: 25, 25, 0.9, 12
+defenceH:250, 0.1
+KdefenceS:600,1.5
+KdefenceH:450, 0.1
+//回数,ダメージ
+element: 5,8 
+elementE: 0.05, 2.5
+Aelement: -1, 250, 0.9, 6.5
+AelementE: 0.3,3
+
+Delement: -1, 100, 0.95, 10,2
+DelementE: 0.4 , 3
+DelementH: 600, 0.1
+Ahissatu: -1, 270, 0.9, 7
+AhissatuE:0.5, 3 
+AhissatuH:750, 0.1
+
+//////////////////////////////////////////////////////////////////////////////
+#region:jotto
+status: 7300, 5,1.2, 1.0, 1.0, 1,1,1, 13
+//*4
+attack: -1, 25, 0.8, 2.5 
+attackF:10, 3 
+Kattack: -1, 200, 0.9, 6
+KattackE: 0.3, 3
+defence: -1, 60, 0.9, 8
+defenceF:  25, 3
+defenceH:300, 0.1
+Kdefence: -1, 120, 1, 6.5
+KdefenceF:  60, 3
+KdefenceH:450, 0.1
+//6個
+element: -1, 30, 1, 1 
+elementF: 30, 3.5
+Aelement: -1, 28, 1, 666
+AelementF: 165,4
+
+Delement: -1, 200, 0.95, 5 
+DelementF: 40 , 3
+DelementW: 0.4 , 3
+DelementH: 700, 0.1
+
+Ahissatu: -1, 190, 0.9, 7
+AhissatuF:140,6.5 
+AhissatuH:750, 0.1
+dodge:0.1,0.1
+
+//////////////////////////////////////////////////////////////////////////////
+#region:kyugu
+status: 6000, 5,1.05, 1.1, 1.2, 1,1,1,8
+attack: -1, 66, 0.9, 6 
+Kattack: -1, 333, 0.9, 3.5
+defence: 5, 20, 0.9, 24
+defenceH:200, 0.1
+//4*n
+Kdefence: -1, 22, 1, 1,3
+KdefenceE:  0.075, 2.5
+KdefenceH:400, 0.1
+//n個
+element: -1, 33, 1, 1.2 ,8
+elementD: 0.1, 2.5
+
+Aelement: -1, 233, 0.95, 7.5
+AelementD: 0.5,3
+
+//*3
+Delement: 10 
+DelementD: 0.3 , 4
+DelementW: 0.3 , 4
+DelementF: 30 , 4
+DelementH: 600, 0.1
+
+Ahissatu: -1, 36, 0.9, 2,20
+AhissatuD:0.1,3 
+AhissatuH:550, 0.1
+
+//////////////////////////////////////////////////////////////////////////////
+#region:bipus
+status: 7500, 5,1.00, 1.20, 1.0, 1,1,1,20
+//*4
+attack: -1, 33, 0.9, 2.5 
+Kattack: -1, 202, 0.9, 7
+
+defence: 5, 88, 0.8, 6
+defenceT: 0.075,2.5
+defenceH:250, 0.1
+//4*n
+Kdefence:28
+KdefenceT:  0.35, 2.5
+KdefenceH:400, 0.1
+//n個
+element: -1, 35, 1, 1.2 ,8
+elementT: 0.100, 3
+
+Aelement: -1, 212, 0.90, 7
+AelementT: 0.2,2.5
+
+
+Delement:30,30,0.95,30
+DelementT: 0.075 , 1.2
+//,n
+DelementS: 30,1,10 
+DelementH: 50, 0.1
+
+Ahissatu: -1,245,0.95,8 
+AhissatuT:0.25,4 
+AhissatuH:600, 0.1
+
+dodge:0.07,0.06
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////
+#region:hyokaitukumo
+status: 6750, 5,1.20, 1.00, 1.0, 1,1,1,25
+//*2
+attack: -1, 70, 0.9, 2.3 
+Kattack: -1, 193, 0.93, 7
+
+//*2(4) ,ノックバック,パワー
+defence: -1, 55, 0.75, 2.5,1.5,1
+defenceH:250, 0.5
+//20持続,ノックバック,上,パワー
+Kdefence: 2.5, 30,0.9,15
+KdefenceK: 2.5, 1,1,66666,5,0.1,2
+KdefenceS: 150,1.2
+KdefenceH:150, 0.7
+//n個
+element: -1, 22, 1, 1.2 ,12
+elementI: 0.075
+
+Aelement: -1, 188, 0.95, 7
+AelementI: 0.2
+
+//,数
+Delement:-1,133,0.95,8,15
+DelementI: 0.3 
+DelementH:600,0.1
+//,ターン
+Ahissatu: -1,111,0.975,15,4
+AhissatuI:0.4 
+AhissatuH:600, 0.1
+
+
+
+//////////////////////////////////////////////////////////////////////////////
+#region:kumotukumo
+status: 6500, 5,1.00, 1.15, 1.0, 1,1,1,6
+//*4
+attack: -1, 32, 0.9, 3 
+Kattack: -1, 123, 0.95, 7
+
+//90持続
+defence: 10, 33, 0.9, 22
+defenceH:250, 0.5
+KdefenceS: 600,1.2
+KdefenceH:400, 0.7
+//n個
+element: -1, 11, 0.9, 1.5 ,20
+elementW: 0.05,3
+//ノックバック
+Aelement: -1, 136, 1, 7,-8
+AelementW: 0.3,2
+
+//ノックバック
+Delement: -1, 136, 1, 7,0
+DelementW: 0.3,2
+DelementH:600, 0.7
+
+//4回    ,ノックバック
+Ahissatu: 36,3
+AhissatuW:0.1,2.5 
+AhissatuH:600, 0.8
+
+
+//////////////////////////////////////////////////////////////////////////////
+#region:bones
+status: 7150, 5,1.00, 1.00, 1.2, 1,1,1,12
+//*6
+attack: -1, 23, 0.9, 2.5 
+
+Kattack: -1, 166, 0.95, 4.5
+KattackL:0.1,2.3
+
+//50持続
+defence: 12, 28, 0.98, 20
+defenceL:0.05,2
+defenceH:250, 0.4
+//,ターン
+Kdefence: -1,123,0.8,10,2.5
+KdefenceH:350, 0.7
+
+element: -1, 33, 0.9, 6666 
+elementL: 0.35,3
+//,数
+Aelement: -1, 33, 0.7, 2.5,13
+AelementL: 0.05,2
+
+//ノックバック
+Delement: -1, 136, 1, 7,-10
+DelementW: 0.3,2
+DelementH:550, 0.7
+
+
+Ahissatu: -1, 234, 0.95, 7.5
+AhissatuL: 0.20,2
+AhissatuH:550, 1
+
+
+//////////////////////////////////////////////////////////////////////////////
+#region:bukitukumo
+status: 6700, 4,1.05, 1.00, 1.1, 1,1,1,10
+
+attack: -1, 102,0.9,3.5
+attackL:0.1,0.25
+
+Kattack: -1, 142, 0.95, 7.5
+KattackF:66,3.2
+
+//,個数,size,speed,grabity
+defence: -1, 44, 1, 1.3,6,  1,0.2,0.01
+defenceL:0.05,2
+defenceH:250, 0.4
+
+Kdefence: -1,111,0.9,8
+KdefenceH:400, 0.7
+
+element: 22
+elementL: 0.25,2.5
+//無い！！！
+Aelement: -1, 33, 0.7, 2.5,13
+AelementL: 0.05,2
+
+//数
+Delement: -1, 44, 1, 1.3,9
+DelementL: 0.05,2.2
+DelementS:200,1
+DelementH:550, 0.7
+
+AhissatuB:-1,70,0.92,6.5
+AhissatuC:-1,60,0.90,7.5
+//数,大きさ,速度
+AhissatuA:-1, 62, 0.55, 5,3,1.5,0.25
+AhissatuS:-1,100,0.99,3.5
+AhissatuBL: 0.10,2.5
+AhissatuCF: 53,4
+AhissatuAL: 0.05,2.5
+
+AhissatuH:550, 1
+
+//下がる量
+dodge:2.5
+
+//////////////////////////////////////////////////////////////////////////////
+#region:homuratukumo
+status: 6800, 5,1.15, 1.00, 1.0, 1,1,1,4
+
+//*2
+attack: -1, 33,0.85,3
+attackF:25,2.5
+
+Kattack: -1, 112, 1, 1
+KattackD: -1, 1, 1, 6666
+KattackF:55,3.0
+
+//80持続
+defence: 30, 43, 0.9, 12
+defenceH:300, 0.6
+
+//100持続
+Kdefence: 15,47,0.89,666
+KdefenceH:400, 0.7
+
+//,持続ターン,射程倍数
+element: 5,1,1,6666,2,1.25
+elementF: 2.5,6
+
+Aelement: -1, 150, 0.9, 6.5
+AelementF: 60,3.5
+
+//持続ターン
+Delement: -1,70,0.975,15,2.5
+DelementF: 75,3.5
+DelementH:600, 0.1
+
+Ahissatu:-1,7,1,66666
+AhissatuF:255,4.5
+AhissatuH:600, 0.9
+
+
+//////////////////////////////////////////////////////////////////////////////
+
+#region:daitinokyojin
+status: 9999, 7,1.1, 1.2, 1.05, 1,1,1,999
+//2回
+attack: -1, 66, 0.8, 4.5
+Kattack: -1, 222, 0.85, 8
+//,持続 
+defence: -1, 63, 0.90, 10,2.1
+defenceE:0.1,2.5
+defenceH:200, 0.1
+
+Kdefence:-1,142,0.90,10
+KdefenceE:0.2,3.5
+KdefenceH:600, 1.8
+//,回数,大きさ,加速度
+element: -1,20,1,1,15,0.2,0.005 
+elementE: 0.05, 2.0
+Aelement: 10
+AelementF: 70,5
+AelementE: 1.0,3.5
+AelementD: 0.25,3
+//,個数
+Delement:-1,155,0.94,10,20
+DelementE: 0.35 , 2.5
+DelementH: 600, 0.1
+Ahissatu: -1, 299, 0.975, 11
+AhissatuH:900, 1
+
+
+//////////////////////////////////////////////////////////////////////////////
+#region:denkitukumo
+status: 6262, 5,1.05, 1.15, 1.0, 1,1,1,3.5
+//*2
+attack: -1, 56, 0.9, 3
+attackT: 0.075,3
+Kattack: -1, 188, 0.9, 4.5
+KattackT:0.175,2.5
+
+//,持続
+defence: 30, 52, 0.9, 12,1.75
+defenceT: 0.05,3
+defenceH:200, 0.6
+//,n個,size
+Kdefence:-1,72,1,3,2,1
+KdefenceT:  0.15, 2.5
+KdefenceH:400,0.1
+
+//n個,持続
+element: -1, 14, 1, 1.2 ,18,2.0
+elementT: 0.05, 2.5
+
+Aelement: -1, 149, 0.95, 10
+AelementT: 0.35,1.5
+
+//,サイズ
+Delement:-1,188,1,5,2.5
+DelementT: 0.25 , 2.5
+DelementH: 600, 0.1
+
+Ahissatu: 50
+AhissatuT: 0.5,4
+AhissatuH: 600, 0.1
+
+
+//////////////////////////////////////////////////////////////////////////////
+#region:suraiku
+status: 6700, 5.5,1.00, 1.20, 1.0, 1,1,1,14
+//*4
+attack: -1, 28, 0.92, 3.25
+attackT:0.01, 2
+Kattack: -1, 155, 0.95, 5
+
+//*2
+defence: -1, 58, 0.9, 3
+defenceH:250, 0.2
+Kdefence:-1,112,0.9,7
+KdefenceT:0.25,0.25
+KdefenceH:400, 0.7
+//,持続
+element: 25, 28.5, 0.955, 20 ,1
+elementW: 0.075,2
+//,size,sp
+Aelement: -1, 174, 0.94, 7,1.5,0.14
+AelementW: 0.25,2.5
+
+//8回
+Delement: -1, 47, 0.9, 2.5
+DelementW: 0.05,2.5
+DelementH:600, 0.5
+
+
+Ahissatu: -1, 256, 0.99, 8
+AhissatuH:600, 0.8
+//x,y
+dodge:2.2,0.7
+
+//////////////////////////////////////////////////////////////////////////////
+#region:kurotukumo
+status: 6666, 5,1.0, 1.0, 1.2, 1,1,1,16
+//*3
+attack: -1, 33, 0.9, 4 
+//*3
+Kattack: -1, 108, 0.7, 3
+KattackD:0.1,2.5
+//,num,jizoku,size,speed,
+defence: 30, 15, 0.9, 7,4, 1.5 , 0.6, 0.1
+defenceD:0.02,2.5
+defenceH:250, 0.1
+
+Kdefence: -1, 153, 0.9, 10
+KdefenceD:  0.35, 2.5
+KdefenceH:400, 0.1
+//n個
+element: -1, 27, 1, 1.2 ,10
+elementD: 0.1, 2
+
+//60持続
+Aelement: 22, 173, 0.9, 14
+AelementD: 0.1,3
+
+//*3
+Delement: 22 
+DelementD: 0.3 , 4
+DelementH: 500, 0.1
+DelementS: 500, 0.1
+
+Ahissatu: -1, 222, 0.9, 10
+AhissatuD:0.3,3 
+AhissatuH:650, 0.1
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////
+#region:hyouganoryuu
+status: 7777, 5,1.20, 1.1, 1.00, 1,1,1,33
+//*4
+attack: -1, 31, 0.88, 3
+attackI:0.03
+attackF:-1,111,0.9,4
+attackFI:0.1
+//,ノックバック
+Kattack: -1, 162, 0.90, 7,7
+KattackW: 0.2,3.5
+
+KattackF: -1, 185, 0.90, 6,5
+KattackFW: 0.2,3
+//*2
+defence: -1, 63, 0.8, 3.0
+defenceI:0.05
+defenceH:250, 0.1
+defenceF:-1, 20, 1, 6666
+defenceFI:0.3
+defenceFH:250,0.4
+
+//バック値,上昇値
+Kdefence: -1, 40,0.99,20,12,4
+KdefenceI:0.4
+KdefenceH:400, 0.2
+//n個
+element: -1, 35, 1, 1.5 ,6
+elementI: 0.075
+
+Aelement: -1, 233, 0.95, 7.5
+AelementI: 0.25
+
+//,持続ターン
+Delement:-1,169,0.95,10,2.2
+DelementI: 0.35
+DelementH:500,0.1
+//,ターン
+Ahissatu: -1,288,0.95,11
+AhissatuI:0.6
+AhissatuH:600, 0.1
+
+dodge:20,3
+
+//////////////////////////////////////////////////////////////////////////////
+#region:hikarinohakaisya
+status: 6789, 5,1.00, 1.00, 1.25, 1,1,1,10
+warp:3000
+//*3,bigs
+attack: -1, 42, 0.72, 66666,3 
+attackL:0.025 ,2
+//８つ,size
+Kattack: -1, 44, 1, 1,0.75
+KattackB:-1,130,0.5,4
+KattackL:0.2,2
+KattackT:0.1,2
+
+//50持続
+defence: -1, 10, 0.95, 6666
+defenceF:50,3
+defenceH:200, 0.7
+//,ターン
+Kdefence: -1,111,0.9,12,3
+KdefenceH:300, 0.7
+
+element: -1, 77, 0.9, 7 
+elementL: 0.25,2.5
+elementF:25,2
+//,大きさ
+Aelement: -1, 222, 0.9, 10,3
+AelementL: 0.4,2
+
+//ノックバック
+Delement: -1, 136, 1, 7,-10
+DelementL: 0.3,2
+DelementT: 0.25,2.25
+DelementH:550, 0.7
+
+
+Ahissatu:55.5
+AhissatuL: 0.7,3.5
+AhissatuT: 0.5,3.5
+AhissatuH:600, 0.1
+
+//////////////////////////////////////////////////////////////////////////////
+#region:tim
+status: 8000, 5,1.05, 1.05, 1.05, 1,1,1,20
+
+attack: -1, 111, 0.85,4
+
+//個数,size
+Kattack: -1, 204, 0.87, 8,15,2
+KattackW:0.25,0.25
+
+//,n回
+defence: -1, 18, 0.5, 3,10
+defenceH:225, 0.7
+//80持続
+Kdefence: 15,74,0.9,30
+KdefenceH:400, 0.7
+
+//,数
+element: -1, 45, 1, 1,7 
+elementD: -1, 1, 1, 666666 
+elementF:25,2
+//,大きさ,速度
+Aelement: -1, 230, 0.9, 8,0.5,0.5
+AelementL: 0.3,3
+
+//*3,ノックバック,パワー
+Delement: -1, 62, 0.9, 4,1.5,1
+DelementH:600, 0.7
+
+
+Ahissatu:1
+AhissatuH:450, 0.1
+//////////////////////////////////////////////////////////////////////////////
+#region:kasandora
+status: 7950, 5,1.05, 1.1, 1.05, 1,1,1,50
+//2回
+attack: -1, 54, 0.9, 3.5
+//,個数
+Kattack: -1, 33, 1, 1.5,12
+KattackE:0.1,2
+//,持続 
+defence: -1, 67, 0.90, 6
+defenceH:275, 0.1
+
+Kdefence:-1,1,1,66666
+KdefenceE:0.3,3.0
+KdefenceH:550, 0.5
+KdefenceS:550,0.9
+//,回数*6,大きさ
+element: -1,15,1,1,3,0.8 
+elementE: 0.05, 2.0
+//,個数,サイズ,速度
+Aelement: -1, 166,0.8,2.5 , 7, 0.8, 0.2
+AelementE: 0.3,3.0
+//,大きさ,速度,持続
+Delement:-1,142,0.95,9,3,0.2,2
+DelementE: 0.35 , 3
+DelementH: 600, 1
+
+Ahissatu: -1, 223, 0.95, 8
+AhissatuE:0.3,4
+AhissatuH:600, 0.1
+
+//////////////////////////////////////////////////////////////////////////////
+#region:bitar
+status: 7100, 5,1.20, 1.05, 1.0, 1,1,1,30
+//*4
+attack: -1, 30, 0.8, 4
+attackI:0.025 
+Kattack: -1, 188, 0.95, 5
+KattackI:0.2
+//,jizoku
+defence: 55, 42, 0.865, 90,2
+defenceI:0.05
+defenceH:250, 0.5
+//,持続,サイズ
+Kdefence: -1, 80,0.9,10,0.2,1
+KdefenceI:0.3
+KdefenceH:400, 0.5
+//,n個,size
+element: -1, 45, 1, 1.2 ,6,0.3
+elementI: 0.1
+//,size,speed
+Aelement: -1, 185, 0.975, 7,0.20,0.1
+AelementI: 0.35
+
+
+Delement:-1,199,0.9,7
+DelementI: 1
+DelementH:600,0.1
+//,大きさ
+Ahissatu: -1,207,0.95,8,4
+AhissatuI:0.5
+AhissatuH:600, 0.1
+
+dodge:0.07,0.07
+
+
+//////////////////////////////////////////////////////////////////////////////
+#region:bibinba
+status: 7214, 5,1.05, 1.05, 1.05, 1,1,1,22
+//*4
+attack: -1, 31, 0.9, 3 
+
+Kattack: -1, 166, 0.95, 4.5
+KattackL:0.05,3
+
+//2回
+defence: -1, 48, 0.80, 5
+defenceL:0.05,3
+defenceH:250, 0.3
+//60持続
+Kdefence: 20,33,0.95,30
+KdefenceF:15,3
+KdefenceH:410, 0.5
+
+//2回
+element: -1, 110, 0.5, 4 
+
+//,数,大きさ
+Aelement: -1, 33, 0.7, 2.0,15,0.3
+AelementE: 0.1,3.5
+
+//,ノックバック
+Delement: 45,7
+DelementW: 0.3,3
+DelementH:550, 0.3
+DelementS:400,1.1
+
+Ahissatu: -1, 234, 0.95, 7.5
+//,speed , agari, power
+AhissatuK: -1,1,1,99999,21,3,10
+AhissatuH:650, 0.2
+
+dodge:0.07,0.13

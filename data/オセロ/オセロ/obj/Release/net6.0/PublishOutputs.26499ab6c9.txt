@@ -1,0 +1,5 @@
+C:\Users\ポン酢\Desktop\令和4年9月16日\オセロ\オセロ\bin\Release\net6.0\publish\オセロ.exe
+C:\Users\ポン酢\Desktop\令和4年9月16日\オセロ\オセロ\bin\Release\net6.0\publish\オセロ.dll
+C:\Users\ポン酢\Desktop\令和4年9月16日\オセロ\オセロ\bin\Release\net6.0\publish\オセロ.deps.json
+C:\Users\ポン酢\Desktop\令和4年9月16日\オセロ\オセロ\bin\Release\net6.0\publish\オセロ.runtimeconfig.json
+C:\Users\ポン酢\Desktop\令和4年9月16日\オセロ\オセロ\bin\Release\net6.0\publish\オセロ.pdb

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>最終課題</title>
+<script type="text/javascript">
+  alert("なんと！世田谷キャンパスにはばくだんがしこまれていた！")
+  alert("ピカチュウはばくだんをしょりすることにした！")
+//運ゲー、せいぜいピカチュウの体がヒントになる
+function tenmann(){
+  alert("ピカチュウは赤の線をきった！")
+  window.location.href ="ex24 爆破.html"
+}
+
+function boru() {
+　alert("ピカチュウは黄色の線をきった！")
+　window.location.href = "ex23 TE.html"
+}
+
+function akubi(){
+  alert("ピカチュウは青の線をきった！")
+  window.location.href = "ex24 爆破.html"
+}
+
+function denko(){
+　alert("ピカチュウは黒の線をきった！")
+　window.location.href="ex23 TE.html"
+}
+
+</script>
+</head>
+<body bgcolor="#eee8aa">
+<h3><p style="padding-left:30px">東京都市大学(世田谷キャンパスのすがた):L50</p></h3>
+<h3><img src="世田谷キャンパス.jpg" width="350" style="padding-left:30px"></img></h3>
+<h3><p style="padding-left:30px" id="enemyhp">10000000/10000000</p></h3><br>
+<h3><p style="padding-left:900px">ピカチュウ:L50</p></h3>
+<h3><img src="ピカチュウ.png" width="200" style="padding-left:900px"></img></h3>
+<h3><p style="padding-left:900px" id="myhp">100/100</p></h3><br>
+
+<table border="1">
+<tr>
+<th>たたかう</th>
+<th><button onclick="tenmann()" id="a">赤の線をきる</th>
+<th><button onclick="boru()" id="b">黄色の線をきる</th>
+<th><button onclick="akubi()" id="c">青の線をきる</th>
+<th><button onclick="denko()" id="d">黒の線をきる</th>
+</tr>
+<tr>
+<th>　　</th>
+<th><button onclick="poke()" id="f">ポケモン</th>
+<th><button onclick="run()" id="g"><a href="ex18 とおせんぼ.html">にげる</a></th>
+<th><button onclick="esc()" id="h"><a href="ex17 TVSぴ.html">やりなおす</a></th>
+
+</tr>
+</table>
+</body>
+</html>

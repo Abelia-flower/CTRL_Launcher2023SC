@@ -1,0 +1,76 @@
+; --- マクロ定義 ---
+
+; loadmem16 T1_IRQ_VEC16,T1_IRQ
+; メモリに16bit定数をロードする
+.macro loadmem16 mem,cons
+  LDA #<(cons)
+  STA mem
+  LDA #>(cons)
+  STA mem+1
+.endmac
+
+.macro loadmem8l mem,cons
+  LDA #<(cons)
+  STA mem
+.endmac
+
+; regload16 T1_IRQ_VEC
+; Aに低位、Xに上位をロードする
+.macro loadreg16 cons
+  LDA #<(cons)
+  LDX #>(cons)
+.endmac
+
+; Aに低位、Yに上位をロードする
+.macro loadAY16 cons
+  LDA #<(cons)
+  LDY #>(cons)
+.endmac
+
+.macro print  str_p
+  loadreg16 str_p
+  JSR MON::PRT_STR
+.endmac
+
+; AYをメモリに格納する
+.macro storeAY16 dst
+  STA dst
+  STY dst+1
+.endmac
+
+.macro mem2mem16 dst,src
+  LDA src
+  STA dst
+  LDA src+1
+  STA dst+1
+.endmac
+
+.macro mem2AY16 src
+  LDA src
+  LDY src+1
+.endmac
+
+.macro pushAY16
+  PHA
+  PHY
+.endmac
+
+.macro pullAY16
+  PLY
+  PLA
+.endmac
+
+.macro pushmem16 src
+  LDA src
+  PHA
+  LDA src+1
+  PHA
+.endmac
+
+.macro pullmem16 src
+  PLA
+  STA src+1
+  PLA
+  STA src
+.endmac
+

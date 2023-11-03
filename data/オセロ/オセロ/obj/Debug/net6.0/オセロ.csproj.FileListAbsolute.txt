@@ -1,0 +1,30 @@
+C:\Visual studio file\オセロ\オセロ\bin\Debug\net6.0\オセロ.exe
+C:\Visual studio file\オセロ\オセロ\bin\Debug\net6.0\オセロ.deps.json
+C:\Visual studio file\オセロ\オセロ\bin\Debug\net6.0\オセロ.runtimeconfig.json
+C:\Visual studio file\オセロ\オセロ\bin\Debug\net6.0\オセロ.dll
+C:\Visual studio file\オセロ\オセロ\bin\Debug\net6.0\オセロ.pdb
+C:\Visual studio file\オセロ\オセロ\obj\Debug\net6.0\オセロ.csproj.AssemblyReference.cache
+C:\Visual studio file\オセロ\オセロ\obj\Debug\net6.0\オセロ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Visual studio file\オセロ\オセロ\obj\Debug\net6.0\オセロ.AssemblyInfoInputs.cache
+C:\Visual studio file\オセロ\オセロ\obj\Debug\net6.0\オセロ.AssemblyInfo.cs
+C:\Visual studio file\オセロ\オセロ\obj\Debug\net6.0\オセロ.csproj.CoreCompileInputs.cache
+C:\Visual studio file\オセロ\オセロ\obj\Debug\net6.0\オセロ.dll
+C:\Visual studio file\オセロ\オセロ\obj\Debug\net6.0\refint\オセロ.dll
+C:\Visual studio file\オセロ\オセロ\obj\Debug\net6.0\オセロ.pdb
+C:\Visual studio file\オセロ\オセロ\obj\Debug\net6.0\オセロ.genruntimeconfig.cache
+C:\Visual studio file\オセロ\オセロ\obj\Debug\net6.0\ref\オセロ.dll
+C:\Users\ポン酢\Desktop\令和4年9月16日\オセロ\オセロ\bin\Debug\net6.0\オセロ.exe
+C:\Users\ポン酢\Desktop\令和4年9月16日\オセロ\オセロ\bin\Debug\net6.0\オセロ.deps.json
+C:\Users\ポン酢\Desktop\令和4年9月16日\オセロ\オセロ\bin\Debug\net6.0\オセロ.runtimeconfig.json
+C:\Users\ポン酢\Desktop\令和4年9月16日\オセロ\オセロ\bin\Debug\net6.0\オセロ.dll
+C:\Users\ポン酢\Desktop\令和4年9月16日\オセロ\オセロ\bin\Debug\net6.0\オセロ.pdb
+C:\Users\ポン酢\Desktop\令和4年9月16日\オセロ\オセロ\obj\Debug\net6.0\オセロ.csproj.AssemblyReference.cache
+C:\Users\ポン酢\Desktop\令和4年9月16日\オセロ\オセロ\obj\Debug\net6.0\オセロ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ポン酢\Desktop\令和4年9月16日\オセロ\オセロ\obj\Debug\net6.0\オセロ.AssemblyInfoInputs.cache
+C:\Users\ポン酢\Desktop\令和4年9月16日\オセロ\オセロ\obj\Debug\net6.0\オセロ.AssemblyInfo.cs
+C:\Users\ポン酢\Desktop\令和4年9月16日\オセロ\オセロ\obj\Debug\net6.0\オセロ.csproj.CoreCompileInputs.cache
+C:\Users\ポン酢\Desktop\令和4年9月16日\オセロ\オセロ\obj\Debug\net6.0\オセロ.dll
+C:\Users\ポン酢\Desktop\令和4年9月16日\オセロ\オセロ\obj\Debug\net6.0\refint\オセロ.dll
+C:\Users\ポン酢\Desktop\令和4年9月16日\オセロ\オセロ\obj\Debug\net6.0\オセロ.pdb
+C:\Users\ポン酢\Desktop\令和4年9月16日\オセロ\オセロ\obj\Debug\net6.0\オセロ.genruntimeconfig.cache
+C:\Users\ポン酢\Desktop\令和4年9月16日\オセロ\オセロ\obj\Debug\net6.0\ref\オセロ.dll

@@ -1,0 +1,10 @@
+Id: "単位を落とすな！"
+Title: "単位を落とすな！"
+Genre: "ゲーム"
+ScreenshotPath: "スクリーンショット.png"
+ExecutablePath: "bin\\単位を落とすな！.exe"
+Argument: 
+SourcePath: src\
+TimeLimit: 00:00:00
+Description: "単位を落とすことなくクリアしましょう。\r\n避けゲーです。"
+IsLate: false

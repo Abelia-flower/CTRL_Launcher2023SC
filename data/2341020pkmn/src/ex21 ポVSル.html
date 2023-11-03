@@ -1,0 +1,211 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>最終課題</title>
+<script type="text/javascript">
+let enemyhp = 250;
+let myhp = 350;
+//ポチタの技を先によびださせてからルカリオの技を出させている、これにより、ルカリオの行動不能ターンの作成可能(かけひきの発生)
+//威力の高い技は、妨害される可能性が高い
+function poke(){
+  alert("ひかえのポケモン：東京都市大学(横浜キャンパスのすがた)");
+}
+
+let enemywaza = ["チェンソー","チェーン","なみだめ","ほえる"];
+let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+
+function tenmann() {
+　let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+if (hangeki ===　"チェンソー"){
+  alert("ポチタのチェンソー！　70ダメージ！")
+  alert("ルカリオのはどうだん！　50ダメージ！")
+  enemyhp -=50;
+  myhp -= 70;
+
+}
+else if (hangeki ===　"チェーン"){
+  alert("ポチタのチェーン！　50ダメージ！")
+  alert("ルカリオのはどうだん！　50ダメージ！")
+  enemyhp -=50;
+  myhp -= 50;
+}
+
+else if (hangeki ===　"なみだめ"){
+  alert("ポチタのチェンソー！　50ダメージ！")
+  alert("ルカリオのはどうだん！　50ダメージ！")
+  enemyhp -=50;
+  myhp -= 50;
+}
+
+else if (hangeki ===　"ほえる"){
+  alert("ポチタのチェーン！　40ダメージ！")
+  alert("ルカリオのはどうだん！　50ダメージ！")
+  enemyhp -=50;
+  myhp -= 40;
+}
+hpkannri();
+checkvictry();
+checklose();
+
+}
+
+function boru() {
+　let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+if (hangeki ===　"チェンソー"){
+  alert("ポチタのチェンソー！　70ダメージ！")
+  alert("ルカリオのボーンラッシュ！　70ダメージ！")
+  enemyhp -=70;
+  myhp -= 70;
+
+}
+else if (hangeki ===　"チェーン"){
+  alert("ポチタのチェーン！　50ダメージ！")
+  alert("ルカリオのボーンラッシュ！　70ダメージ！")
+  enemyhp -=80;
+  myhp -= 50;
+}
+
+else if (hangeki ===　"なみだめ"){
+  alert("ポチタのチェンソー！　50ダメージ！")
+  alert("ルカリオのボーンラッシュ！　70ダメージ！")
+  enemyhp -=80;
+  myhp -= 50;
+}
+
+else if (hangeki ===　"ほえる"){
+  alert("ポチタのほえる！　30ダメージ！")
+  alert("ルカリオはビビッてうごけない！")
+  myhp -= 30;
+}
+hpkannri();
+checkvictry();
+checklose();
+
+
+}
+
+function akubi() {
+　let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+if (hangeki ===　"チェンソー"){
+  alert("ポチタのチェンソー！　70ダメージ！")
+  alert("ルカリオのぶんなぐる！　80ダメージ！")
+  enemyhp -=80;
+  myhp -= 70;
+
+}
+else if (hangeki ===　"チェーン"){
+  alert("ポチタのチェーン！　50ダメージ！")
+  alert("ルカリオのぶんなぐる！　80ダメージ！")
+  enemyhp -=80;
+  myhp -= 50;
+}
+
+else if (hangeki ===　"なみだめ"){
+  alert("TCUバードのなみだめ！　20ダメージ！")
+  alert("ルカリオもなみだがとまらない！")
+  myhp -=20;
+}
+
+else if (hangeki ===　"ほえる"){
+  alert("ポチタのほえる！　30ダメージ！")
+  alert("ルカリオはビビッてうごけない！")
+  myhp -= 30;
+}
+hpkannri();
+checkvictry();
+checklose();
+
+}
+
+function denko() {
+  let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+if (hangeki === "チェンソー") {
+ alert("ポチタのチェンソー！　70ダメージ！");
+ alert("ルカリオはじょうにうったえかけた！");
+ alert("・・・");
+ alert("だめだった！");
+ alert("ルカリオのぼうりょくはんたいパンチ！　100ダメージ！");
+ enemyhp -= 100;
+ myhp -= 70;
+}
+else if (hangeki === "チェーン") {
+  alert("TCUバードのなみだめ！　20ダメージ！");
+  alert("ルカリオもなみだがとまらない！");
+  myhp -= 20;
+}
+else if (hangeki === "なみだめ") {
+  alert("TCUバードのなみだめ！　20ダメージ！");
+  alert("ルカリオもなみだがとまらない！");
+  myhp -= 20;
+}
+else if (hangeki === "ほえる") {
+ alert("ポチタのほえる！　30ダメージ！");
+ alert("ルカリオはビビッてうごけない！");
+ myhp -= 30;
+}
+hpkannri();
+checkvictry();
+checklose();
+}
+
+function checkvictry() {
+  if(enemyhp <= 0){
+  alert("ポチタはたおれた！")
+  alert("ルカリオはポチタをたべてげんきになった！")
+  alert("敵は東京都市大学(世田谷キャンパスのすがた)をくりだした！")
+  window.location.href = "ex27 世VSル.html";
+}
+}
+
+function checklose(){
+if(myhp <= 0){
+  alert("ルカリオはたおれた！")
+  alert("ポチタはルカリオをたべてげんきになった！")
+  alert("いけっ！東京都市大学(横浜キャンパスのすがた)！")
+  window.location.href = "ex30 ポVS横.html";
+}
+}
+
+function checkdraw(){
+if(myhp <= 0 && enemyhp <= 0){
+　alert("ポチタはたおれた！")
+  alert("ルカリオもたおれた！")
+  alert("敵は東京都市大学(世田谷キャンパスのすがた)をくりだした！")
+  alert("いけっ！東京都市大学(横浜キャンパスのすがた)！")
+  window.location.href = "ex22 世VS横.html";
+}
+}
+
+function hpkannri() {
+  document.getElementById("enemyhp").innerText = enemyhp + "/250";
+  document.getElementById("myhp").innerText = myhp + "/350";
+}
+
+</script>
+</head>
+<body bgcolor="#eee8aa">
+<h3><p style="padding-left:30px">ポチタ:L50</p></h3>
+<h3><img src="ポチタ.jpg" width="200" style="padding-left:30px"></img></h3>
+<h3><p style="padding-left:30px" id="enemyhp">250/250</p></h3><br>
+<h3><p style="padding-left:900px">ル力リオ:L50</p></h3>
+<h3><img src="ルカリオ.png" width="200" style="padding-left:900px"></img></h3>
+<h3><p style="padding-left:900px" id="myhp">350/350</p></h3><br>
+
+<table border="1">
+<tr>
+<th>たたかう</th>
+<th><button onclick="tenmann()" id="a">はどうだん</th>
+<th><button onclick="boru()" id="b">ボーンラッシュ</th>
+<th><button onclick="akubi()" id="c">ぶんなぐる</th>
+<th><button onclick="denko()" id="d">じょうにうったえかける</th>
+</tr>
+<tr>
+<th>　　</th>
+<th><button onclick="poke()" id="f">ポケモン</th>
+<th><button onclick="run()" id="g"><a href="ex18 とおせんぼ.html">にげる</a></th>
+<th><button onclick="esc()" id="h"><a href="ex17 TVSぴ.html">やりなおす</a></th>
+
+</tr>
+</table>
+</body>
+</html>

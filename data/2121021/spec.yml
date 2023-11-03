@@ -1,0 +1,10 @@
+Id: 2121021
+Title: TCUcollect
+Genre: "ゲーム"
+ScreenshotPath: "スクリーンショット (106).png"
+ExecutablePath: bin\CountMinus.exe
+Argument: 
+SourcePath: src\
+TimeLimit: 00:00:00
+Description: "制限時間にアイテムを集めろ"
+IsLate: false

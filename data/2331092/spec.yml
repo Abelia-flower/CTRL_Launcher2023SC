@@ -1,0 +1,10 @@
+Id: 2331092
+Title: "す～ぱ～アンナちゃん！"
+Genre: "ゲーム"
+ScreenshotPath: "スクリーンショット.png"
+ExecutablePath: "bin\\横スクロール(debug).exe"
+Argument: 
+SourcePath: src\
+TimeLimit: 00:00:00
+Description: "横スクロールまんじゅうアクションです。\r\nキャラクターの操作はすべてカーソルキー(←↑→)でできます。\r\nタイトル画面では左クリックで決定、右クリックでキャンセルができます。\r\nステージ最奥の旗に触れるとクリアです。"
+IsLate: false

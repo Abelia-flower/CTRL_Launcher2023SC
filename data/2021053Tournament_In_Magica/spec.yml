@@ -1,0 +1,10 @@
+Id: Tournament_In_Magica0.0
+Title: Tournament_In_Magica
+Genre: "ゲーム"
+ScreenshotPath: "サムネイル.PNG"
+ExecutablePath: bin\Release\Tournament_In_Magica.exe
+Argument: 
+SourcePath: src\
+TimeLimit: 00:00:00
+Description: "引退作です！！！！\r\n"
+IsLate: false

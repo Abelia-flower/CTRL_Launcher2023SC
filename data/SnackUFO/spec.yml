@@ -1,0 +1,10 @@
+Id: snk
+Title: SnackUfo
+Genre: "ゲーム"
+ScreenshotPath: image.png
+ExecutablePath: bin\SnackUFO.exe
+Argument: 
+SourcePath: src\
+TimeLimit: 00:00:00
+Description: "とても簡単な弾幕シューティングゲームです"
+IsLate: false

@@ -1,0 +1,10 @@
+Id: kurodenwa
+Title: "黒電話マスターアンナちゃん"
+Genre: "ゲーム"
+ScreenshotPath: "bin\\スクリーンショット_20230216_184601.png"
+ExecutablePath: "bin\\黒電話マスターアンナちゃん.exe"
+Argument: 
+SourcePath: src\
+TimeLimit: 00:00:00
+Description: "ゲームジャムで作った作品です。\r\n製作期間: 1日\r\nお題: 「黒電話」「クイズ王」「四字熟語」\r\nゲームジャンル: リズムゲームでございます。"
+IsLate: false

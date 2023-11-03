@@ -1,0 +1,376 @@
+
+[sharpKnife]
+{
+ [name]{Sharp Knife}
+ [flavor]{With this knife, you can slice any food easy}
+ [texture]{sharpKnife}
+ [health]{50}
+ [attack]{50}
+}
+
+[bigPot]
+{
+ [name]{Big Pot}
+ [flavor]{If you cook meal in a pot, you have power}
+ [texture]{bigpot}
+ [health]{50}
+ [shield]{50}
+}
+[distiller]
+{
+ [name]{Distiller}
+ [flavor]{When the bottle filled with water, your heart filled with too}
+ [texture]{distiller}
+ [health]{50}
+ [heal]{50}
+}
+[clothesline]
+{
+ [name]{Clothes Line}
+ [flavor]{If you don't dry your clothes properly, you'll catch a cold}
+ [texture]{clothesline}
+ [health]{50}
+ [FI]{50}
+}
+[weightStone]
+{
+ [name]{Weight Stone}
+ [flavor]{You can pickle all sorts of delicious things. Also, you can sit down}
+ [texture]{weightStone}
+ [health]{50}
+ [WET]{50}
+}
+[goodSleepPillow]
+{
+ [name]{Good Sleeping Pillow}
+ [flavor]{You can't have bad dream with this pillow}
+ [texture]{goodSleepPillow}
+ [health]{50}
+ [LD]{50}
+}
+
+
+
+[telescope]
+{
+ [name]{Telescope}
+ [flavor]{For viewing distant landscapes and stars}
+ [texture]{telescope}
+ [attack]{50}
+ [shield]{50}
+}
+[travelDiary]
+{
+ [name]{Travel Diary}
+ [flavor]{The process of the journey continues to be described}
+ [texture]{travelDiary}
+ [attack]{50}
+ [heal]{50}
+}
+
+[weatherGauge]
+{
+ [name]{Weather Gauge}
+ [flavor]{Apparatus that can measure temperature, humidity, air pressure, and wind direction}
+ [texture]{weatherGauge}
+ [attack]{50}
+ [FI]{50}
+}
+[magicMap]
+{
+ [name]{Magical Map}
+ [flavor]{Maps that allow you to view any location at any magnification}
+ [texture]{magicMap}
+ [attack]{50}
+ [WET]{50}
+}
+[cleanMirror]
+{
+ [name]{Clean Mirror}
+ [flavor]{A mirror that clearly reflects true things}
+ [texture]{cleanMirror}
+ [attack]{50}
+ [LD]{50}
+}
+[sacredTriangle]
+{
+ [name]{Sacred Triangle}
+ [flavor]{The apex represents God, prophets, and people, and the edges show oracles, words, and faith}
+ [texture]{sacredTriangle}
+ [attack]{33}
+ [shield]{33}
+ [heal]{33}
+ [FI]{33}
+ [WET]{33}
+ [LD]{33}
+}
+[fairDice]
+{
+ [name]{Fair Dice}
+ [flavor]{Every aspect seems equally certain}
+ [texture]{fairDice}
+ [health]{33}
+ [attack]{33}
+ [shield]{33}
+ [heal]{33}
+}
+[wellHammock]
+{
+ [name]{Well Well Hammock}
+ [flavor]{Sleep well thanks to the shaking and the fluffy blankets}
+ [texture]{wellHammock}
+ [health]{33}
+ [shield]{33}
+ [heal]{33}
+ [FI]{33}
+ [WET]{33}
+ [LD]{33}
+}
+[stackOfCards]
+{
+ [name]{Stack Of Cards}
+ [flavor]{Bundle of 56 picture cards for both play and divination}
+ [texture]{stackOfCards}
+ [health]{33}
+ [attack]{33}
+ [FI]{33}
+ [WET]{33}
+ [LD]{33}
+}
+[encyclopedia]
+{
+ [name]{Encyclopedia}
+ [flavor]{Very heavy book packed with knowledge in many areas}
+ [texture]{encyclopedia}
+ [health]{25}
+ [attack]{25}
+ [shield]{25}
+ [heal]{25}
+ [FI]{25}
+ [WET]{25}
+ [LD]{25}
+}
+
+[greedyBowl]
+{
+ [name]{Greedy Bowl}
+ [flavor]{Large enough to finish a meal with just this}
+ [texture]{greedyBowl}
+ [health]{100}
+}
+
+
+[bookOfAttack]
+{
+ [name]{Book of Attack}
+ [flavor]{"Keep going even if your friends down. If you do that, you prpbably win"}
+ [texture]{bookOfattack}
+ [attack]{100}
+}
+[bookOfHeal]
+{
+ [name]{Book of Heal}
+ [flavor]{"After all, keep healing, will never lose"}
+ [texture]{bookOfHeal}
+ [heal]{100}
+}
+[bookOfShield]
+{
+ [name]{Bool of Shield}
+ [flavor]{"Have shield, that means you have afford to attack"}
+ [texture]{bookOfShield}
+ [shield]{100}
+}
+
+[eternalFire]
+{
+ [name]{Eternal Fire}
+ [flavor]{A bottle filled with a flame that continues to burn without extinguishing}
+ [texture]{eternalFire}
+ [FI]{100}
+}
+[coldColdShpere]
+{
+ [name]{Cold, Cold Sphere}
+ [flavor]{Spheres that steal heat when touched}
+ [texture]{coldColdShpere}
+ [FI]{100}
+}
+[stormCan]
+{
+ [name]{Storm Can}
+ [flavor]{Can sealing the heavy storm inside}
+ [texture]{stormCan}
+ [WET]{100}
+}
+[unbreakableRock]
+{
+ [name]{Unbreakable Rock}
+ [flavor]{A rock that will never shatter no matter what happens}
+ [texture]{unbreakableRock}
+ [WET]{100}
+}
+[solidThunder]
+{
+ [name]{Solid Thunder}
+ [flavor]{Lightning, solidified by sorcery}
+ [texture]{solidThunder}
+ [WET]{100}
+}
+[emblemOfTheSun]
+{
+ [name]{Emblem of the Sun}
+ [flavor]{Crest blessed by the Warrior of the Sun}
+ [texture]{emblemOfTheSun}
+ [LD]{100}
+}
+[cursedBook]
+{
+ [name]{Cursed Book}
+ [flavor]{A book releases dark mana}
+ [texture]{cursedBook}
+ [LD]{100}
+}
+
+
+[luckyCoin]
+{
+ [name]{Lucky Coin}
+ [flavor]{Coins widely circulated, although people don't know where it comes from}
+ [texture]{luckyCoin}
+ [health]{50}
+ [Hrecast]{50}
+}
+[hornAmulet]
+{
+ [name]{Horn Amulet}
+ [flavor]{Made for the success and gratitude of the hunt}
+ [texture]{hornAmulet}
+ [attack]{50}
+ [Arecast]{50}
+}
+[metronomeOfLife]
+{
+ [name]{Metoronome of Life}
+ [flavor]{Ticking the rhythm of all living things}
+ [texture]{metronomeOfLife}
+ [heal]{50}
+ [Drecast]{50}
+}
+
+[brightJewel]
+{
+ [name]{Bright Jewel}
+ [flavor]{Reflects light intricately and sparkles}
+ [texture]{brightJewel}
+ [shield]{50}
+ [Drecast] {50}
+}
+[bookOfFI]
+{
+ [name]{Book of Fire-Ice}
+ [flavor]{"Fire is life and ice is death"}
+ [texture]{bookOfFI}
+ [FI]{50}
+ [Erecast]{50}
+}
+[bookOfWET]
+{
+ [name]{Book of Wind-Earth-Thinder}
+ [flavor]{"There is a profound relationship between the motion of matter and the magic of wind, earth, and lightning"}
+ [texture]{bookOfWET}
+ [WET]{50}
+ [Erecast]{50}
+}
+[bookOfLD]
+{
+ [name]{Book of Light-Dark}
+ [flavor]{"Light magic is powerful. Dark magic is subtle. This is probably why the masses prefer light"}
+ [texture]{bookOfLD}
+ [LD]{50}
+ [Erecast]{50}
+}
+
+[ancientArrowhead]
+{
+ [name]{Ancient Arrowhead}
+ [flavor]{There is some kind of sorcery enchant into it, but can't figure it out}
+ [texture]{ancientArrowhead}
+ [attack]{200}
+ [health]{-150}
+}
+[ancientFlute]
+{
+ [name]{Ancient Flute}
+ [flavor]{There is some kind of sorcery enchant into it, but can't figure it out}
+ [texture]{ancientFlute}
+ [shield]{200}
+ [heal]{200}
+ [health]{-150}
+}
+[ancientKey]
+{
+ [name]{Ancient Key}
+ [flavor]{There is some kind of sorcery enchant into it, but can't figure it out}
+ [texture]{ancientKey}
+ [FI]{200}
+ [WET]{200}
+ [LD]{200}
+ [health]{-150}
+}
+[miss]
+{
+ [name]{Miss}
+ [flavor]{Nothing but an increase in status with rank}
+ [texture]{miss}
+}
+[allDown]
+{
+ [name]{All Down}
+ [flavor]{Hard-mode that reduces party power}
+ [texture]{allDown}
+ [attack]{-50}
+ [shield]{-50}
+ [heal]{-50}
+ [FI]{-50}
+ [WET]{-50}
+ [LD]{-50}
+}
+[allDown2]
+{
+ [name]{All Down 2}
+ [flavor]{Hard-mode that reduces party power 2}
+ [texture]{allDown2}
+ [attack]{-100}
+ [shield]{-100}
+ [heal]{-100}
+ [FI]{-100}
+ [WET]{-100}
+ [LD]{-100}
+}
+{
+[attackDown]
+ [name]{攻撃低下}
+ [flavor]{攻撃力が低下する縛りプレイ}
+ [texture]{attackDown}
+ [attack]{-100}
+}
+
+{
+[defenceDown]
+ [name]{防御低下}
+ [flavor]{防御力が低下する縛りプレイ}
+ [texture]{defenceDown}
+ [shield]{-100}
+ [heal]{-100}
+}
+
+{
+[elementDown]
+ [name]{属性低下}
+ [flavor]{属性力が低下する縛りプレイ}
+ [texture]{elementDown}
+ [FI]{-100}
+ [WET]{-100}
+ [LD]{-100}
+}

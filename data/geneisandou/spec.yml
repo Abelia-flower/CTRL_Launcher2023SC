@@ -1,0 +1,10 @@
+Id: geneisandou
+Title: "幻影山道"
+Genre: "ゲーム"
+ScreenshotPath: "幻影山道.png"
+ExecutablePath: bin\main.exe
+Argument:
+SourcePath: src\
+TimeLimit: 00:00:00
+Description: "現在制作中のダンジョンRPGのプロトタイプです。"
+IsLate: false

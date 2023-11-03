@@ -1,0 +1,55 @@
+jumper:120, 6, 1, 1, 480
+weponhealth:100
+
+kasokar:220, 0.5, 1,18, 720
+warper:260, 66, 1, 12, 800 
+timshot:120, 30 , 1, 20, 480
+timarm:100, 30 , 3, 30, 400
+firerod:150, 33 , 3, 50, 600
+icerod:150, 10 , 1.5, 30, 600
+thunderrod:150, 22 , 3, 40, 600
+windrod:150, 15 , 1.5, 60, 600
+earthrod:150, 40 , 2.5, 80, 600
+lightrod:150, 40 , 1, 50, 600
+darkrod:150, 23 , 2, 33, 600
+
+timwand:150, 25 , 2, 35, 600
+firewand:200, 55 , 5, 10, 800
+icewand:200, 25 , 4, 15, 800
+windwand:200, 81 , 6, 60, 800
+earthwand:200, 44 , 2, 60, 800
+thunderwand:200, 78 , 5,3 , 800
+lightwand:200, 72 , 5, 3, 800
+darkwand:200, 64 , 3, 3, 800
+
+timcane:200, 110 , 4, 20, 800
+firecane:250, 120 , 10, 50, 1000
+icecane:250, 60 , 10, 20, 1000
+windcane:250, 70 , 3, 40, 1000
+earthcane:250, 150 , 10, 60, 1000
+thundercane:250, 140 , 3, 60, 1000
+lightcane:250, 166 , 20, 10, 1000
+darkcane:250, 22 , 3, 30, 1000
+
+star:300, 80 , 4, 20, 1200
+atom:300, 80 , 3, 40, 1200
+origin:300, 120 , 3, 15, 1200
+hugemagic:300, 33 , 4, 15, 1200
+
+
+firefist:225, 200 , 3, 40, 1800
+iceedge:225, 88,  2.5, 2, 1800
+windsound:450, 888,  6, 30, 1800
+eartharm:450, 900,  6, 70, 1800
+thundersphere:450, 455,  3, 10, 1800
+lightclaw:225,222,2,1,225
+darksword:225,333,4,7,1800
+oursoul:500,1000,3,180,2000
+
+
+
+
+
+
+
+

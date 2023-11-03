@@ -1,0 +1,718 @@
+[nothing]
+{
+ [config]
+ { 
+  [HR]{0}[HG]{0.8}[HB]{0.9}[HOpa]{1}
+  [sky]{sky}
+  
+ }
+ [1]
+ {
+   [kusa]
+   {
+     [maxcou]{2}[scale]{0.01}[scalebure]{0.005}
+     [scx]{0.7}[scxbure]{0.3}[scy]{(1)}[scybure]{(0)}
+     [opa]{(1)}[opabure]{(0)}[rad]{(0)}[radbure]{(0)}
+   }
+
+    [minnum]{20}[maxnum]{40} [kuri]{2}
+    [yline]{(0.8)}[ybure]{(0)}[assyuku]{(1)}
+  }
+}
+
+[sougen]
+{
+ [1]
+ {
+   [kusa]
+   {
+     [maxcou]{2}[scale]{0.09}[scalebure]{0.05}
+     [scx]{0.7}[scxbure]{0.3}
+     [opa]{0.9}[opabure]{0.1}
+   }
+   [minnum]{27}[maxnum]{45} [kuri]{4}
+  }
+[2]
+ {
+   [tree]
+   {
+     [maxcou]{1}[scale]{0.35}[scalebure]{0.1}
+     [scx]{0.8}[scxbure]{0.2}
+   }
+   [minnum]{6}[maxnum]{10} [kuri]{1}
+  }
+[3]
+ {
+   [tree]
+   {
+     [maxcou]{1}[scale]{0.2}[scalebure]{0.1}
+     [scx]{0.4}[scxbure]{0.2}
+   }
+   [minnum]{9}[maxnum]{15} [kuri]{1}
+  }
+
+}
+
+[mori]
+{
+ [1]
+ {
+   [kusa]
+   {
+     [maxcou]{2}[scale]{0.09}[scalebure]{0.05}
+     [scx]{0.98}[scxbure]{0.02}
+     [opa]{0.9}[opabure]{0.1}
+   }
+     [minnum]{24}[maxnum]{40} [kuri]{3}
+  }
+[2]
+ {
+   [tree]
+   {
+     [maxcou]{2}[scale]{0.5}[scalebure]{0.125}
+     [scx]{0.85}[scxbure]{0.125}  
+   }
+  [minnum]{18}[maxnum]{30} [kuri]{2}
+  }
+[3]
+ {
+   [tree]
+   {
+     [maxcou]{2}[scale]{0.45}[scalebure]{0.1}
+     [scx]{0.6}[scxbure]{0.2}
+   }
+     [minnum]{21}[maxnum]{35} [kuri]{2}
+  }
+
+}
+
+
+[setugen]
+{
+ 
+ [1]
+ {
+   [kusa]
+   {
+     [maxcou]{2}[scale]{0.09}[scalebure]{0.05}
+     [scx]{0.7}[scxbure]{0.3}
+     [opa]{0.9}[opabure]{0.1}     
+   }
+   [yuki]
+   {
+     [maxcou]{0}[scale]{0.12}[scalebure]{0.05}
+     [scx]{0.7}[scxbure]{0.3}
+     [opa]{1}[opabure]{0}     
+   }
+     [minnum]{25}[maxnum]{45} [kuri]{4}
+  }
+[2]
+ {
+   [tree]
+   {
+     [maxcou]{1}[scale]{0.35}[scalebure]{0.1}
+     [scx]{0.8}[scxbure]{0.2}     
+   }
+     [minnum]{6}[maxnum]{10} [kuri]{1}
+  }
+[3]
+ {
+   [tree]
+   {
+     [maxcou]{1}[scale]{0.2}[scalebure]{0.1}
+     [scx]{0.4}[scxbure]{0.2}     
+   }
+     [minnum]{9}[maxnum]{15} [kuri]{1}
+  }
+
+}
+
+[countryofsuntree]
+{[config]
+ { 
+  [HR]{0.60}[HG]{0.9}[HB]{1.0}
+  [sky]{suntree}
+ }
+ [1]
+ {
+   [kusa]
+   {
+     [maxcou]{4}[scale]{0.11}[scalebure]{0.05}
+     [scx]{0.7}[scxbure]{0.3}
+     [opa]{0.9}[opabure]{0.1}     
+   }
+     [minnum]{30}[maxnum]{49} [kuri]{4}
+  }
+[2]
+ {
+   [tree]
+   {
+     [maxcou]{3}[scale]{0.33}[scalebure]{0.12}
+     [scx]{0.8}[scxbure]{0.2}     
+   }
+     [minnum]{6}[maxnum]{10} [kuri]{2}
+  }
+[3]
+ {
+   [tree]
+   {
+     [maxcou]{3}[scale]{0.19}[scalebure]{0.05}
+     [scx]{0.4}[scxbure]{0.2}     
+   }
+     [minnum]{11}[maxnum]{20} [kuri]{1}
+  }
+
+}
+
+
+[savanna]
+{
+ [1]
+ {
+   [kusa]
+   {
+     [maxcou]{2}[scale]{0.09}[scalebure]{0.05}
+     [scx]{0.7}[scxbure]{0.3}
+     [opa]{0.9}[opabure]{0.1}     
+   }
+     [minnum]{20}[maxnum]{40} [kuri]{4}
+  }
+[2]
+ {
+   [tree]
+   {
+     [maxcou]{1}[scale]{0.33}[scalebure]{0.1}
+     [scx]{0.8}[scxbure]{0.2}
+    }
+     [minnum]{6}[maxnum]{8} [kuri]{1}
+  }
+[3]
+ {
+   [tree]
+   {
+     [maxcou]{1}[scale]{0.18}[scalebure]{0.08}
+     [scx]{0.4}[scxbure]{0.2}
+   }
+     [minnum]{6}[maxnum]{10} [kuri]{1}
+  }
+[4]
+ {
+   [mountain]
+   {
+     [maxcou]{0}[scale]{0.18}[scalebure]{0.08}
+     [scx]{0.15}[scxbure]{0.1}
+   }
+     [minnum]{6}[maxnum]{10} [kuri]{1}
+  }
+
+}
+
+[desert]
+{
+ [1]
+ {
+   [kusa]
+   {
+     [maxcou]{2}[scale]{0.09}[scalebure]{0.05}
+     [scx]{0.7}[scxbure]{0.3}
+     [opa]{1}[opabure]{0}     
+   }
+   [kusa]
+   {
+     [maxcou]{1}[scale]{0.09}[scalebure]{0.05}
+     [scx]{0.7}[scxbure]{0.3}
+     [opa]{1}[opabure]{0}     
+   }
+     [minnum]{20}[maxnum]{40} [kuri]{4}
+  }
+[2]
+ {
+   [tree]
+   {
+     [maxcou]{1}[scale]{0.15}[scalebure]{0.05}
+     [scx]{0.6}[scxbure]{0.2}
+    }
+     [minnum]{6}[maxnum]{8} [kuri]{1}
+  }
+[4]
+ {
+   [kusa]
+   {
+     [maxcou]{1}[scale]{0.24}[scalebure]{0.08}
+     [scx]{0.15}[scxbure]{0.1} 
+   }
+   [mountain]
+   {
+     [maxcou]{0}[scale]{0.18}[scalebure]{0.08}
+     [scx]{0.15}[scxbure]{0.1}
+   }
+     [minnum]{6}[maxnum]{10} [kuri]{1}
+  }
+
+}
+
+[pureland]
+{
+ [1]
+ {
+   [kusa]
+   {
+     [maxcou]{1}[scale]{0.12}[scalebure]{0.05}
+     [scx]{0.8}[scxbure]{0.2}
+     [opa]{1}[opabure]{0}     
+   }
+    [minnum]{20}[maxnum]{40} [kuri]{4}
+  }
+[2]
+ {
+   [tree]
+   {
+     [maxcou]{1}[scale]{0.15}[scalebure]{0.08}
+     [scx]{0.4}[scxbure]{0.3}
+    }
+     [minnum]{8}[maxnum]{14} [kuri]{1}
+  }
+[4]
+ {
+   [tree]
+   {
+     [maxcou]{1}[scale]{0.3}[scalebure]{0.10}
+     [scx]{0.7}[scxbure]{0.3}
+   }
+     [minnum]{6}[maxnum]{8} [kuri]{1}
+  }
+
+}
+
+
+[curseland]
+{
+ [1]
+ {
+   [kusa]
+   {
+     [maxcou]{2}[scale]{0.10}[scalebure]{0.08}
+     [scx]{0.7}[scxbure]{0.3}
+     [opa]{0.9}[opabure]{0.1}
+   }
+   [minnum]{27}[maxnum]{45} [kuri]{4}
+  }
+[2]
+ {
+   [tree]
+   {
+     [maxcou]{4}[scale]{0.28}[scalebure]{0.1}
+     [scx]{0.8}[scxbure]{0.2}
+   }
+   [minnum]{6}[maxnum]{10} [kuri]{2}
+  }
+[3]
+ {
+   [tree]
+   {
+     [maxcou]{4}[scale]{0.17}[scalebure]{0.07}
+     [scx]{0.4}[scxbure]{0.2}
+   }
+   [minnum]{9}[maxnum]{17} [kuri]{1}
+  }
+
+}
+
+
+[lightningplain]
+{
+ [1]
+ {
+   [kusa]
+   {
+     [maxcou]{2}[scale]{0.12}[scalebure]{0.08}
+     [scx]{0.7}[scxbure]{0.3}
+     [opa]{0.9}[opabure]{0.1}
+   }
+   [minnum]{25}[maxnum]{40} [kuri]{4}
+  }
+[2]
+ {
+   [tree]
+   {
+     [maxcou]{1}[scale]{0.32}[scalebure]{0.11}
+     [scx]{0.8}[scxbure]{0.2}
+   }
+   [minnum]{6}[maxnum]{10} [kuri]{2}
+  }
+[3]
+ {
+   [tree]
+   {
+     [maxcou]{1}[scale]{0.2}[scalebure]{0.09}
+     [scx]{0.4}[scxbure]{0.2}
+   }
+   [minnum]{10}[maxnum]{18} [kuri]{1}
+  }
+
+}
+[windshome]
+{
+ [1]
+ {
+   [kusa]
+   {
+     [maxcou]{2}[scale]{0.12}[scalebure]{0.08}
+     [scx]{0.7}[scxbure]{0.3}
+     [opa]{0.9}[opabure]{0.1}
+   }
+   [minnum]{28}[maxnum]{48} [kuri]{4}
+  }
+[2]
+ {
+   [tree]
+   {
+     [maxcou]{1}[scale]{0.25}[scalebure]{0.09}
+     [scx]{0.8}[scxbure]{0.2}
+   }
+   [minnum]{5}[maxnum]{9} [kuri]{2}
+  }
+[3]
+ {
+   [tree]
+   {
+     [maxcou]{1}[scale]{0.175}[scalebure]{0.05}
+     [scx]{0.4}[scxbure]{0.2}
+   }
+   [minnum]{10}[maxnum]{18} [kuri]{1}
+  }
+
+}
+
+[wilderness]
+{
+ [1]
+ {
+   [kusa]
+   {
+     [maxcou]{2}[scale]{0.08}[scalebure]{0.04}
+     [scx]{0.7}[scxbure]{0.3}
+     [opa]{0.9}[opabure]{0.1}     
+   }
+     [minnum]{15}[maxnum]{35} [kuri]{4}
+  }
+[2]
+ {
+   [tree]
+   {
+     [maxcou]{1}[scale]{0.23}[scalebure]{0.08}
+     [scx]{0.8}[scxbure]{0.2}
+    }
+     [minnum]{6}[maxnum]{8} [kuri]{2}
+  }
+[3]
+ {
+   [tree]
+   {
+     [maxcou]{1}[scale]{0.15}[scalebure]{0.06}
+     [scx]{0.4}[scxbure]{0.2}
+   }
+     [minnum]{6}[maxnum]{10} [kuri]{1}
+  }
+[4]
+ {
+   [mountain]
+   {
+     [maxcou]{1}[scale]{0.24}[scalebure]{0.09}
+     [scx]{0.15}[scxbure]{0.1}
+   }
+     [minnum]{3}[maxnum]{6} [kuri]{2}
+  }
+
+}
+[volcano]
+{
+ [1]
+ {
+   [kusa]
+   {
+     [maxcou]{3}[scale]{0.10}[scalebure]{0.03}
+     [scx]{0.7}[scxbure]{0.3}
+     [opa]{0.9}[opabure]{0.1}     
+   }
+     [minnum]{15}[maxnum]{35} [kuri]{3}
+  }
+[2]
+ {
+   [tree]
+   {
+     [maxcou]{0}[scale]{0.23}[scalebure]{0.08}
+     [scx]{0.8}[scxbure]{0.2}
+    }
+     [minnum]{8}[maxnum]{14} [kuri]{1}
+  }
+[3]
+ {
+   [tree]
+   {
+     [maxcou]{0}[scale]{0.15}[scalebure]{0.06}
+     [scx]{0.4}[scxbure]{0.2}
+   }
+     [minnum]{6}[maxnum]{10} [kuri]{1}
+  }
+[4]
+ {
+   [mountain]
+   {
+     [maxcou]{0}[scale]{0.24}[scalebure]{0.09}
+     [scx]{0.15}[scxbure]{0.1}
+   }
+     [minnum]{4}[maxnum]{7} [kuri]{2}
+  }
+
+}
+
+
+[southhell]
+{
+ [config]
+ { 
+  [HR]{0}[HG]{0.6}[HB]{0.75}[HOpa]{1}
+  
+ }
+ [1]
+ {
+   [kusa]
+   {
+     [maxcou]{2}[scale]{0.09}[scalebure]{0.05}
+     [scx]{0.7}[scxbure]{0.3}
+     [opa]{0.9}[opabure]{0.1}     
+   }
+   
+     [minnum]{25}[maxnum]{45} [kuri]{3}
+  }
+[2]
+ {
+   [tree]
+   {
+     [maxcou]{1}[scale]{0.30}[scalebure]{0.08}
+     [scx]{0.8}[scxbure]{0.2}     
+   }
+     [minnum]{6}[maxnum]{9} [kuri]{1}
+  }
+[3]
+ {
+   [tree]
+   {
+     [maxcou]{2}[scale]{0.2}[scalebure]{0.08}
+     [scx]{0.4}[scxbure]{0.2}     
+   }
+     [minnum]{9}[maxnum]{13} [kuri]{1}
+  }
+
+}
+
+[mountains]
+{
+ [1]
+ {
+   [kusa]
+   {
+     [maxcou]{1}[scale]{0.08}[scalebure]{0.04}
+     [scx]{0.7}[scxbure]{0.3}
+     [opa]{0.9}[opabure]{0.1}     
+   }
+     [minnum]{25}[maxnum]{45} [kuri]{4}
+  }
+[2]
+ {
+   [tree]
+   {
+     [maxcou]{1}[scale]{0.30}[scalebure]{0.10}
+     [scx]{0.8}[scxbure]{0.2}
+    }
+     [minnum]{6}[maxnum]{8} [kuri]{2}
+  }
+[3]
+ {
+   [tree]
+   {
+     [maxcou]{1}[scale]{0.19}[scalebure]{0.07}
+     [scx]{0.4}[scxbure]{0.15}
+   }
+     [minnum]{9}[maxnum]{14} [kuri]{1}
+  }
+[4]
+ {
+   [mountain]
+   {
+     [maxcou]{1}[scale]{0.35}[scalebure]{0.15}
+     [scx]{0.125}[scxbure]{0.125}
+   }
+     [minnum]{7}[maxnum]{11} [kuri]{2}
+  }
+
+}
+
+[jungle]
+{
+ [1]
+ {
+   [kusa]
+   {
+     [maxcou]{2}[scale]{0.08}[scalebure]{0.04}
+     [scx]{0.7}[scxbure]{0.3}
+     [opa]{0.9}[opabure]{0.1}     
+   }
+     [minnum]{30}[maxnum]{50} [kuri]{4}
+  }
+[2]
+ {
+   [tree]
+   {
+     [maxcou]{2}[scale]{0.35}[scalebure]{0.10}
+     [scx]{0.8}[scxbure]{0.2}
+    }
+     [minnum]{8}[maxnum]{10} [kuri]{2}
+  }
+[3]
+ {
+   [tree]
+   {
+     [maxcou]{2}[scale]{0.24}[scalebure]{0.08}
+     [scx]{0.4}[scxbure]{0.15}
+   }
+     [minnum]{9}[maxnum]{16} [kuri]{1}
+  }
+[4]
+ {
+   [bigtree]
+   {
+     [
+     [maxcou]{1}[scale]{0.60}[scalebure]{0.15}
+     [scx]{0.6}[scxbure]{0.2}
+    }
+     [minnum]{7}[maxnum]{12} [kuri]{1}
+  }
+[5]
+ {
+   [bigtree]
+   {
+     [
+     [maxcou]{1}[scale]{0.50}[scalebure]{0.15}
+     [scx]{0.2}[scxbure]{0.15}
+    }
+     [minnum]{8}[maxnum]{16} [kuri]{2}
+  }
+
+}
+
+
+[nanokuni]
+{
+[config]{[sky]{jp}}
+ [1]
+ {
+   [kusa]
+   {
+     [maxcou]{2}[scale]{0.10}[scalebure]{0.06}
+     [scx]{0.7}[scxbure]{0.3}
+     [opa]{0.9}[opabure]{0.1}
+   }
+   [minnum]{25}[maxnum]{45} [kuri]{4}
+  }
+[2]
+ {
+   [tree]
+   {
+     [maxcou]{2}[scale]{0.34}[scalebure]{0.12}
+     [scx]{0.8}[scxbure]{0.2}
+   }
+   [minnum]{6}[maxnum]{10} [kuri]{2}
+  }
+[3]
+ {
+   [tree]
+   {
+     [maxcou]{1}[scale]{0.21}[scalebure]{0.11}
+     [scx]{0.4}[scxbure]{0.2}
+   }
+   [minnum]{9}[maxnum]{15} [kuri]{1}
+  }
+
+}
+
+[flowergarden]
+{
+ [1]
+ {
+   [kusa]
+   {
+     [maxcou]{8}[scale]{0.12}[scalebure]{0.04}
+     [scx]{0.7}[scxbure]{0.3}
+     [opa]{0.80}[opabure]{0.2}
+   }
+   [minnum]{28}[maxnum]{48} [kuri]{4}
+  }
+[2]
+ {
+   [kusa]
+   {
+     [maxcou]{8}[scale]{0.16}[scalebure]{0.07}
+     [scx]{0.4}[scxbure]{0.2}
+     [opa]{0.85}[opabure]{0.15}
+     
+   }
+   [minnum]{32}[maxnum]{58} [kuri]{2}
+  }
+[3]
+ {
+   [mountain]
+   {
+     [maxcou]{1}[scale]{0.35}[scalebure]{0.15}
+     [scx]{0.125}[scxbure]{0.125}
+   }
+     [minnum]{4}[maxnum]{8} [kuri]{2}
+  }
+
+}
+
+
+[believerscapital]
+{
+ [1]
+ {
+   [kusa]
+   {
+     [maxcou]{2}[scale]{0.10}[scalebure]{0.06}
+     [scx]{0.7}[scxbure]{0.3}
+     [opa]{0.8}[opabure]{0.1}
+   }
+   [minnum]{25}[maxnum]{45} [kuri]{4}
+  }
+[2]
+ {
+   [tree]
+   {
+     [maxcou]{1}[scale]{0.30}[scalebure]{0.10}
+     [scx]{0.8}[scxbure]{0.2}
+   }
+ [pole]
+   {
+     [maxcou]{0}[scale]{0.40}[scalebure]{0.05}
+     [scx]{0.8}[scxbure]{0.2}
+   }
+   [minnum]{8}[maxnum]{13} [kuri]{2}
+  }
+[3]
+ {
+   [tree]
+   {
+     [maxcou]{1}[scale]{0.21}[scalebure]{0.11}
+     [scx]{0.4}[scxbure]{0.2}
+   } 
+   [pole]
+   {
+     [maxcou]{0}[scale]{0.32}[scalebure]{0.03}
+     [scx]{0.4}[scxbure]{0.2}
+   }
+   [minnum]{9}[maxnum]{15} [kuri]{1}
+  
+  }
+
+}

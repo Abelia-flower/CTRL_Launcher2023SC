@@ -1,0 +1,53 @@
+Modules list:
+-------------
+slide.o:
+    CODE              Offs=000000  Size=00014F  Align=00001  Fill=0000
+    RODATA            Offs=000000  Size=000000  Align=00001  Fill=0000
+    BSS               Offs=000000  Size=004003  Align=00001  Fill=0000
+    DATA              Offs=000000  Size=000000  Align=00001  Fill=0000
+    ZEROPAGE          Offs=000000  Size=00000A  Align=00001  Fill=0000
+    NULL              Offs=000000  Size=000000  Align=00001  Fill=0000
+
+
+Segment list:
+-------------
+Name                   Start     End    Size  Align
+----------------------------------------------------
+NULL                  000000  000000  000000  00001
+RODATA                000000  000000  000000  00001
+ZEROPAGE              000040  000049  00000A  00001
+CODE                  000700  00084E  00014F  00001
+BSS                   00084F  004851  004003  00001
+DATA                  004900  004900  000000  00001
+
+
+Exports list by name:
+---------------------
+__BSS_LOAD__              00084F  LA    __BSS_RUN__               00084F  LA    
+__BSS_SIZE__              004003  EA    __CODE_LOAD__             000700  LA    
+__CODE_RUN__              000700  LA    __CODE_SIZE__             00014F  EA    
+__DATA_LOAD__             004900  LA    __DATA_RUN__              004900  LA    
+__DATA_SIZE__             000000  EA    
+
+
+Exports list by value:
+----------------------
+__DATA_SIZE__             000000  EA    __CODE_SIZE__             00014F  EA    
+__CODE_LOAD__             000700  LA    __CODE_RUN__              000700  LA    
+__BSS_LOAD__              00084F  LA    __BSS_RUN__               00084F  LA    
+__BSS_SIZE__              004003  EA    __DATA_LOAD__             004900  LA    
+__DATA_RUN__              004900  LA    
+
+
+Imports list:
+-------------
+__BSS_LOAD__ ([linker generated]):
+__BSS_RUN__ ([linker generated]):
+__BSS_SIZE__ ([linker generated]):
+__CODE_LOAD__ ([linker generated]):
+__CODE_RUN__ ([linker generated]):
+__CODE_SIZE__ ([linker generated]):
+__DATA_LOAD__ ([linker generated]):
+__DATA_RUN__ ([linker generated]):
+__DATA_SIZE__ ([linker generated]):
+

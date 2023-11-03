@@ -1,0 +1,173 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>最終課題</title>
+<script type="text/javascript">
+let enemyhp = 150;
+let myhp = 350;
+//このバトルではルカリオが負けるようにはできていない
+function poke(){
+  alert("ひかえのポケモン：東京都市大学(横浜キャンパスのすがた)");
+}
+
+let enemywaza = ["つばさでうつ","つつく","なみだめ","とびひざげり"];
+let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+
+function tenmann() {
+  enemyhp -= 30;
+  let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+  alert("ル力リオのはどうだん！　30ダメージ！")
+if (hangeki ===　"つばさでうつ"){
+  alert("アチャモ（都市大のすがた）のつばさでうつ！　30ダメージ！")
+  myhp -= 30;
+}
+
+else if (hangeki ===　"つつく"){
+  alert("アチャモ（都市大のすがた）のつつく！　10ダメージ！")
+  myhp -= 10;
+}
+
+else if (hangeki ===　"なみだめ"){
+  alert("アチャモ（都市大のすがた）のつつく！　10ダメージ！")
+  myhp -= 10;
+}
+
+else if (hangeki ===　"とびひざげり"){
+  alert("アチャモ（都市大のすがた）のとびひざげり！")
+　alert("アチャモ（都市大のすがた）はじめんにげきとつした！　10ダメージ！")
+  enemyhp -= 10;
+}
+hpkannri();
+checkvictry();
+checklose();
+}
+
+function boru() {
+  enemyhp -= 50;
+  let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+  alert("ル力リオのボーンラッシュ！　50ダメージ！")
+if (hangeki ===　"つばさでうつ"){
+  alert("アチャモ（都市大のすがた）のつばさでうつ！　30ダメージ！")
+  myhp -= 30;
+}
+
+else if (hangeki ===　"つつく"){
+  alert("アチャモ（都市大のすがた）のつつく！　10ダメージ！")
+  myhp -= 10;
+}
+
+else if (hangeki ===　"なみだめ"){
+  alert("アチャモ（都市大のすがた）のつつく！　10ダメージ！")
+  myhp -= 10;
+}
+
+else if (hangeki ===　"とびひざげり"){
+  alert("アチャモ（都市大のすがた）のとびひざげり！")
+  alert("アチャモ（都市大のすがた）はじめんにげきとつした！　10ダメージ！")
+  enemyhp -= 10;
+}
+hpkannri();
+checkvictry();
+checklose();
+}
+
+function akubi() {
+  enemyhp -= 100;
+  let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+  alert("ル力リオのぶんなぐる！　100ダメージ！")
+if (hangeki ===　"つばさでうつ"){
+  alert("アチャモ（都市大のすがた）のつばさでうつ！　30ダメージ！")
+  myhp -= 30;
+}
+
+else if (hangeki ===　"つつく"){
+  alert("アチャモ（都市大のすがた）のつつく！　10ダメージ！")
+  myhp -= 10;
+}
+
+else if (hangeki ===　"なみだめ"){
+  alert("アチャモ（都市大のすがた）のつつく！　10ダメージ！")
+  myhp -= 10;
+}
+
+else if (hangeki ===　"とびひざげり"){
+  alert("アチャモ（都市大のすがた）のとびひざげり！")
+  alert("アチャモ（都市大のすがた）はじめんにげきとつした！　10ダメージ！")
+  enemyhp -= 10;
+}
+hpkannri();
+checkvictry();
+checklose();
+}
+
+function denko() {
+  alert("ルカリオはじょうにうったえかけた！")
+  alert("・・・")
+  alert("はなしあいでかいけつした！")
+  alert("アチャモ（都市大のすがた）はかえった！")
+  alert("ルカリオはこころがあったかくなった！　HPぜんかいふく！")
+  alert("てきはポチタをくりだした！")
+  window.location.href = "ex21 ポVSル.html";
+}
+
+function checkvictry() {
+  if(enemyhp <= 0){
+  alert("アチャモ（都市大のすがた）はたおれた！")
+  alert("ル力リオはアチャモ（都市大のすがた）をたべてげんきになった！")
+  alert("てきはポチタをくりだした！")
+  window.location.href = "ex21 ポVSル.html";
+}
+}
+
+function checklose(){
+  if(myhp <= 0){
+  alert("ル力リオははたおれた！")
+  alert("アチャモ（都市大のすがた）はル力リオはをたべてげんきになった！")
+  alert("いけっ！東京都市大学(横浜キャンパスのすがた)！")
+  alert("ほんらいひょうじされないはずのメッセージだよ")
+}
+}
+
+function checkdraw(){
+if(myhp <= 0 && enemyhp <= 0){
+  alert("アチャモ（都市大のすがた）はたおれた！")
+  alert("ル力リオもたおれた！")
+  alert("敵はポチタをくりだした！")
+  alert("いけっ！東京都市大学(横浜キャンパスのすがた)！")
+  alert("ほんらいひょうじされないはずのメッセージだよ")
+}
+}
+
+function hpkannri() {
+document.getElementById("enemyhp").innerText = enemyhp + "/150";
+document.getElementById("myhp").innerText = myhp + "/350";
+}
+
+</script>
+</head>
+<body bgcolor="#eee8aa">
+<h3><p style="padding-left:30px">アチャモ（都市大のすがた）:L50</p></h3>
+<h3><img src="TCUバード.png" width="200" style="padding-left:30px"></img></h3>
+<h3><p style="padding-left:30px" id="enemyhp">150/150</p></h3><br>
+<h3><p style="padding-left:900px">ル力リオ:L50</p></h3>
+<h3><img src="ルカリオ.png" width="200" style="padding-left:900px"></img></h3>
+<h3><p style="padding-left:900px" id="myhp">350/350</p></h3><br>
+
+<table border="1">
+<tr>
+<th>たたかう</th>
+<th><button onclick="tenmann()" id="a">はどうだん</th>
+<th><button onclick="boru()" id="b">ボーンラッシュ</th>
+<th><button onclick="akubi()" id="c">ぶんなぐる</th>
+<th><button onclick="denko()" id="d">じょうにうったえかける</th>
+</tr>
+<tr>
+<th>　　</th>
+<th><button onclick="poke()" id="f">ポケモン</th>
+<th><button onclick="run()" id="g"><a href="ex18 とおせんぼ.html">にげる</a></th>
+<th><button onclick="esc()" id="h"><a href="ex17 TVSぴ.html">やりなおす</a></th>
+
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>最終課題</title>
+<script type="text/javascript">
+    let enemyhp = 150;
+    let myhp = 100;
+//お互いのHPを設定しておく
+//基本的に敵と自分の攻撃タイミングは同じ
+function poke(){
+  alert("ひかえのポケモン：ルカリオ　東京都市大学(横浜キャンパスのすがた)");
+}//アラート
+
+let enemywaza = ["つばさでうつ","つつく","なみだめ","とびひざげり"];
+let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+//配列を代入し、hangeki変数が呼び出されるときにランダムに抽出
+function tenmann() {//まず敵HPを減らしてから、hangeki変数を呼び出す
+  enemyhp -= 40;
+  let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];//function内外にhangeki変数をおくことでボタンをおすたびに敵の技変更
+  alert("ピカチュウの10まんボルト！ こうかはばつぐんだ！　40ダメージ！")
+　if (hangeki ===　"つばさでうつ"){
+　alert("アチャモ（都市大のすがた）のつばさでうつ！　30ダメージ！")
+　myhp -= 30;
+}
+
+else if (hangeki ===　"つつく"){
+　alert("アチャモ（都市大のすがた）のつつく！　10ダメージ！")
+　myhp -= 10;
+}
+
+else if (hangeki ===　"なみだめ"){
+　alert("アチャモ（都市大のすがた）のなみだめ！")
+　alert("ピカチュウになみだはつうじない！")
+}
+
+else if (hangeki ===　"とびひざげり"){
+　alert("アチャモ（都市大のすがた）のとびひざげり！")
+　alert("アチャモ（都市大のすがた）はじめんにげきとつした！　10ダメージ！")
+　enemyhp -= 10;
+}
+hpkannri();//HPの増減管理
+checkvictry();
+checklose();//勝敗管理
+}
+
+function boru() {
+　enemyhp -= 30;
+　let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+　alert("ピカチュウのボルテッカー！ 30ダメージ！")
+　if (hangeki ===　"つばさでうつ"){
+　alert("アチャモ（都市大のすがた）のつばさでうつ！　30ダメージ！")
+　myhp -= 30;
+}
+
+else if (hangeki ===　"つつく"){
+　alert("アチャモ（都市大のすがた）のつつく！　10ダメージ！")
+　myhp -= 10;
+}
+
+else if (hangeki ===　"なみだめ"){
+　alert("アチャモ（都市大のすがた）のなみだめ！")
+　alert("ピカチュウになみだはつうじない！")
+}
+
+else if (hangeki ===　"とびひざげり"){
+　alert("アチャモ（都市大のすがた）のとびひざげり！")
+　alert("アチャモ（都市大のすがた）はじめんにげきとつした！　10ダメージ！")
+　enemyhp -= 10;
+}
+hpkannri();
+checkvictry();
+checklose();
+}
+
+function akubi() {
+alert("ピカチュウのあくび！")
+alert("ピカチュウはねむくなった！")
+enemyhp -= 0;
+let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+
+if (hangeki ===　"つばさでうつ"){
+　alert("アチャモ（都市大のすがた）のつばさでうつ！　30ダメージ！")
+　myhp -= 30;
+}
+
+else if (hangeki ===　"つつく"){
+　alert("アチャモ（都市大のすがた）のつつく！　10ダメージ！")
+　myhp -= 10;
+}
+
+else if (hangeki ===　"なみだめ"){
+　alert("アチャモ（都市大のすがた）のなみだめ！")
+　alert("ピカチュウになみだはつうじない！")
+}
+
+else if (hangeki ===　"とびひざげり"){
+　alert("アチャモ（都市大のすがた）のとびひざげり！")
+　alert("アチャモ（都市大のすがた）はじめんにげきとつした！　10ダメージ！")
+　enemyhp -= 10;
+}
+hpkannri();
+checkvictry();
+checklose();
+}
+
+function denko() {
+enemyhp -= 10;
+alert("ピカチュウのでんこうせっ火！　10ダメージ！")
+if (hangeki ===　"つばさでうつ"){
+　alert("アチャモ（都市大のすがた）のつばさでうつ！　30ダメージ！")
+　myhp -= 30;
+}
+
+else if (hangeki ===　"つつく"){
+　alert("アチャモ（都市大のすがた）のつつく！　10ダメージ！")
+　myhp -= 10;
+}
+
+else if (hangeki ===　"なみだめ"){
+　alert("アチャモ（都市大のすがた）のなみだめ！")
+　alert("ピカチュウになみだはつうじない！")
+}
+
+else if (hangeki ===　"とびひざげり"){
+　alert("アチャモ（都市大のすがた）のとびひざげり！")
+　alert("アチャモ（都市大のすがた）はじめんにげきとつした！　10ダメージ！")
+　enemyhp -= 10;
+}
+hpkannri();
+checkvictry();
+checklose();
+}
+
+function checkvictry() {
+if(enemyhp <= 0){
+　alert("アチャモ（都市大のすがた）はたおれた！")
+　alert("ピカチュウはアチャモ（都市大のすがた）をたべてげんきになった！")
+　alert("敵はポチタをくりだした！")
+　window.location.href = "ex19 ポVSピ.html";
+}//敵HPが0以下なら次のページへ
+}
+
+function checklose(){
+if(myhp <= 0){
+　alert("ピカチュウはたおれた！")
+　alert("アチャモ（都市大のすがた）はピカチュウをたべてげんきになった！")
+　alert("いけっ！ルカリオ！")
+　window.location.href = "ex20 TVSル.html";
+}//自分のHPが0以下なら次のページへ
+}
+
+function checkdraw(){
+if(myhp <= 0 && enemyhp <= 0){
+　alert("アチャモ（都市大のすがた）はたおれた！")
+　alert("ピカチュウもたおれた！")
+　alert("敵はポチタをくりだした！")
+　alert("いけっ！ルカリオ！")
+　window.location.href = "ex21 ポVSル.html";
+}//両方HP0以下なら次のページへ
+}
+
+function hpkannri() {
+　document.getElementById("enemyhp").innerText = enemyhp + "/150";
+　document.getElementById("myhp").innerText = myhp + "/100";//HPの増減を管理し、書き換え表示
+}
+
+</script>
+</head>
+<body bgcolor="#eee8aa"><!--ページの背景色-->
+<h3><p style="padding-left:30px">アチャモ（都市大のすがた）:L50</p></h3>
+<h3><img src="TCUバード.png" width="200" style="padding-left:30px"></img></h3>
+<h3><p style="padding-left:30px" id="enemyhp">150/150</p></h3><br>
+<h3><p style="padding-left:900px">ピカチュウ:L50</p></h3>
+<h3><img src="ピカチュウ.png" width="200" style="padding-left:900px"></img></h3>
+<h3><p style="padding-left:900px" id="myhp">100/100</p></h3><br>
+<!--paddingleftで文字や画像の位置を調整-->
+<table border="1">
+<tr><!--表にボタン設置-->
+<th>たたかう</th>
+<th><button onclick="tenmann()" id="a">10まんボルト</th>
+<th><button onclick="boru()" id="b">ボルテッカー</th>
+<th><button onclick="akubi()" id="c">あくび</th>
+<th><button onclick="denko()" id="d">でんこうせっ火</th>
+</tr>
+<tr>
+<th>　　</th>
+<th><button onclick="poke()" id="f">ポケモン</th>
+<th><button onclick="run()" id="g"><a href="ex18 とおせんぼ.html">にげる</a></th>
+<th><button onclick="esc()" id="h"><a href="ex17 TVSぴ.html">やりなおす</a></th>
+
+</tr>
+</table>
+</body>
+</html>

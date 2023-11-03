@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>最終課題</title>
+<script type="text/javascript">
+let enemyhp = 10000000;
+let myhp = 350;
+//このバトルはルカリオが勝てるようにできていない
+function poke(){
+  alert("ひかえのポケモン：東京都市大学(横浜キャンパスのすがた)");
+}
+
+let enemywaza = ["ギガインパクト", "と死dieビーム"];
+let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+
+function tenmann() {
+  enemyhp -= 300;
+  let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+  alert("ル力リオのはどうだん！　300ダメージ！")
+if (hangeki ===　"ギガインパクト"){
+  alert("東京都市大学(世田谷キャンパスのすがた)のギガインパクト！　3000000ダメージ！")
+  myhp -= 3000000;
+}
+
+else if (hangeki ===　"と死dieビーム"){
+  alert("東京都市大学(世田谷キャンパスのすがた)のと死dieビーム！　4000000ダメージ！")
+  myhp -= 40000000;
+}
+
+hpkannri();
+checkvictry();
+checklose();
+}
+
+
+function boru() {
+  enemyhp -= 500;
+　let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+　alert("ル力リオのボーンラッシュ！　300ダメージ！")
+if (hangeki ===　"ギガインパクト"){
+  alert("東京都市大学(世田谷キャンパスのすがた)のギガインパクト！　3000000ダメージ！")
+  myhp -= 3000000;
+}
+
+else if (hangeki ===　"と死dieビーム"){
+  alert("東京都市大学(世田谷キャンパスのすがた)のと死dieビーム！　4000000ダメージ！")
+  myhp -= 40000000;
+}
+
+hpkannri();
+checkvictry();
+checklose();
+
+}
+
+function akubi() {
+  enemyhp -=1000;
+　let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+　alert("ル力リオのぶんなぐる！　1000ダメージ！")
+if (hangeki ===　"ギガインパクト"){
+  alert("東京都市大学(世田谷キャンパスのすがた)のギガインパクト！　3000000ダメージ！")
+  myhp -= 3000000;
+}
+
+else if (hangeki ===　"と死dieビーム"){
+  alert("東京都市大学(世田谷キャンパスのすがた)のと死dieビーム！　4000000ダメージ！")
+  myhp -= 40000000;
+}
+
+hpkannri();
+checkvictry();
+checklose();
+
+}
+
+function denko() {
+  enemyhp -= 10000
+  let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+  alert("ル力リオはじょうにうったえかけた！")
+  alert("・・・")
+  alert("だめだった！")
+  alert("ルカリオのぼうりょくはんたいパンチ！　10000ダメージ！")
+if (hangeki ===　"ギガインパクト"){
+   alert("東京都市大学(世田谷キャンパスのすがた)のギガインパクト！　3000000ダメージ！")
+   myhp -= 3000000;
+ }
+
+ else if (hangeki ===　"と死dieビーム"){
+   alert("東京都市大学(世田谷キャンパスのすがた)のと死dieビーム！　4000000ダメージ！")
+   myhp -= 40000000;
+ }
+
+hpkannri();
+checkvictry();
+checklose();
+}
+
+function checkvictry() {
+  if(enemyhp <= 0){
+  alert("ポチタはたおれた！")
+  alert("ルカリオはポチタをたべてげんきになった！")
+  alert("敵は東京都市大学(世田谷キャンパスのすがた)をくりだした！")
+  alert("このメッセージはありえない！")
+}
+}
+
+function checklose(){
+if(myhp <= 0){
+  alert("ルカリオはたおれた！")
+  alert("東京都市大学(世田谷キャンパス)はルカリオをたべてげんきになった！")
+  alert("いけっ！東京都市大学(横浜キャンパスのすがた)！")
+  window.location.href = "ex22 世VS横.html";
+}
+}
+
+function checkdraw(){
+if(myhp <= 0 && enemyhp <= 0){
+  alert("ポチタはたおれた！")
+  alert("ルカリオもたおれた！")
+  alert("敵は東京都市大学(世田谷キャンパスのすがた)をくりだした！")
+  alert("いけっ！東京都市大学(横浜キャンパスのすがた)！")
+  alert("このメッセージはありえない！")
+}
+}
+
+function hpkannri() {
+  document.getElementById("enemyhp").innerText = enemyhp + "/10000000";
+  document.getElementById("myhp").innerText = myhp + "/350";
+}
+
+</script>
+</head>
+<body bgcolor="#eee8aa">
+<h3><p style="padding-left:30px">東京都市大学(世田谷キャンパス):L50</p></h3>
+<h3><img src="世田谷キャンパス.jpg" width="350" style="padding-left:30px"></img></h3>
+<h3><p style="padding-left:30px" id="enemyhp">10000000/10000000</p></h3><br>
+<h3><p style="padding-left:900px">ル力リオ:L50</p></h3>
+<h3><img src="ルカリオ.png" width="200" style="padding-left:900px"></img></h3>
+<h3><p style="padding-left:900px" id="myhp">350/350</p></h3><br>
+
+<table border="1">
+<tr>
+<th>たたかう</th>
+<th><button onclick="tenmann()" id="a">はどうだん</th>
+<th><button onclick="boru()" id="b">ボーンラッシュ</th>
+<th><button onclick="akubi()" id="c">ぶんなぐる</th>
+<th><button onclick="denko()" id="d">じょうにうったえかける</th>
+</tr>
+<tr>
+<th>　　</th>
+<th><button onclick="poke()" id="f">ポケモン</th>
+<th><button onclick="run()" id="g"><a href="ex18 とおせんぼ.html">にげる</a></th>
+<th><button onclick="esc()" id="h"><a href="ex17 TVSぴ.html">やりなおす</a></th>
+
+</tr>
+</table>
+</body>
+</html>

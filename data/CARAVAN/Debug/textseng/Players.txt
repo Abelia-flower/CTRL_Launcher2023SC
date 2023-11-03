@@ -1,0 +1,372 @@
+
+
+//持続、回復割合、攻撃、クール割合、意志の倍率
+deadbuf:3.5, 0.75, 0.75, 0.35, 2
+icegarder:4.5
+//敵が逃げる確率
+skipper:1.5
+
+//DPでの攻撃力上昇 1あたり
+DPattack:0
+//DPでの防御上昇 1あたり
+DPdefence:0.25
+//選んでないコマンドの方のリキャスト
+otherrecast:0.25
+//ドッジしたときのリキャスト(KA,KD,hissatuのほうのE)
+dogerecast:0.4
+
+//チャージしたときのリキャスト(hissatuのほうのK)
+chargerecast:1
+
+//ダンスしたときのリキャスト(hissatu)
+dancerecast:2
+
+#region:itembase
+//装備品のベースパワー
+health:100
+attack:0.1
+shield:0.1
+heal:0.1
+FI:0.1
+WET:0.1
+LD:0.1
+Arecast:0.5
+Drecast:0.5
+Erecast:0.5
+Hrecast:0.5
+defence:0.05
+AP:0.05
+DP:0.05
+EP:0.05
+
+
+
+#region:bufkati
+iced:1
+winded:0.1
+thundered:1
+earthed:1
+lighted:0.1
+darked:0.1
+//味方の統計に使用したいため、1/5にしてる<-やーめた
+charged:0.25
+//defence,heal,shield,attack,FI,WET,LD,Areca,Dreca,Ereca,Hreca 
+powerup:0.1, 0.1, 0.2,  0.2,    0.06,0.06,0.06,0.02,  0.02,  0.02, 0.02
+
+
+
+#region:tact
+status: 10, 5, 1, 1, 1, 1, 1, 1
+charge:1
+
+#region:yoshino
+status: 1000, 2, 1.1, 1.2, 1.1, 1, 1, 1
+attack: -1, 50, 1, 1
+Kattack: -1, 75, 1, 1
+defence: -1, 40, 1, 1
+defenceDef:0.3,1
+//80じぞく=180
+Kdefence: 7, -10, 0.95 , 48
+KdefenceDef:0.3,1
+//100持続
+element: 20, 15, 0.9, 6
+elementW: 0.08, 3
+Aelement: -1, 87.5, 0.6, 3
+AelementW: 0.16,2
+//wet,Arecast
+DelementP: 1 , 3, 0.25, 0.20 
+DelementH: 55 , 3
+DelementDef: 0.3 , 1
+Ahissatu: -1, 130, 0.9, 4 
+AhissatuW: 0.35 ,2
+Dhissatu: -1, 95, 0.95, 6
+DhissatuW: 0.5 ,2
+DhissatuDef:0.3,1
+//////////////////////////////////////////////////////////
+#region:kaito
+status: 800, 5, 1.2, 1, 1, 1, 1, 1
+//３発
+attack: -1, 20, 1, 1
+//dam ,n発
+Kattack: 21.5, 4
+//,bai,FI
+defence: 0.8, 2.5, 0.125, 0.125
+defenceDef:0.3,1
+//最後のはnターン
+Kdefence: 1, 150, 1 , 1, 3.5
+KdefenceDef:0.3,1
+//最後のはnターン
+element: 40, 10, 0.9, 6, 2
+elementI: 0.020
+//最後のはn発
+Aelement: -1, 14, 1, 1,6
+AelementI: 0.025
+//最後のはn発
+Delement: -1 , 10, 1, 1, 6 
+DelementI: 0.030
+DelementDef: 0.3 , 1
+//,回数
+Ahissatu: 17, 8 
+AhissatuI: 0.030 
+//全体
+Dhissatu: 30
+DhissatuI: 0.50 
+DhissatuDef:0.3,1
+//////////////////////////////////////////////////////////
+#region:monika
+status: 400, 10, 0.9, 0.9, 0.9, 1, 1, 1
+//5発
+attack: -1, 12, 1, 1
+//9発
+Kattack: -1, 10, 1, 1
+//3発
+defence: -1, 18, 1, 1
+defenceDef:0.3,1
+//20発
+Kdefence: -1, 8, 1 , 1
+KdefenceDef:0.3,1
+//power
+element: 1
+//最後のはn発
+Aelement: -1, 18, 1, 1,6
+
+Delement: -1 , 80, 0.8, 4 
+DelementDef: 0.3 , 1
+//最後のは4*n発
+Ahissatu: -1,9.4,0.6,3,4 
+//ダメージ,回数,同時にとる対象,持続ターン
+Dhissatu: 15,7,20,1.5
+DhissatuDef:0.3,1
+//////////////////////////////////////////////////////////
+#region:penny
+status: 950, 3, 1.2, 1.2, 1.2, 1, 1, 1
+//2発
+attack: -1, 25, 1, 1
+attackL: 0.025, 2
+
+Kattack: -1, 80, 1, 1
+KattackW:0.1,2
+//最後のはターン
+defence: -1, 75, 1, 1, 2.5
+defenceDef:0.3,1
+//n回,生存時間
+Kdefence: 30, 15, 0.5 , 3 ,5 ,2
+KdefenceL:0.03,3
+KdefenceDef:0.3,1
+//n回
+element: -1, 18, 1, 1, 3
+elementL:0.035, 3
+
+Aelement: -1, 92, 0.8, 3
+AelementL: 0.2,3
+
+//シールド
+Delement:100,3.5
+DelementDef: 0.3 , 1
+//
+Ahissatu: -1,110,0.8,3
+AhissatuL: 0.4, 3 
+
+
+//全体のパワー,ターン,def,shield,dam,FI,WET,LD
+Dhissatu: 1,   4,     0.3, 0.5,   0.5,0.5,0.5,0.5
+//回復するKA,KD,AE,DEの割合
+DhissatuC:1,1,1,1
+DhissatuDef:0.3,1
+DhissatuH:200,4
+//6000->50->120発 0.0085=50だめーじ
+/////////////////////////////////////////////////////////////////////////////
+#region:yuu
+status: 800, 6, 1.2, 1.0, 1.0, 1, 1, 1
+
+attack: -1, 55, 1, 1
+
+Kattack: -1, 84, 1, 1
+//チャージ
+defence: 1
+defenceDef:0.3,1
+//チャージユウ君に、みんなに
+Kdefence: 1,0.3
+KdefenceDef:0.3,1
+
+element: -1, 30, 0.4, 3
+elementF:30, 2
+
+//7発
+Aelement: -1, 10, 0.5, 4
+AelementF: 5, 2
+
+//二つあるわけではない。75持続
+Delement:5, 10, 0.9, 10
+//一回だけヒット
+DelementF:70, 2
+DelementDef: 0.3 , 1
+//最後のはターン
+Ahissatu: 18,5,1,400,4
+AhissatuF: 5, 3 
+
+
+Dhissatu:-1,60,0.9,4
+DhissatuDef:0.3,1
+DhissatuF:70,2
+/////////////////////////////////////////////////////////////////////////////
+#region:maniya
+//もうバランスわからんね。
+status: 500, 7, 0.9, 0.9, 0.9, 1, 1, 1
+//残るターン 標準の数 
+sword:15, 3
+//倍率、ターン 剣の威力強化と、s.shieldによる強化が重なりまっせ(ん)<-どっち？わからん
+shield:1.25, 4.5
+recommand:0.8
+//継続ターン
+attack: -1, 33, 1, 1
+
+//二個
+Kattack: -1, 25, 1, 1
+
+defence: -1,33, 1, 1
+defenceDef:0.3,1
+//二個生まれる
+Kdefence: -1,25 ,1 , 1
+KdefenceS: 55, 2.5
+KdefenceDef:0.3,1
+
+//他にエレメントパワーの活躍の場所がないからここで。エレメントパワー割合上げて回転率上げたら強い
+element: -1, 44, 0.5, 3
+
+//elementSwordが標準搭載
+
+//二つある
+
+DelementDef: 0.3 , 1
+Ahissatu: -1,77,0.5,3
+
+//最後のは数 
+Dhissatu:-1,22,1,1,6
+DhissatuDef:0.3,1
+DhissatuF:70,2
+
+/////////////////////////////////////////////////////////////////////////////
+#region:sisyo
+status: 450, 8, 1.1, 1.1, 1.3, 1, 1, 1
+//3つ,おおきさ,速度
+attack: -1, 18, 1, 1 , 1.3,10 
+attackD: 0.04 ,2
+
+//数,大きさ
+Kattack: -1, 8, 1, 1, 10, 1.0
+KattackD: 0.02 ,2
+//,,人数
+defenceH: 27,1.5,4
+defenceDef:0.3,1
+//じぞく,大きさ　残りがダメージに転換
+Kdefence: -1, 50, 0.95 , 3 ,2.5, 1.5
+KdefenceDef:0.3,1
+//回数
+element: -1, 20, 1, 1, 4
+elementD: 0.01, 3
+elementH: -1, -27 ,1 ,1 
+
+Aelement: -1, 44, 0.5, 3
+AelementF: 20, 2
+AelementI: 0.1
+AelementW: 0.3, 3
+AelementE: 0.1, 2
+AelementT: 0.1, 2
+AelementL: 0.3, 3
+AelementD: 0.3, 3
+
+//power,turn,FI,WET,LD,Erecast
+DelementP: 1.5,3 , 0.2, 0.2, 0.2,0.20 
+DelementDef: 0.3 , 1
+DelementH: 33, 0.1
+
+AhissatuF: 50, 2
+AhissatuI: 0.1
+AhissatuW: 0.3, 3
+AhissatuE: 0.1, 2
+AhissatuT: 0.1, 2
+AhissatuL: 0.3, 3
+AhissatuD: 0.3, 3
+
+//120持続
+
+Dhissatu: 20, 10, 0.95, 18
+//215ぐらい
+DhissatuH: 20, -11, 0.95, 40
+
+DhissatuD: 0.1 ,3
+DhissatuDef:0.3,1
+
+
+//////////////////////////////////////////////////////////////////////////////
+#region:tutitukumo
+status: 8000, 5,1.0, 1.2, 1.0, 1,1,1
+//+回数
+attack: -1, 33, 1, 1.2 ,6
+Kattack: -1, 200, 0.9, 6
+//持続 60
+defence: 25, 25, 0.9, 12
+defenceH:300, 0.1
+KdefenceS:600,1.5
+KdefenceH:500, 0.1
+//回数,ダメージ
+element: 5,8 
+elementE: 0.05, 2.5
+Aelement: -1, 250, 0.9, 6.5
+AelementE: 0.3,3
+
+Delement: -1, 100, 0.95, 10 
+DelementE: 0.4 , 3
+DelementH: 700, 0.1
+Ahissatu: -1, 270, 0.9, 7
+AhissatuE:0.5, 3 
+AhissatuH:1000, 0.1
+
+//////////////////////////////////////////////////////////////////////////////
+#region:jotto
+status: 7300, 6,1.2, 1.0, 1.0, 1,1,1
+//*4
+attack: -1, 20, 0.8, 2.5 
+attackF:10, 3 
+Kattack: -1, 200, 0.9, 6
+KattackE: 0.3, 3
+defence: -1, 60, 0.9, 8
+defenceF:  25, 3
+defenceH:350, 0.1
+Kdefence: -1, 120, 1, 6.5
+KdefenceF:  60, 3
+KdefenceH:500, 0.1
+//6個
+element: -1, 30, 1, 1 
+elementF: 20, 3.5
+Aelement: -1, 1, 1, 666
+AelementF: 165,4
+
+Delement: -1, 200, 0.95, 5 
+DelementF: 40 , 3
+DelementW: 0.4 , 3
+DelementH: 750, 0.1
+
+Ahissatu: -1, 200, 0.9, 7
+AhissatuF:180,6.5 
+AhissatuH:1100, 0.1
+dodge:0.1,0.1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+Id: 233200202
+Title: "たのしい〇×クイズ!"
+Genre: "ゲーム"
+ScreenshotPath: "スクリーンショット 2023-11-02 161343.png"
+ExecutablePath: bin\main.exe
+Argument: 
+SourcePath: src\
+TimeLimit: 00:00:00
+Description: "音量注意！！〇×クイズに正解してスライムを倒すゲームです！１ゲーム５問！１つ正解するとスライムを１匹倒せます！連続で５問正解すると最後にかわいいイラストが見れるかも？"
+IsLate: false

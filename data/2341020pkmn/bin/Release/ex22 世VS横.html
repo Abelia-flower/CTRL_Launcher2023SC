@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>最終課題</title>
+<script type="text/javascript">
+let enemyhp = 10000000;
+let myhp = 10000000;
+let countdown = 6;
+let enemywaza = ["ギガインパクト", "と死dieビーム"];
+//countdown変数を代入し、技を出すたびにカウントを減らしていくことで、時限制バトルを作成可能
+
+alert("なんと！世田谷キャンパスは等々力キャンパスに爆弾をしかけられていた！")
+alert("等々力キャンパスをたおして時限爆弾を解除しよう！")
+
+
+
+function poke() {
+　alert("ひかえのポケモンはいないよ");
+}
+
+function tenmann() {
+let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+  alert("東京都市大学(横浜キャンパスのすがた)のはかいこうせん！ 4000000ダメージ！");
+  enemyhp -= 4000000
+  alert("反動で25%のダメージをうけた！")
+  myhp *= 0.75
+
+if (hangeki === "ギガインパクト") {
+  alert("東京都市大学(等々力キャンパスのすがた)のギガインパクト！　3000000ダメージ！");
+  myhp -= 3000000;
+}
+ else if (hangeki === "と死dieビーム") {
+  alert("東京都市大学(等々力キャンパスのすがた)のと死dieビーム！　4000000ダメージ！");
+  myhp -= 4000000;
+}
+
+countdown -= 1;
+alert("世田谷キャンパス爆発まで残り" + countdown + "カウント・・・");
+
+if (countdown <= 0) {
+  window.location.href = "ex24 爆破.html";
+}
+
+hpkannri();
+checkvictry();
+checklose();
+}
+
+function boru() {
+　let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+　enemyhp -= 3000000;
+  alert("東京都市大学(横浜キャンパスのすがた)のボディプレス！　3000000ダメージ！");
+
+if (hangeki === "ギガインパクト") {
+  alert("東京都市大学(等々力キャンパスのすがた)のギガインパクト！　3000000ダメージ！");
+  myhp -= 3000000;
+}
+else if (hangeki === "と死dieビーム") {
+  alert("東京都市大学(等々力キャンパスのすがた)のと死dieビーム！　4000000ダメージ！");
+  myhp -= 4000000;
+}
+
+countdown -= 1;
+  alert("世田谷キャンパス爆発まで残り" + countdown + "カウント・・・");
+
+if (countdown <= 0) {
+  window.location.href = "ex24 爆破.html";
+}
+
+hpkannri();
+checkvictry();
+checklose();
+}
+
+function akubi() {
+  let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+  enemyhp *= 0.75;
+  alert("東京都市大学(横浜キャンパスのすがた)のみずびだし！");
+  alert("東京都市大学(等々力キャンパスのすがた)にビオトープのみずをぶちまけた！　てきのHPが25%へった！");
+
+if (hangeki === "ギガインパクト") {
+  alert("東京都市大学(等々力キャンパスのすがた)のギガインパクト！　3000000ダメージ！");
+  myhp -= 3000000;
+  }
+else if (hangeki === "と死dieビーム") {
+  alert("東京都市大学(等々力キャンパスのすがた)のと死dieビーム！　4000000ダメージ！");
+  myhp -= 4000000;
+}
+
+countdown -= 1;
+alert("世田谷キャンパス爆発まで残り" + countdown + "カウント・・・");
+
+if (countdown <= 0) {
+  window.location.href = "ex24 爆破.html";
+}
+
+hpkannri();
+checkvictry();
+checklose();
+}
+
+function denko() {
+  let hangeki = enemywaza[Math.floor(Math.random() * enemywaza.length)];
+  myhp += 8000000;
+  alert("東京都市大学(横浜キャンパスのすがた)は1にちまるごと休講した！　8000000HPかいふくした！");
+
+if (hangeki === "ギガインパクト") {
+  alert("東京都市大学(等々力キャンパスのすがた)のギガインパクト！　3000000ダメージ！");
+  myhp -= 3000000;
+}
+else if (hangeki === "と死dieビーム") {
+  alert("東京都市大学(等々力キャンパスのすがた)のと死dieビーム！　4000000ダメージ！");
+  myhp -= 4000000;
+}
+
+countdown -= 1;
+alert("世田谷キャンパス爆発まで残り" + countdown + "カウント・・・");
+
+if (countdown <= 0) {
+  window.location.href = "ex24 爆破.html";
+}
+
+hpkannri();
+checkvictry();
+checklose();
+}
+
+function checkvictry() {
+  if (enemyhp <= 0) {
+  alert("東京都市大学(等々力キャンパスのすがた)はたおれた！");
+  window.location.href = "ex26 GE.html";
+}
+}
+
+function checklose() {
+  if (myhp <= 0) {
+  alert("東京都市大学(横浜キャンパスのすがた)はたおれた！");
+  window.location.href = "ex24 爆破.html";
+}
+}
+
+function checkdraw() {
+  if (myhp <= 0 && enemyhp <= 0) {
+  alert("東京都市大学(世田谷キャンパスのすがた)はたおれた！");
+  alert("東京都市大学(横浜キャンパスのすがた)もたおれた！");
+  window.location.href = "ex24 爆破.html";
+}
+}
+
+function hpkannri() {
+  document.getElementById("enemyhp").innerText = enemyhp + "/10000000";
+  document.getElementById("myhp").innerText = myhp + "/10000000";
+}
+</script>
+</head>
+<body bgcolor="#eee8aa">
+<h3><p style="padding-left:30px">東京都市大学(等々力キャンパスのすがた):L50</p></h3>
+<h3><img src="等々力キャンパス.jpg" width="350" style="padding-left:30px"></img></h3>
+<h3><p style="padding-left:30px" id="enemyhp">10000000/10000000</p></h3><br>
+<h3><p style="padding-left:900px">東京都市大学(横浜キャンパスのすがた):L50</p></h3>
+<h3><img src="横浜キャンパス.png" width="350" style="padding-left:900px"></img></h3>
+<h3><p style="padding-left:900px" id="myhp">10000000/10000000</p></h3><br>
+
+<table border="1">
+<tr>
+<th>たたかう</th>
+<th><button onclick="tenmann()" id="a">はかいこうせん</button></th>
+<th><button onclick="boru()" id="b">ボディプレス</button></th>
+<th><button onclick="akubi()" id="c">みずびだし</button></th>
+<th><button onclick="denko()" id="d">休講</button></th>
+</tr>
+<tr>
+<th>　　</th>
+<th><button onclick="poke()" id="f">ポケモン</button></th>
+<th><button onclick="run()" id="g"><a href="ex18 とおせんぼ.html">にげる</a></button></th>
+<th><button onclick="esc()" id="h"><a href="ex17 TVSぴ.html">やりなおす</a></button></th>
+</tr>
+</table>
+</body>
+</html>

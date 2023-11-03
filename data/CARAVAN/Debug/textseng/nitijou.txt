@@ -1,0 +1,3262 @@
+出身は80,天気は50?会合は10?
+[config]
+{
+ [yoshino]
+ {
+   [inname]{@size@=*0.12}
+    [inkakko]{}
+    [format]
+   {
+     [character:yoshino]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+ [tact]
+ {
+   [inname]{@size@=*0.10}
+    [inkakko]{}
+    [format]
+   {
+     [character:tact]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+ [kaito]
+ {
+   [inname]{@size@=*0.105}
+    [inkakko]{}
+    [format]
+   {
+     [character:kaito]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[monika]
+ {
+   [inname]{@size@=*0.09}
+    [inkakko]{}
+    [format]
+   {
+     [character:monika]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[penny]
+ {
+   [inname]{@size@=*0.09}
+    [inkakko]{}
+    [format]
+   {
+     [character:penny]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[yuu]
+ {
+   [inname]{@size@=*0.102}
+    [inkakko]{}
+    [format]
+   {
+     [character:yuu]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[maniya]
+ {
+   [inname]{@size@=*0.085}
+    [inkakko]{}
+    [format]
+   {
+     [character:maniya]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[maniyasword]
+ {
+   [inname]{@num@=0:@size@=*0.4}
+    [inkakko]{}
+    [format]
+   {
+     [texture:maniya/wep@num@]
+     {
+       [KscaleWH]{@size@:-1}
+  	[setTXY]{0.2:0.5}
+     }
+   }
+  } 
+[sisyo]
+ {
+   [inname]{@size@=*0.09}
+    [inkakko]{}
+    [format]
+   {
+     [character:sisyo]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[inami]
+{
+ [inname]{@size@=*0.11}
+    [inkakko]{}
+    [format]
+   {
+     [character:inami]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+}
+[tutitukumo]
+{
+ [inname]{@size@=*0.11}
+    [inkakko]{}
+    [format]
+   {
+     [character:tutitukumo]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+}
+ [namebox]
+ {
+   [inname]{}
+   [inkakko]{@name@=お前の脾臓:@kazu@=*12}
+   [format]{
+ [texture:window/namebox]
+  {
+   [message:LC]{@name@:@kazu@}
+   [KscaleW]{0.15:}
+   [KscaleH]{:0.075}
+   [spot]{0.25:0.6:0:1}
+   [z]{10000}
+  }
+ }
+}
+[nameboxR]
+ {
+   [inname]{}
+   [inkakko]{@name@=彼の扁桃腺:@kazu@=*12}
+   [format]{
+ [texture:window/namebox]
+  {
+   [message:LC]{@name@:@kazu@}
+   [KscaleW]{0.15:}
+   [KscaleH]{:0.075}
+   [spot]{0.75:0.6:1:1}
+   [z]{10000}
+  }
+ }
+}
+ [textbox]
+ {
+   [inname]{}
+   [inkakko]{@text@=アタシの胆のう:@kazu@=/40:@speed@=/1.88}
+   [format]{
+ [texture:window/textbox]
+ {
+  [message]{@text@:@kazu@:@speed@}
+  [KscaleW]{0.5:}
+  [KscaleH]{:0.4}
+  [spot]{0.25:0.6:0:0}
+  [z]{11000}
+ }
+ }
+ 
+}
+}
+
+[commandtutorial]
+{
+
+[0]
+{
+ [inami]
+ {
+  [pose]{inami/niou:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{20:0.5}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+I'm going to start the introduction to the Battle.
+ }
+}
+[1]
+{
+ [inami]
+ {
+  [pose]{inami/niou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/attention}
+ }
+ 
+ [wait:45]{
+ [character:tutitukumo]
+ {
+  [KscaleWH]{0.2:-1}
+  [spot]{0.5:0.3:0.5:0.5}
+  [fadein]{20:0.5}
+ }}
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+You can give orders to your servants  \nThis time, use this one I prepared especially for you.
+ }
+}
+[2]
+{
+ [inami]
+ {
+  [pose]{inami/attention}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/right}
+ }
+ [character:tutitukumo]
+ {
+  [KscaleWH]{0.2:-1}
+  [spot]{0.5:0.3:0.5:0.5}
+  [fade]{30:0}
+ }
+ [wait:20]{
+ [texture:tact/wep]
+ {
+  [KscaleWH]{0.4:-1}
+  [spot]{0.875:0.6:0.5:0.5:-90}
+  [fadein]{30:0}
+ }}
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+First, you move your servant around   \nYou can give them commands using the controller you have
+ }
+}
+[3]
+{
+ [inami]
+ {
+  [pose]{inami/right}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/taiki}
+  [motion:]{inami/syaberu50}
+ }
+ [texture:tact/wep]
+ {
+  [KscaleWH]{0.4:-1}
+  [spot]{0.875:0.6:0.5:0.5:-90}
+ }
+ [texture:commands/dodge]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fadein]{30:0}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+Select the point you want to move and choose the middle of the command menu
+ }
+}
+ お前のしもべたちには命令を出せる。　そういう機能がそのコントローラには備わっている まずは移動させてみろ　移動させたい地点を指定し、コマンドメニューの真ん中を選ぶんだ　しばらく動き回ってみろ
+}
+[attacktutorial]
+{
+[0]
+{
+ [inami]
+ {
+  [pose]{inami/niou:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{20:0.5}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+Next up is the order to attack   \nIt's imperative to kick the crap out of anyone who gets in the way
+ }
+}
+[1]
+{
+ [inami]
+ {
+  [pose]{inami/niou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/attention}
+ }
+ 
+ [texture:commands/attack]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fadein]{30:0}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+To the right of the command menu, select the sword symbol
+ }
+}
+[2]
+{
+ [inami]
+ {
+  [pose]{inami/attention}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/yareyare}
+ }
+
+ [texture:commands/attack]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+I'm sure you already know that, but the orders will be issued all at once when the time comes   \nWait quietly, because the noise of the switching is too loud
+ }
+}
+ 
+}
+[defencetutorial]
+{
+[0]
+{
+ [inami]
+ {
+  [pose]{inami/niou:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{20:0.5}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+If you want to deal with an enemy attack, it's a defensive order
+ }
+}
+[1]
+{
+ [inami]
+ {
+  [pose]{inami/niou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/attention}
+ }
+ [texture:effects/raincircle]
+ {
+  [KscaleWH]{0.25:-1}
+  [spot]{0.25:0.3:0.5:0.5:}
+  [fadein]{30:20}
+ }
+ [texture:jinbo/shield]
+ {
+  [KscaleWH]{0.25:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fadein]{30:35}
+ }
+ [texture:commands/defence]
+ {
+  [KscaleWH]{0.25:-1}
+  [spot]{0.75:0.3:0.5:0.5:}
+  [fadein]{30:65}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+The method of defense varies depending on the action,  \n"Recovery"  ,"Shield"  ,"Defensive Up" 
+ }
+}
+[2]
+{
+ [inami]
+ {
+  [pose]{inami/attention}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/right}
+ }
+  [texture:effects/raincircle]
+ {
+  [KscaleWH]{0.25:-1}
+  [spot]{0.25:0.3:0.5:0.5:}
+  [fade]{30:0}
+ }
+ [texture:jinbo/shield]
+ {
+  [KscaleWH]{0.25:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fade]{30:0}
+ }
+ [texture:commands/defence]
+ {
+  [KscaleWH]{0.25:-1}
+  [spot]{0.75:0.3:0.5:0.5:}
+  [fade]{30:0}
+ }
+ [texture:tutitukumo/body]
+ {
+  [KscaleWH]{0.20:-1}
+  [spot]{0.85:0.55:0.5:0.5:}
+  [fadein]{30:0}
+ } 
+[texture:nothing]
+ {
+  [KscaleWH]{0.20:-1}
+  [spot]{0.82:0.55:0.5:0.5:}
+  [message]{100:4::0:0:1} 
+  [z]{10}
+[fadein]{30:0}
+  
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+Also, look at the blue number in the upper left corner of the icon.   \nIf the number is 50, you take a half of the damage, and if 200, you take twice as much
+ }
+}
+[3]
+{
+ 
+[inami]
+ {
+  [pose]{inami/right}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/yareyare}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [texture:tutitukumo/body]
+ {
+  [KscaleWH]{0.20:-1}
+  [spot]{0.85:0.55:0.5:0.5:}
+  [fade]{30:0}
+ } 
+[texture:nothing]
+ {
+  [KscaleWH]{0.20:-1}
+  [spot]{0.82:0.55:0.5:0.5:}
+  [message]{100:4::0:0:1} 
+  [z]{10}
+[fade]{30:0}
+  
+ }
+ [texture:commands/defence]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+ }
+ [textbox:0]
+ {
+You'd better defend yourself when the enemy's attack looks strong  \nit's to the left of the command menu
+ }
+}
+敵の攻撃に対処したいのならば防御命令だ。 行動によって防御方法は変わるが、回復したり、シールドを張ったりすることもある。 回復やシールドがなくても、ダメージを軽減する効果が働くから強い攻撃が来るときは防御した方がいい
+}
+
+[elementtutorial]
+{
+[0]
+{
+ [inami]
+ {
+  [pose]{inami/niou:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{20:0.5}
+  [motion]{inami/syaberu50}
+  [wait:50]{ [motion]{inami/syaberu50}}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+But even the servants have a will   \nAs you've somewhat figured out, they don't always do what we're ordered to do
+ }
+}
+[1]
+{
+ [inami]
+ {
+  [pose]{inami/niou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/yareyare}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+No one's dumb enough to order a defense and then attack, but they may take actions that their good at ...... \ncalled elemet actions   \nas well as when he orders an attack
+ }
+}
+[2]
+{
+ [inami]
+ {
+  [pose]{inami/yareyare}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/right}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+So there is an order to entrust the action completely  \nIt's under the command menu
+ }
+ [texture:commands/element]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fadein]{30:0}
+ }
+}
+[3]
+{
+ [inami]
+ {
+  [pose]{inami/right}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/attention}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+The balance of power determines which action to take when you entrust      \n
+If you can get a good balance between attack and defense, you may be able to win the battle just by leaving it        \n
+You can manage this balance later, try it
+ }
+
+ [texture:commands/element]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fade]{30:0}
+ }
+
+ [texture:commands/triangle2]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fadein]{30:25}
+ }
+}
+
+ しかし、しもべどもにも自我がある。 攻撃と命令しても必ず攻撃をしてくれるわけでは無い。 属性行動という個人の得意なことを行うこともある。防御の時でも同様だ。 しもべの自我に完全に任せる命令がコマンドメニューの下にある  楽だが、眺めっぱなしでは有利をとれないこともある　気をつけろ
+}
+[dodgetutorial]
+{
+[0]
+{
+ [inami]
+ {
+  [pose]{inami/niou:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{20:0.5}
+  [motion]{inami/syaberu50}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+In fact, some enemy attacks can be avoided   \nNext time you train to avoid that attack
+ }
+}
+[1]
+{
+ [inami]
+ {
+  [pose]{inami/niou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/attention}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+The method is the same as moving    \nJust designate the sky as the destination
+ }
+ [texture:commands/dodge]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fadein]{30:0}
+ }
+}
+[2]
+{
+ [inami]
+ {
+  [pose]{inami/attention}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/migi}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+You can't avoid the ones like the above  \nThe ones like the below can be easily avoided by just flying    \n
+Well, you just have to watch and learn once
+ }
+ [texture:commands/dodge]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fade]{30:0}
+ }
+ [tutitukumo]
+ {
+  [spot]{0.85:0.25:0.5:0.5:}
+  [motion]{tutitukumo/hissatu:1:1}
+  [fadein]{30:0}
+ }
+ [wait:30]{
+ [tutitukumo:1]
+ {
+  [z]{100}
+  [spot]{0.85:0.55:0.5:0.5:}
+  [motion]{tutitukumo/Kattack:1:1}
+  [fadein]{30:0}
+ }}
+}
+[3]
+{
+ [inami]
+ {
+  [pose]{inami/migi}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/niou}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+Don't worry about timing your jumps  \nAttacks that can be avoided are always designed to be timed
+ }
+ [tutitukumo]
+ {
+  [spot]{0.85:0.25:0.5:0.5:}
+  [motion]{tutitukumo/hissatu:1:1}
+  [fade]{30:0}
+ }
+ [tutitukumo:1]
+ {
+  [spot]{0.85:0.55:0.5:0.5:}
+  [motion]{tutitukumo/Kattack:1:1}
+  [fade]{30:0}
+  [z]{100}
+ }
+}
+ 敵の攻撃には避けられるものがある 作法は移動と同じだ。　敵の予備動作を見て、回避を行え  ジャンプで避けれるなら高いところを指定してコマンドメニューの真ん中で避けるだ
+}
+
+[dancetutorial]
+{
+[0]
+{
+ [inami]
+ {
+  [pose]{inami/niou:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{20:0.5}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+The next action I'm going to teach you is also one that will help you deal with the enemy's actions
+ }
+}
+[1]
+{
+ [inami]
+ {
+  [pose]{inami/niou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/attention}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+It's a dance ....... Don't underestimate it's just a boogie. \nDance eliminates all debuffs
+ }
+ [texture:commands/dance]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fadein]{30:0}
+ }
+}
+[2]
+{
+ [inami]
+ {
+  [pose]{inami/attention}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/migi}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+The groove of the dance is scientifically eliminate the effects of \nelectrical paralysis that reduces aggression  \ncold air that disables action  \nflames that set off a conflagration  \nand much more
+
+ }
+ [texture:commands/dance]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+ }
+ [texture:effects/thundered]
+ {
+  [KscaleWH]{0.2:-1}
+  [spot]{0.85:0.2:0.5:0.5:}
+  [fadein]{30:120}
+ }
+ [texture:effects/iced]
+ {
+  [KscaleWH]{0.2:-1}
+  [spot]{0.85:0.5:0.5:0.5:}
+  [fadein]{30:210}
+ }
+ [texture:effects/fired]
+ {
+  [KscaleWH]{0.2:-1}
+  [spot]{0.85:0.8:0.5:0.5:}
+  [fadein]{30:270}
+ }
+}
+
+[3]
+{
+ [inami]
+ {
+  [pose]{inami/migi}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/douda}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+I'm going to burn you now   \nDance from the top right corner of the command menu
+ }
+ [texture:commands/dance]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+ }
+ [texture:effects/thundered]
+ {
+  [KscaleWH]{0.2:-1}
+  [spot]{0.85:0.2:0.5:0.5:}
+ }
+ [texture:effects/iced]
+ {
+  [KscaleWH]{0.2:-1}
+  [spot]{0.85:0.5:0.5:0.5:}
+ }
+ [texture:effects/fired]
+ {
+  [KscaleWH]{0.2:-1}
+  [spot]{0.85:0.8:0.5:0.5:}
+ }
+}
+ これもまた敵の行動に対応するためのものだ お前の力で踊りとともに状態異常をかき消すことができる　敵の攻撃や天候によって燃やされたりだとか、力が出なくなったりするときに踊らせるといい　ちょっと燃やしてやるからやってみろ コマンドメニュー右上だ
+}
+[chargetutorial]
+{
+[0]
+{
+ [inami]
+ {
+  [pose]{inami/niou:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{20:0.5}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+
+This is the last   \nThe last command is a special one that only you can do
+ }
+}
+[1]
+{
+ [inami]
+ {
+  [pose]{inami/niou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/attention}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+The Charge   \nThe charged power is carried over to the next action  \n
+The power doubles ... and triples ... \nWhat happens if the next action is a powerful attack?
+ }
+ [texture:commands/charge]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fadein]{30:0}
+ }
+}
+[2]
+{
+ [inami]
+ {
+  [pose]{inami/attention}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/douda}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+If you put your accumulated power into a powerful ult that only activates every dozen or so turns,  \nyou'll be able to defeat even the high-level enemies
+ }
+ [texture:commands/charge]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+ }
+}
+[3]
+{
+ [inami]
+ {
+  [pose]{inami/douda}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/right}
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+
+Charge it to the max and attack   \n
+That the way you can destroy it  \n
+Charge from the top left of the command menu
+ }
+ [texture:commands/charge]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+ }
+}
+
+ これで最後だな　お前にはしもべに力を溜めさせる機能がある　溜まった力は一度の行動に注がれ、爆発的な力を生み出す 最大まで力を溜めて攻撃してみろ。それでそこの泥人形を破壊できる　コマンドメニュー左上だ
+}
+[100:tact][deadtutorial]
+{
+[0]
+{
+ [inami]
+ {
+  [pose]{inami/niou:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{20:0.5}
+ }
+[tact]
+{
+  
+  [pose]{tact/taiki:0}
+  [flip]{}
+  [spot]{0.875:1.0:0.5:1}
+  [fadein]{20:30}
+}
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+
+And lastly,  \nI'm sure you already know this,  your body is basically a invincible
+ }
+}
+[1]
+{
+ [inami]
+ {
+  [pose]{inami/niou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/taiki}
+  [motion:]{inami/syaberu50}
+
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+But if all the servants are wiped out,  the power will lost
+ }
+[tact]
+{
+  
+  [pose]{tact/taiki:0}
+  [flip]{}
+  [spot]{0.875:1.0:0.5:1}
+  [wait:30]{
+  [fade]{30:0}
+  }
+}
+}
+[2]
+{
+ [inami]
+ {
+  [pose]{inami/taiki}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/douda}
+
+ }
+ [namebox]
+ {
+ Inami
+ }
+ [textbox:0]
+ {
+
+Finally, you get to experience it, and the tutorial is over.    \nGo
+ }
+}
+ で、最後に　お前はしもべが全滅するまでは無敵だ。　しもべが死んでしまえば戦力が減り、敵を倒せる出力が足りなくなってしまうだろう　残されたしもべが火事場の馬鹿力を発揮することもあるが、最後には計画性がモノを言う　火事場の馬鹿力すら計画的に使いこなして敵を粉砕しろ　じゃ、全滅を体感してチュートリアルは終了だ。　行ってこい
+
+}
+
+[100:tact]
+{
+
+[0]
+{
+ [yoshino]
+ {
+  [pose]{maniya/warai:0}
+  [spot]{0.525:1.0:0.5:1}
+  [slidein]{20:0.5}
+   
+ [maniyasword:0]
+ {
+  [spot]{0.18:0.3:::5}
+  [slidein]{20:0.8}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.10:0.20:::-5}
+  [slidein]{20:0.6}
+  }
+ [maniyasword:0:1]
+ {
+  [spot]{0.025:0.30:::10}
+  [slidein]{20:0.5}
+  }
+ }
+ 
+ [namebox]
+ {
+ Maniya
+ }
+ [textbox:0]
+ {
+ねぇねぇ、  その短剣、  \nやっぱりカッコイイね！
+ }
+}
+
+[1]
+{ 
+[maniya]
+ {
+  [pose]{maniya/warai:0}
+  [spot]{0.125:1.0:0.5:1}
+[maniyasword:0]
+ {
+  [spot]{0.18:0.3:::5}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.10:0.20:::-5}
+  }
+ [maniyasword:0:1]
+ {
+  [spot]{0.025:0.30:::10}
+  }
+ }
+  [kaito]
+ {
+  [pose]{kaito/gimon2:0}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [slidein]{20:-0.5}
+ }
+ 
+ [nameboxR]
+ {
+ Kaito
+ }
+ [textbox]
+ {
+そうか？
+
+ }
+}
+[2]
+{ 
+[maniya]
+ {
+  [pose]{maniya/warai}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{maniya/sore}
+  [texchange]{head:talk}
+[maniyasword:0]
+ {
+  [spot]{0.18:0.3:::5}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.10:0.20:::-5}
+  }
+ [maniyasword:0:1]
+ {
+  [spot]{0.025:0.30:::10}
+  }
+ }
+  [kaito]
+ {
+  [pose]{kaito/gimon2:0}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  
+ }
+ 
+ [namebox]
+ {
+ Maniya
+ }
+ [textbox]
+ {
+しかもそれ、  \n魔術で切れ味をよくしてるでしょ？
+
+ }
+}
+[3]
+{ 
+[maniya]
+ {
+  [pose]{maniya/sore:0}
+  [texchange]{head:talk}
+  [spot]{0.125:1.0:0.5:1}
+[maniyasword:0]
+ {
+  [spot]{0.18:0.3:::5}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.10:0.20:::-5}
+  }
+ [maniyasword:0:1]
+ {
+  [spot]{0.025:0.30:::10}
+  }
+ }
+  [kaito]
+ {
+  [pose]{kaito/gimon2}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [motion]{kaito/knife}
+  [texchange]{head:talk}
+ }
+ 
+ [nameboxR]
+ {
+ Kaito
+ }
+ [textbox]
+ {
+よくわかるな    \n氷の魔力さえあれば刻んだ魔術が自動で刃を整えてくれるんだ::0.9
+ }
+}
+[4]
+{ 
+[maniya]
+ {
+  [pose]{maniya/sore}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{maniya/happy2:1.4}
+[maniyasword:0]
+ {
+  [spot]{0.18:0.3:::5}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.10:0.20:::-5}
+  }
+ [maniyasword:0:1]
+ {
+  [spot]{0.025:0.30:::10}
+  }
+ }
+  [kaito]
+ {
+  [pose]{kaito/knife:0}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+ }
+ 
+ [namebox]
+ {
+ Maniya
+ }
+ [textbox]
+ {
+やっぱり！  \nアタシじゃ使えないから奪わないであげるね！:1.05:0.9
+ }
+}
+[5]
+{ 
+[maniya]
+ {
+  [pose]{maniya/happy2:0}
+  [spot]{0.125:1.0:0.5:1}
+[maniyasword:0]
+ {
+  [spot]{0.18:0.3:::5}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.10:0.20:::-5}
+  }
+ [maniyasword:0:1]
+ {
+  [spot]{0.025:0.30:::10}
+  }
+ }
+  [kaito]
+ {
+  [pose]{kaito/knife}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [motion]{kaito/akire}
+ }
+ 
+ [nameboxR]
+ {
+ Kaito
+ }
+ [textbox]
+ {
+それはどうも……:0.85:0.85
+
+ }
+}
+}
+
+
+[10:maniya:kaito]
+{
+
+[0]
+{
+ [maniya]
+ {
+  [pose]{maniya/warai:0}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{20:0.5}
+   
+ [maniyasword:0]
+ {
+  [spot]{0.18:0.3:::5}
+  [slidein]{20:0.8}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.10:0.20:::-5}
+  [slidein]{20:0.6}
+  }
+ [maniyasword:0:1]
+ {
+  [spot]{0.025:0.30:::10}
+  [slidein]{20:0.5}
+  }
+ }
+ 
+ [namebox]
+ {
+ Maniya
+ }
+ [textbox:0]
+ {
+ねぇねぇ、  その短剣、  \nやっぱりカッコイイね！
+ }
+}
+
+[1]
+{ 
+[maniya]
+ {
+  [pose]{maniya/warai:0}
+  [spot]{0.125:1.0:0.5:1}
+[maniyasword:0]
+ {
+  [spot]{0.18:0.3:::5}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.10:0.20:::-5}
+  }
+ [maniyasword:0:1]
+ {
+  [spot]{0.025:0.30:::10}
+  }
+ }
+  [kaito]
+ {
+  [pose]{kaito/gimon2:0}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [slidein]{20:-0.5}
+ }
+ 
+ [nameboxR]
+ {
+ Kaito
+ }
+ [textbox]
+ {
+そうか？
+
+ }
+}
+[2]
+{ 
+[maniya]
+ {
+  [pose]{maniya/warai}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{maniya/sore}
+  [texchange]{head:talk}
+[maniyasword:0]
+ {
+  [spot]{0.18:0.3:::5}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.10:0.20:::-5}
+  }
+ [maniyasword:0:1]
+ {
+  [spot]{0.025:0.30:::10}
+  }
+ }
+  [kaito]
+ {
+  [pose]{kaito/gimon2:0}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  
+ }
+ 
+ [namebox]
+ {
+ Maniya
+ }
+ [textbox]
+ {
+しかもそれ、  \n魔術で切れ味をよくしてるでしょ？
+
+ }
+}
+[3]
+{ 
+[maniya]
+ {
+  [pose]{maniya/sore:0}
+  [texchange]{head:talk}
+  [spot]{0.125:1.0:0.5:1}
+[maniyasword:0]
+ {
+  [spot]{0.18:0.3:::5}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.10:0.20:::-5}
+  }
+ [maniyasword:0:1]
+ {
+  [spot]{0.025:0.30:::10}
+  }
+ }
+  [kaito]
+ {
+  [pose]{kaito/gimon2}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [motion]{kaito/knife}
+  [texchange]{head:talk}
+ }
+ 
+ [nameboxR]
+ {
+ Kaito
+ }
+ [textbox]
+ {
+よくわかるな    \n氷の魔力さえあれば刻んだ魔術が自動で刃を整えてくれるんだ::0.9
+ }
+}
+[4]
+{ 
+[maniya]
+ {
+  [pose]{maniya/sore}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{maniya/happy2:1.4}
+[maniyasword:0]
+ {
+  [spot]{0.18:0.3:::5}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.10:0.20:::-5}
+  }
+ [maniyasword:0:1]
+ {
+  [spot]{0.025:0.30:::10}
+  }
+ }
+  [kaito]
+ {
+  [pose]{kaito/knife:0}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+ }
+ 
+ [namebox]
+ {
+ Maniya
+ }
+ [textbox]
+ {
+やっぱり！  \nアタシじゃ使えないから奪わないであげるね！:1.05:0.9
+ }
+}
+[5]
+{ 
+[maniya]
+ {
+  [pose]{maniya/happy2:0}
+  [spot]{0.125:1.0:0.5:1}
+[maniyasword:0]
+ {
+  [spot]{0.18:0.3:::5}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.10:0.20:::-5}
+  }
+ [maniyasword:0:1]
+ {
+  [spot]{0.025:0.30:::10}
+  }
+ }
+  [kaito]
+ {
+  [pose]{kaito/knife}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [motion]{kaito/akire}
+ }
+ 
+ [nameboxR]
+ {
+ Kaito
+ }
+ [textbox]
+ {
+それはどうも……:0.85:0.85
+
+ }
+}
+}
+
+[10:sisyo:kaito]
+{
+
+[0]
+{
+ [sisyo]
+ {
+  [pose]{sisyo/taiki:0}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{20:0.5}
+ }
+ 
+ [namebox]
+ {
+ Sisyo
+ }
+ [textbox:0]
+ {
+ようKaito！   \n調子どうだ？:1.2
+ }
+}
+
+[1]
+{ 
+[sisyo]
+ {
+  [pose]{sisyo/taiki:0}
+  [spot]{0.125:1.0:0.5:1}
+ }
+  [kaito]
+ {
+  [pose]{kaito/shop:0}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [slidein]{20:-0.5}
+  [texchange]{head:def}
+ }
+ 
+ [nameboxR]
+ {
+ Kaito
+ }
+ [textbox]
+ {
+急にどうした？師匠   \n……まあ、いい方だよ::0.9
+
+ }
+}
+[2]
+{ 
+[sisyo]
+ {
+  [pose]{sisyo/taiki}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{sisyo/satori}
+ }
+  [kaito]
+ {
+  [pose]{kaito/shop:0}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  
+  [texchange]{head:def}
+ }
+ 
+ [namebox]
+ {
+ Sisyo
+ }
+ [textbox]
+ {
+ふむ、  じゃあ昔のように稽古をつけてやろう！
+
+ }
+}
+[3]
+{ 
+[sisyo]
+ {
+  [pose]{sisyo/satori:0}
+  [spot]{0.125:1.0:0.5:1}
+ }
+  [kaito]
+ {
+  [pose]{kaito/shop}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [motion]{kaito/akire}
+ }
+ 
+ [nameboxR]
+ {
+ Kaito
+ }
+ [textbox]
+ {
+あの虐待を稽古と呼ぶのか？   \nさすがにもう勘弁してくれよ
+
+ }
+}
+[4]
+{ 
+[sisyo]
+ {
+  [pose]{sisyo/satori}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{sisyo/omoihaseru:1.1}
+ }
+  [kaito]
+ {
+  [pose]{kaito/akire:0}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [texchange]{head:def}
+ }
+ 
+ [namebox]
+ {
+ Sisyo
+ }
+ [textbox]
+ {
+俺はお前の成長のことを考えてるんだ    \n師匠の気持ちを無碍にするなよ
+
+ }
+}
+[5]
+{ 
+[sisyo]
+ {
+  [pose]{sisyo/omoihaseru:0}
+  [spot]{0.125:1.0:0.5:1}
+ }
+  [kaito]
+ {
+  [pose]{kaito/akire}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [motion]{kaito/talk}
+  [texchange]{head:akire}
+ }
+ 
+ [nameboxR]
+ {
+ Kaito
+ }
+ [textbox]
+ {
+嘘だ。   暇なだけだろう
+
+ }
+}
+[6]
+{ 
+[sisyo]
+ {
+  [pose]{sisyo/omoihaseru}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{sisyo/shop:2}
+ }
+  [kaito]
+ {
+  [pose]{kaito/talk}
+  [spot]{0.875:1.0:0.5:1}
+  [flip]{}
+  [motion]{kaito/nayami:1.2}
+ }
+ 
+ [namebox]
+ {
+ Sisyo
+ }
+ [textbox]
+ {
+正解！  さすが我が弟子！:1.2:0.75
+ }
+}
+}
+
+
+
+[80:maniya:desert]
+{
+
+[0]
+{
+ [maniya]
+ {
+  [pose]{maniya/talk:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{10}
+ }
+ 
+ [namebox]
+ {
+ Maniya
+ }
+ [textbox:0]
+ {
+う～ん、  確かにここは故郷だけど、   \nアタシはあんまり思い入れないかな
+ }
+[maniyasword:0]
+ {
+  [spot]{0.2:0.35:::0}
+  [fadein]{10}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.15:0.20:::0}
+  [fadein]{10}
+  }
+ [maniyasword:2]
+ {
+  [spot]{-0.1:0.30:::0}
+  [fadein]{10}
+  }
+}
+
+[1]
+{
+ [maniya]
+ {
+  [pose]{maniya/talk}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{maniya/shop:1}
+  
+ }
+ [namebox]
+ {
+ Maniya
+ }
+ [textbox]
+ {
+長い間ここのコ達を助けてたんだけど、それだけだね
+
+ }
+[maniyasword:0]
+ {
+  [spot]{0.3:0.35:::50}
+   [slidein]{15:0.1:0:50}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.2:0.20:::45}
+   [slidein]{15:0.05:0:45}
+  }
+ [maniyasword:2]
+ {
+  [spot]{0.1:0.30:::30}
+   [slidein]{15:0.2:0:30}
+  }
+}
+[2]
+{
+ [maniya]
+ {
+  [pose]{maniya/shop}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{maniya/happy:1}
+  
+ }
+ [namebox]
+ {
+ Maniya
+ }
+ [textbox]
+ {
+あ、 でもやっぱ帰ってくると嬉しいってコも結構いるみたい!:1.1
+ }
+[maniyasword:0]
+ {
+  [spot]{0.3:0.35:::50}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.2:0.20:::45}
+  }
+ [maniyasword:2]
+ {
+  [spot]{0.1:0.30:::30}
+  }
+ [maniyasword:0:1:1]
+ {
+  [spot]{0.15:0.30:::10}
+   [slidein]{15:0.4:0:30}
+  }
+ [maniyasword:0:1]
+ {
+  [spot]{0.05:0.30:::20}
+   [slidein]{15:0.4:0:30}
+  }
+
+}
+[3]
+{
+ [maniya]
+ {
+  [pose]{maniya/happy}
+  [spot]{0.125:1.0:0.5:1}
+  
+
+  [motion:0]{maniya/shop:1}
+  [texchange:0]{head:happy}
+}
+ [namebox]
+ {
+ Maniya
+ }
+ [textbox]
+ {
+よかったね～
+ }
+[maniyasword:0]
+ {
+  [spot]{0.3:0.35:::50}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.2:0.20:::45}
+  }
+ [maniyasword:2]
+ {
+  [spot]{0.1:0.30:::30}
+  }
+ [maniyasword:0:1:1]
+ {
+  [spot]{0.15:0.30:::10}
+  }
+ [maniyasword:0:1]
+ {
+  [spot]{0.05:0.30:::20}
+  }
+
+}
+}
+
+[80:yuu:mountains]
+{
+
+[0]
+{
+ [yuu]
+ {
+ 
+  [pose]{yuu/talk:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{10}
+
+ }
+ 
+ [namebox]
+ {
+ Yuu
+ }
+ [textbox]
+ {
+実のところ、  俺はこの辺の裕福な家の生まれなんだ    \n周りも坊ちゃん嬢ちゃんだらけだった
+ }
+}
+
+[1]
+{
+ [yuu]
+ {
+  [pose:0]{yuu/talk}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion]{yuu/akire2talk}
+ }
+ [namebox]
+ {
+ Yuu
+ }
+ [textbox]
+ {
+ただ、  とてつもなく嫌だったんだよ   \n特にわけわからん力を振りかざすやつらがな
+ }
+
+}
+[2]
+{
+ [yuu]
+ {
+  [pose:0]{yuu/akire2talk}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{yuu/akiretalk:1}
+  
+ }
+ [namebox]
+ {
+ Yuu
+ }
+ [textbox]
+ {
+だから俺はここを出て、  単純な力がモノをいう世界に入ったんだ
+ }
+
+}
+[3]
+{
+ [yuu]
+ {
+  [pose:0]{yuu/akiretalk}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{yuu/youtoo:1.2}
+  
+ }
+ [namebox]
+ {
+ Yuu
+ }
+ [textbox]
+ {
+それが楽しくてさ   \n今でもこうして夢中って感じだ
+ }
+
+}
+[4]
+{
+ [yuu]
+ {
+  [pose:0]{yuu/youtoo}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{yuu/kennka:1.3}
+  
+ }
+ [namebox]
+ {
+ Yuu
+ }
+ [textbox]
+ {
+よし！  今日も戦ってこうぜ！:1.2
+ }
+
+}
+}
+
+[80:penny:countryofsuntree]
+{
+
+[0]
+{
+ [penny]
+ {
+ 
+  [pose]{penny/nobi:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{10}
+
+ }
+ 
+ [namebox]
+ {
+ Penny
+ }
+ [textbox]
+ {
+う～ん安心する匂い、   故郷って感じだね～:0.8
+ }
+}
+
+[1]
+{
+ [penny]
+ {
+  [pose:0]{penny/nobi}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion]{penny/talk}
+ }
+ [namebox]
+ {
+ Penny
+ }
+ [textbox]
+ {
+ここでは吹雪のせいで星が見えないんだ    \n太陽だってね
+ }
+
+}
+[2]
+{
+ [penny]
+ {
+  [pose:0]{penny/talk}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{penny/shop:1}
+  
+ }
+ [namebox]
+ {
+ Penny
+ }
+ [textbox]
+ {
+だから僕は"外"に出て吹雪を越えたとき、初めて星を見たんだよ！:1.1:1.1
+ }
+
+}
+[3]
+{
+ [penny]
+ {
+  [pose:0]{penny/shop}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{penny/gimon2:1.2}
+  
+ }
+ [namebox]
+ {
+ Penny
+ }
+ [textbox]
+ {
+あれも太陽なんだってね  \nじゃあここみたいな違う世界もあるのかな？
+ }
+
+}
+[4]
+{
+ [penny]
+ {
+  [pose:0]{penny/gimon2}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{penny/omoihaseru:1.3}
+  
+ }
+ [namebox]
+ {
+ Penny
+ }
+ [textbox]
+ {
+いつか行ってみたいなぁ…………:0.9:0.7
+ }
+
+}
+}
+
+[80:sisyo:pureland]
+{
+
+[0]
+{
+ [sisyo]
+ {
+ 
+  [pose]{sisyo/yasume:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{10}
+
+ }
+ 
+ [namebox]
+ {
+ Sisyo
+ }
+ [textbox]
+ {
+この辺で40年前かな？  \n俺は目覚めたんだ
+ }
+}
+
+[1]
+{
+ [sisyo]
+ {
+  [pose:0]{sisyo/yasume}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion]{sisyo/omoihaseru:0.1}
+ }
+ [namebox]
+ {
+ Sisyo
+ }
+ [textbox]
+ {
+人っ子一人いない不気味な場所で  \n自分が誰か分からないことを理解した::0.8
+ }
+
+}
+[2]
+{
+ [sisyo]
+ {
+  [pose:0]{sisyo/omoihaseru}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{sisyo/talk:1}
+  
+ }
+ [namebox]
+ {
+ Sisyo
+ }
+ [textbox]
+ {
+不安な俺は当然自分探し回るわけだ  \n結果的に大陸中を廻ったが、  \nなぜか覚えていた学問のおかげで金には困らなかったよ
+ }
+
+}
+[2.5]
+{
+ [sisyo]
+ {
+  [pose:0]{sisyo/talk}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{sisyo/yasume:0.4}
+  
+ }
+ [namebox]
+ {
+ Sisyo
+ }
+ [textbox]
+ {
+自分について知る者はどこにもいなかった   \n記憶も何も戻らなかった::0.9
+ }
+
+}
+[2.8]
+{
+ [sisyo]
+ {
+  [pose:0]{sisyo/yasume}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{sisyo/omamori:1}
+  [texchange]{head:talk}
+  
+ }
+ [namebox]
+ {
+ Sisyo
+ }
+ [textbox]
+ {
+だが、このお守りや、名前を貰った
+ }
+
+}
+[3]
+{
+ [sisyo]
+ {
+  [pose:0]{sisyo/omamori}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{sisyo/yasume:0.1}
+  
+  [texchange]{head:sleep}
+ }
+ [namebox]
+ {
+ Sisyo
+ }
+ [textbox]
+ {
+それで気づいたんだ   \nせっかく授かった人生 楽しんでやろうって::0.9
+ }
+
+}
+}
+
+[80:monika;mori]
+{
+
+[0]
+{
+ [monika]
+ {
+  [pose]{monika/talk:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{10}
+
+ }
+ 
+ [namebox]
+ {
+ Monika
+ }
+ [textbox]
+ {
+もう昔の話だが、   \n私はこの周辺の森をナワバリに狩をしていた
+ }
+}
+
+[1]
+{
+ [monika]
+ {
+  [pose:0]{monika/talk}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion]{monika/kamae:1}
+  [texchange]{head:katame}
+ }
+ [namebox]
+ {
+ Monika
+ }
+ [textbox]
+ {
+時々森の外からやってくる奴らもいてな   \n退屈はしてなかったさ
+ }
+
+}
+[2]
+{
+ [monika]
+ {
+  [pose:0]{monika/talk}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{monika/gimon:1}
+  
+ }
+ [namebox]
+ {
+ Monika
+ }
+ [textbox]
+ {
+本来、  ここに足を踏み入れた時点で全員私の得物なんだが、 　\nもう離れてるしな…… だが……:1:0.9
+ }
+
+}
+[3]
+{
+ [monika]
+ {
+  [pose:0]{monika/gimon}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{monika/taiki:1}
+  
+ }
+ [namebox]
+ {
+ Monika
+ }
+ [textbox]
+ {
+……ここは我慢しよう   \n仲間を狩るわけにはいかないしな:0.8:0.8
+ }
+
+}
+}
+
+
+[80:kaito:mori]
+{
+
+[0]
+{
+ [kaito]
+ {
+  [pose]{kaito/talk:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{10}
+
+ }
+ 
+ [namebox]
+ {
+ Kaito
+ }
+ [textbox]
+ {
+懐かしいな、    \nこの辺の集落で俺は育ったんだ
+ }
+}
+
+[1]
+{
+ [kaito]
+ {
+  [pose:0]{kaito/talk}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion]{kaito/gimon2:1}
+  
+ }
+ [namebox]
+ {
+ Kaito
+ }
+ [textbox]
+ {
+もうほとんど覚えていないが、  \nとにかく師匠に出会ってからすべてが始まった
+ }
+
+}
+[2]
+{
+ [kaito]
+ {
+  [pose:0]{kaito/gimon2}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{kaito/gimon:1}
+  
+ }
+ [namebox]
+ {
+ Kaito
+ }
+ [textbox]
+ {
+修行したり、  街に繰り出したり……
+ }
+
+}
+[3]
+{
+ [kaito]
+ {
+  [pose:0]{kaito/gimon}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{kaito/akire:1}
+  
+ }
+ [namebox]
+ {
+ Kaito
+ }
+ [textbox]
+ {
+まあ、  何度も死にかけたけど、  \nいい思い出だよ
+ }
+
+}
+[4]
+{
+ [kaito]
+ {
+  [pose:0]{kaito/akire}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{kaito/happy:1}
+  [texchange:0]{head:def}
+ }
+ [namebox]
+ {
+ Kaito
+ }
+ [textbox]
+ {
+そのおかげで今の俺があるからな
+ }
+
+}
+}
+
+
+
+[80:yoshino:believerscapital]
+{
+
+[0]
+{
+ [yoshino]
+ {
+  [pose]{yoshino/talk:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{10}
+
+ }
+ 
+ [namebox]
+ {
+ Yoshino
+ }
+ [textbox:0]
+ {
+ええ、  私はこの国の出身よ
+ }
+}
+
+[1]
+{
+ [yoshino]
+ {
+  [pose:0]{yoshino/talk}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion]{yoshino/think:1}
+  [texchange]{head:itai:}
+  
+ }
+ [namebox]
+ {
+ Yoshino
+ }
+ [textbox]
+ {
+でも、    \nあんまりいい思い出はないわね:0.9
+ }
+
+}
+[2]
+{
+ [yoshino]
+ {
+  [pose:0]{yoshino/think}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{yoshino/toridasi:1}
+  [texchange]{head:turai1:}
+  
+ }
+ [namebox]
+ {
+ Yoshino
+ }
+ [textbox]
+ {
+聖楽隊としてやってたんだけど、  \n嫌になって逃げ出してきたのよ:0.8
+ }
+
+}
+[3]
+{
+ [yoshino]
+ {
+  [pose:0]{yoshino/toridasi}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{yoshino/onsa:1}
+  
+ }
+ [namebox]
+ {
+ Yoshino
+ }
+ [textbox]
+ {
+そうそう、   \nこれも抜け出すときに拝借した音叉なのよ    \n今は武器として使ってるけどね
+ }
+
+}
+[4]
+{
+ [yoshino]
+ {
+  [pose:0]{yoshino/onsa}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{yoshino/syokai:1}
+  
+ }
+ [namebox]
+ {
+ Yoshino
+ }
+ [textbox]
+ {
+戦うのは大変だけど、   \nあの頃と比べると今の方が断然楽しいわね
+ }
+
+}
+[5]
+{
+ [yoshino]
+ {
+  [pose:0]{yoshino/syokai}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{yoshino/taiki2:1.5}
+  
+ }
+ [namebox]
+ {
+ Yoshino
+ }
+ [textbox]
+ {
+やっぱり音楽はまず、   \n自分たちのものじゃなくっちゃね:0.9
+ }
+
+}
+}
+
+[50:maniya:snow]
+{
+[0]
+{
+ [maniya]
+ {
+  [pose]{maniya/odoroki:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{10}
+ }
+ 
+ [namebox]
+ {
+ Maniya
+ }
+ [textbox:0]
+ {
+え、私が寒そうだって？
+ }
+[maniyasword:0]
+ {
+  [spot]{0.2:0.2:::20}
+  [fadein]{10}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.05:0.20:::0}
+  [fadein]{10}
+  }
+ [maniyasword:2]
+ {
+  [spot]{-0.025:0.30:::-20}
+  [fadein]{10}
+  }
+}
+
+[1]
+{
+ [maniya]
+ {
+  [pose]{maniya/odoroki}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{maniya/shop:1}
+  
+ }
+ [namebox]
+ {
+ Maniya
+ }
+ [textbox]
+ {
+大丈夫だよ   \n雪はこのコ達が防いでくれるし……:0.95
+
+ }
+[maniyasword:0]
+ {
+  [spot]{0.2:0.2:::20}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.05:0.20:::0}
+  }
+ [maniyasword:2]
+ {
+  [spot]{-0.025:0.30:::-20}
+  }
+}
+[2]
+{
+ [maniya]
+ {
+  [pose]{maniya/shop}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{maniya/irezumi:1}
+  
+ }
+ [namebox]
+ {
+ Maniya
+ }
+ [textbox]
+ {
+アタシの入れ墨が体温を調節してくれるんだ   \nもともとは砂漠の熱に耐えるためのものだがね
+ }
+[maniyasword:0]
+ {
+  [spot]{0.2:0.2:::20}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.05:0.20:::0}
+  }
+ [maniyasword:2]
+ {
+  [spot]{-0.025:0.30:::-20}
+  }
+
+}
+[3]
+{
+ [maniya]
+ {
+  [pose]{maniya/irezumi}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{maniya/warai:1.5}
+  
+ }
+ [namebox]
+ {
+ Maniya
+ }
+ [textbox]
+ {
+っ てことで、 そう心配しなくていいぞ！:1.1
+ }
+[maniyasword:0]
+ {
+  [spot]{0.2:0.2:::20}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.05:0.20:::0}
+  }
+ [maniyasword:2]
+ {
+  [spot]{-0.025:0.30:::-20}
+  }
+
+}
+}
+
+[50:penny:snow]
+{
+[0]
+{
+ [penny]
+ {
+  [pose]{penny/tameiki:0}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{10:0.2:0}
+ }
+ 
+ [namebox]
+ {
+ Penny:8
+ }
+ [textbox:0]
+ {
+はぁ、  今日は雨かぁ:0.8
+ }
+}
+
+[1]
+{
+ [penny]
+ {
+  [pose]{penny/tameiki}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{penny/gimon:1}
+  
+ }
+ [namebox]
+ {
+ Penny
+ }
+ [textbox]
+ {
+濡れるのって嫌なんだよねぇ……:0.9
+ }
+
+}
+[2]
+{
+ [penny]
+ {
+  [pose]{penny/gimon}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{penny/yobikake:2}
+  
+ }
+ [namebox]
+ {
+ Penny
+ }
+ [textbox]
+ {
+誰か～～  乾かして～～～:1.4
+ }
+
+}
+}
+
+[yoshinokanyu]
+{
+[0]
+{
+ [yoshino]
+ {
+  [pose]{yoshino/taiki}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{10:0.2:0}
+
+ }
+ 
+ [namebox]
+ {
+ ???
+ }
+ [textbox:0]
+ {
+Hi,  I'm Yoshino
+ }
+}
+
+[1]
+{
+ [yoshino]
+ {
+  [pose:0]{yoshino/taiki}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion]{yoshino/sinasadame:1}
+  
+ }
+ [namebox]
+ {
+ Yoshino
+ }
+ [textbox]
+ {
+
+I'm traveling around looking for song ideas... \n   And you look so awesome.
+
+ }
+
+}
+[2]
+{
+ [yoshino]
+ {
+  [pose:0]{yoshino/taiki}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{yoshino/syokai:1}
+  
+ }
+ [namebox]
+ {
+ Yoshino
+ }
+ [textbox]
+ {
+
+You're a conductor, right?    \nYou also do conduct when you fight,  then I was interested
+}
+
+}
+[3]
+{
+ [yoshino]
+ {
+  [pose:0]{yoshino/taiki}
+  [spot:0]{0.125:1.0:0.5:1}
+  [motion:0]{yoshino/happy:1}
+  
+ }
+ [namebox]
+ {
+ Yoshino
+ }
+ [textbox]
+ {
+Let's travel together!:1.2
+ }
+
+}
+
+
+}
+
+
+[kaitokanyu]
+{
+[0]
+{
+ [kaito]
+ {
+  [pose]{kaito/whoareyou:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{20}
+
+ }
+ 
+ [namebox]
+ {
+ Kaito
+ }
+ [textbox:0]
+ {
+I know we've never met,   \nBut what are you?
+ }
+}
+
+[1]
+{
+ [kaito]
+ {
+  [pose]{kaito/whoareyou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{kaito/gimon:1.5}
+  
+ }
+ [namebox]
+ {
+ Kaito
+ }
+ [textbox]
+ {
+
+Can't be touched, can't talk to me   \nbut you can communicate with someway
+ }
+
+}
+[1.5]
+{
+ [kaito]
+ {
+  [pose]{kaito/gimon}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{kaito/gimon2:1}
+  
+ }
+ [namebox]
+ {
+ Kaito
+ }
+ [textbox]
+ {
+And clearly you see something different with me ......
+ }
+
+}
+[2]
+{
+ [kaito]
+ {
+  [pose]{kaito/gimon2}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{kaito/syokai:1}
+  
+ }
+ [namebox]
+ {
+ Kaito
+ }
+ [textbox]
+ {
+Well, whatever  \nI was just looking for a travel companion.
+ }
+
+}
+[3]
+{
+  [kaito]
+ {
+  [pose]{kaito/syokai}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{kaito/yorosiku:1}
+  
+ }
+ [namebox]
+ {
+ Kaito
+ }
+ [textbox]
+ {
+I'll follow you
+ }
+
+}
+}
+[monikakanyu]
+{
+[0]
+{
+ [monika]
+ {
+  [pose]{monika/taiki:0}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{10:0.2}
+
+ }
+ 
+ [namebox]
+ {
+ Monika
+ }
+ [textbox:0]
+ {
+Hey,   you're going to keep traveling, aren't you?
+ }
+}
+
+[1]
+{
+ [monika]
+ {
+  [pose]{monika/taiki}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{monika/shop:1.5}
+  
+ }
+ [namebox]
+ {
+ Monika
+ }
+ [textbox]
+ {
+Take me on.  \nI know I'm not here for the same purpose as you......
+ }
+
+}
+[2]
+{
+ [monika]
+ {
+  [pose]{monika/shop}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{monika/udekumi:1}
+  
+ }
+ [namebox]
+ {
+ Monika
+ }
+ [textbox]
+ {
+After all,  hunting is a cooperative effort
+ }
+
+}
+[3]
+{
+ [monika]
+ {
+  [pose]{monika/udekumi}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{monika/syokai:1}
+  
+ }
+ [namebox]
+ {
+ Monika
+ }
+ [textbox]
+ {
+I'll get good results   \nI promise
+ }
+
+}
+
+
+}
+[pennykanyu]
+{
+[0]
+{
+ [penny]
+ {
+  [pose]{penny/happy:0}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{7.5:0.2}
+  
+ }
+ 
+ [namebox]
+ {
+ ???
+ }
+ [textbox:0]
+ {
+Yoo-hoo!  My name is Penny!
+ }
+}
+
+[1]
+{
+ [penny]
+ {
+  [pose]{penny/happy}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{penny/talk:1.5}
+  
+ }
+ [namebox]
+ {
+ Penny
+ }
+ [textbox]
+ {
+You have quite an interesting body!    \nI'm curious!
+ }
+
+}
+[2]
+{
+ [penny]
+ {
+  [pose]{penny/talk}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{penny/shop:1}
+  
+ }
+ [namebox]
+ {
+ Penny
+ }
+ [textbox]
+ {
+I was just traveling too!   \nSince we're here, let's do it together!
+}
+
+}
+[3]
+{
+ [penny]
+ {
+  [pose]{penny/shop:0}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{penny/patt:1}
+  
+ }
+ [namebox]
+ {
+ Penny
+ }
+ [textbox]
+ {
+Let's go that way!?:1.2
+ }
+
+}
+}
+[yuukanyu]
+{
+[0]
+{
+ [yuu]
+ {
+  [pose]{yuu/taiki:0}
+  [spot]{0.125:1.0:0.5:1}
+  [slidein]{7.5:0.2}
+  
+ }
+ 
+ [namebox]
+ {
+ Yuu
+ }
+ [textbox:0]
+ {
+Hey!   \nLooks like you've had quite a dangerous journey
+ }
+}
+
+[1]
+{
+ [yuu]
+ {
+  [pose]{yuu/taiki}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{yuu/kennka:1.5}
+  
+ }
+ [namebox]
+ {
+ Yuu
+ }
+ [textbox]
+ {
+
+Just fighting with all the monstars on the street,   \nI'm trying to be the best fighter!
+ }
+
+}
+[2]
+{
+ [yuu]
+ {
+  [pose]{yuu/kennka}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{yuu/youtoo:1}
+  
+ }
+ [namebox]
+ {
+ Yuu
+ }
+ [textbox]
+ {
+you wants to be too,  right?
+ }
+
+}
+[3]
+{
+ [yuu]
+ {
+  [pose]{yuu/youtoo}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{yuu/sakebi:1}
+  
+ }
+ [namebox]
+ {
+ Yuu
+ }
+ [textbox]
+ {
+I have hundreds of power!   \nLet's Go!:1.5
+ }
+
+}
+}
+[maniyakanyu]
+{
+[0]
+{
+ [maniya]
+ {
+  [pose]{maniya/out}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{10}
+  [motion]{maniya/out:0.8}
+ }
+ 
+ [namebox]
+ {
+ ???
+ }
+ [textbox:0]
+ {
+Hello   \nI'm Maniya
+ }
+}
+
+[1]
+{
+ [maniya]
+ {
+  [pose]{maniya/out}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{maniya/X:1}
+  
+ }
+ [namebox]
+ {
+ Maniya
+ }
+ [textbox]
+ {
+
+And these are   \nour precious family members!:1.5
+ }
+ [maniyasword:0]
+ {
+  [spot]{0.4:0.3:::-20}
+  [slidein]{30:0.8}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.25:0.20:::-5}
+  [slidein]{20:0.6}
+  }
+ [maniyasword:2]
+ {
+  [spot]{0.125:0.30:::10}
+  [slidein]{10:0.5}
+  }
+
+}
+[2]
+{
+ [maniya]
+ {
+  [pose]{maniya/X}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{maniya/shop:1}
+  
+ }
+ [namebox]
+ {
+ Maniya
+ }
+ [textbox]
+ {
+Yes yes, these kids want to travel,  \nand I want to meet many guys too......:0.9
+ }
+[maniyasword:0]
+ {
+  [spot]{0.4:0.3:::-20}
+  [slide]{10:0:0:30}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.25:0.20:::-5}
+  [slide]{15:0:0:30}
+  }
+ [maniyasword:2]
+ {
+  [spot]{0.125:0.30:::10}
+  [slide]{20:0:0:30}
+  }
+
+}
+[3]
+{
+ [maniya]
+ {
+  [pose]{maniya/shop}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{maniya/happy:1}
+  
+ }
+ [namebox]
+ {
+ Maniya
+ }
+ [textbox]
+ {
+I'll be with you!  guys, Do greetings to him! :1.1
+ }
+ [maniyasword:0]
+ {
+  [spot]{0.4:0.3:::10}
+  [slide]{10:-0.15:0:-140}
+  }
+ [maniyasword:1]
+ {
+  [spot]{0.25:0.20:::25}
+  [slide]{12:-0.15:0:-150}
+  }
+ [maniyasword:2]
+ {
+  [spot]{0.125:0.30:::40}
+  [slide]{11:-0.15:0:-160}
+  }
+
+}
+}
+[sisyokanyu]
+{
+[0]
+{
+ [sisyo]
+ {
+  [pose]{sisyo/taiki}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{15}
+ }
+ 
+ [namebox]
+ {
+ Sisyo
+ }
+ [textbox:0]
+ {
+oysiS si eman yM .oLLeH::1.3
+ }
+}
+
+[1]
+{
+ [sisyo]
+ {
+  [pose]{sisyo/taiki}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{sisyo/me:2}
+  
+ }
+ [namebox]
+ {
+ Sisyo
+ }
+ [textbox]
+ {
+
+Hmph ......  you could understand what I said ......  \ndon't you?
+ }
+
+}
+[2]
+{
+ [sisyo]
+ {
+  [pose]{sisyo/me}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{sisyo/yasume:1.5}
+  
+ }
+ [namebox]
+ {
+ Sisyo
+ }
+ [textbox]
+ {
+I guess I won't be bored if I follow with you
+ }
+
+}
+[3]
+{
+ [sisyo]
+ {
+  [pose]{sisyo/yasume}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{sisyo/satori:1}
+  
+ }
+ [namebox]
+ {
+ Sisyo
+ }
+ [textbox]
+ {
+Even if you say you don't want to, I'll definitely follow you!  \n THANK YOU!!!:1.1 
+ }
+
+}
+}

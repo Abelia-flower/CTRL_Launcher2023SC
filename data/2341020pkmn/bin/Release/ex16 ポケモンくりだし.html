@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>最終課題</title>
+  <script type="text/javascript">
+
+function text1() {
+  let text1id = document.getElementById("text1id");
+      let a = document.getElementById("a");
+//id=aとid=text1idの文字を読み取る
+
+      if (text1id.innerHTML === "▼") {//id=aとid=text1idの文字を書き換える
+             a.innerHTML = "いけっ！ピカチュウ！";
+             text1id.innerHTML = "▽";
+           } else {//次のページに移動
+             location.href = "ex17 TVSぴ.html"
+           }
+
+}
+
+    </script>
+    </head>
+    <body bgcolor="#eee8aa">
+
+<p id="a">てきはアチャモ（都市大のすがた）を繰り出した！</p>
+
+      <button onclick="text1()" id="text1id">▼</button>
+
+
+    </body>
+    </html>

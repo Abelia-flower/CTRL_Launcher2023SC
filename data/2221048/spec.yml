@@ -1,0 +1,10 @@
+Id: pingpong
+Title: "ピンポン"
+Genre: "ゲーム"
+ScreenshotPath: "ピンポン.png"
+ExecutablePath: "bin\\ピンポン.exe"
+Argument: 
+SourcePath: src\
+TimeLimit: 00:00:00
+Description: "ボールを壁に当ててピンポンができます。\r\nバーの操作には矢印キーの←→を使用します。"
+IsLate: false

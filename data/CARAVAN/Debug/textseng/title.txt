@@ -1,0 +1,167 @@
+
+[config]
+{
+[maniyasword]
+ {
+   [inname]{@num@=0:@size=*0.07}
+    [inkakko]{@x@=0:@y@=0:@s@=0:@sx@=0:@sy@=0}
+    [format]
+   {
+     [texture:maniya/wep@num@]
+     {
+       [KscaleWH]{@size:-1}
+  	[setTXY]{0.2:0.5}
+        [scrollspot]{@x@:@y@:::@s@:@sx@:@sy@}
+     }
+   }
+  } 
+}
+
+[title]
+{
+ [texture:commands/title:]
+  {
+   [setTXY]{0.5:0.5}
+   [KscaleWH]{1:-1}
+   [fade]{0:0.85}
+   [scrollspot]{0.5:0.2::::-0.35:-0.35}
+[z]{200000}
+   }
+
+  [texture:nothing]
+  {
+   [message]{CLICK TO START:20::1:1:1}
+   [setTXY]{0.5:0.5}
+   [KscaleWH]{0.4:-1}
+   [scrollspot]{0.5:1.2::::1:1}
+[z]{2000000}
+   }
+  [texture:nothing:1]
+  {
+   [message]{CLICK TO START:20::0:0:0}
+   [setTXY]{0.5:0.5}
+   [KscaleWH]{0.4:-1}
+   [scrollspot]{0.502:1.2::::1:1}
+[z]{1500000}
+   }
+  [texture:nothing:2]
+  {
+   [message]{CLICK TO START:20::0:0:0}
+   [setTXY]{0.5:0.5}
+   [KscaleWH]{0.4:-1}
+   [scrollspot]{0.498:1.2::::1:1}
+[z]{1500000}
+   }
+  [texture:nothing:3]
+  {
+   [message]{CLICK TO START:20::0:0:0}
+   [setTXY]{0.5:0.5}
+   [KscaleWH]{0.4:-1}
+   [scrollspot]{0.5:1.205::::1:1}
+[z]{1500000}
+   }
+  [texture:nothing:4]
+  {
+   [message]{CLICK TO START:20::0:0:0}
+   [setTXY]{0.5:0.5}
+   [KscaleWH]{0.4:-1}
+   [scrollspot]{0.5:1.195::::1:1}
+[z]{1500000}
+   }
+
+  [character:yoshino]
+  {
+     [scrollspot]{0.40:0.804::1:0.05}
+    [pose]{yoshino/Ahissatu:0:30}
+[z]{50}
+   }
+ [character:tact]
+  {
+     [scrollspot]{0.30:0.78::1:0:0}
+    [pose]{tact/patt:0}
+[z]{0}
+   }
+  [character:kaito]
+  {
+    [pose]{kaito/Kattack:0:5}
+     [scrollspot]{0.36:0.803::1.3:25:0.1}
+    [fade]{0:1}
+   }
+ [character:monika]
+  {
+     [scrollspot]{0.05:0.801::1:0:-0.2}
+    [pose]{monika/Dhissatu:0:5}
+[z]{-200}
+   }
+   [character:penny]
+  {
+    [scrollspot]{0.376:0.62:::20:-0.1:-0.1}
+    [pose]{penny/Ahissatu:0:10}
+    [z]{100}
+   }
+ [character:yuu]
+  {
+    
+    [pose]{yuu/dash:0:10}
+    [pose:0]{yuu/Ahissatu:0:2.5}
+ [scrollspot]{0.28:0.53:::20:0.2:0.2}
+[z][{-400}
+     [texture:effects/sun]
+     {
+	[KscaleWH]{0.2:-1}
+	[z][{-500}
+        [scrollspot]{0.28:0.53:0.5:0.5:20:0.2:0.2}
+        [fade]{0:0.92}           
+        
+     }
+   }
+   [character:maniya]
+  {
+     [scrollspot]{0.2:0.801::1:0:0.0}
+   [z]{80}
+    [pose]{maniya/Aelement:0}
+    [maniyasword:1]{0.2:0.55:10:-0.08:-0.05:[z]{-100}}
+    [maniyasword:3:1]{0.14:0.57:5:-0.06:-0.05:[z]{-200}}
+    [maniyasword:0]{0.22:0.6:0:0.02:0.02:[z]{100}}
+    [maniyasword:0:1]{0.18:0.6:10:0.03:0.04:[z]{200}}
+    [maniyasword:0:1:1]{0.15:0.7:-8:-0.03:-0.02:[z]{-50}}
+    [maniyasword:2]{0.2:0.67:-10:0.08:0.03:[z]{150}}
+    [maniyasword:1:1]{0.25:0.7:-15:-0.07:-0.06:[z]{-200}}
+   }
+   [character:sisyo]
+  {
+    [scrollspot]{0.1:0.4::::-0.25:-0.25}
+    [pose]{sisyo/Dhissatu:0:20}
+[z]{1500}
+    [texture:sisyo/shield:0]
+    {
+	[KscaleWH]{0.2:-1}
+	[z][{2000}
+        [scrollspot]{0.1:0.4:0.5:0.5:60:-0.2:-0.2}
+        [fade]{0:0.4}   
+    }
+   [texture:sisyo/shield]
+    {
+	[KscaleWH]{0.2:-1}
+	[z][{2000}
+        [scrollspot]{0.1:0.4:0.5:0.5:-60:-0.2:-0.2}
+        [fade]{0:0.4}   
+    }
+   }
+  [character:tutitukumo]
+  {
+   [KscaleWH]{0.10:-1}
+   [scrollspot]{0.6:0.85:0:0:0:-0.05:-0.05}
+   [z]{1000000}
+   [pose]{tutitukumo/taiki}
+  }
+ [character:jotto]
+  {
+   [KscaleWH]{0.15:-1}
+   [pose]{jotto/Delement:0:80}
+   [scrollspot]{0.7:0.8:0:1.1:-10:0.2}
+   
+    }
+
+ 
+}

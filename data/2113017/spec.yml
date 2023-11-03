@@ -1,0 +1,10 @@
+Id: 2113017
+Title: "単位を落とすな！"
+Genre: "ゲーム"
+ScreenshotPath: "スクリーンショット.png"
+ExecutablePath: "bin\\Release\\単位を落とすな！.exe"
+Argument: 
+SourcePath: src\
+TimeLimit: 00:00:00
+Description: "このゲームは単位を保持することを目的とした避けゲーです。敵に触れたら単位を１つずつ落としてしまうので頑張って逃げ切りましょう！目指せ進級！\nWASDキーで移動できます。隠し難易度も存在するので頑張って開放しましょう！"
+IsLate: false

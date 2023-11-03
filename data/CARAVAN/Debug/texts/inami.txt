@@ -1,0 +1,1796 @@
+
+[config]
+{
+ [yoshino]
+ {
+   [inname]{@size@=*0.12}
+    [inkakko]{}
+    [format]
+   {
+     [character:yoshino]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+ [tact]
+ {
+   [inname]{@size@=*0.10}
+    [inkakko]{}
+    [format]
+   {
+     [character:tact]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+ [kaito]
+ {
+   [inname]{@size@=*0.105}
+    [inkakko]{}
+    [format]
+   {
+     [character:kaito]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[monika]
+ {
+   [inname]{@size@=*0.09}
+    [inkakko]{}
+    [format]
+   {
+     [character:monika]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[penny]
+ {
+   [inname]{@size@=*0.09}
+    [inkakko]{}
+    [format]
+   {
+     [character:penny]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[yuu]
+ {
+   [inname]{@size@=*0.102}
+    [inkakko]{}
+    [format]
+   {
+     [character:yuu]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[maniya]
+ {
+   [inname]{@size@=*0.085}
+    [inkakko]{}
+    [format]
+   {
+     [character:maniya]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[maniyasword]
+ {
+   [inname]{@num@=0:@size@=*0.4}
+    [inkakko]{}
+    [format]
+   {
+     [texture:maniya/wep@num@]
+     {
+       [KscaleWH]{@size@:-1}
+  	[setTXY]{0.2:0.5}
+     }
+   }
+  } 
+[sisyo]
+ {
+   [inname]{@size@=*0.09}
+    [inkakko]{}
+    [format]
+   {
+     [character:sisyo]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[era]
+ {
+   [inname]{@size@=*0.112}
+    [inkakko]{}
+    [format]
+   {
+     [character:era]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[jakusu]
+ {
+   [inname]{@size@=*0.092}
+    [inkakko]{}
+    [format]
+   {
+     [character:jakusu]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[anna]
+ {
+   [inname]{@size@=*0.075}
+    [inkakko]{}
+    [format]
+   {
+     [character:anna]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+  }
+[inami]
+{
+ [inname]{@size@=*0.11}
+    [inkakko]{}
+    [format]
+   {
+     [character:inami]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+}
+[tutitukumo]
+{
+ [inname]{@size@=*0.11}
+    [inkakko]{}
+    [format]
+   {
+     [character:tutitukumo]
+     {
+       [KscaleWH]{@size@:-1}
+     }
+   }
+}
+ [namebox]
+ {
+   [inname]{}
+   [inkakko]{@name@=お前の脾臓:@kazu@=*12}
+   [format]{
+ [texture:window/namebox]
+  {
+   [message:LC]{@name@:@kazu@}
+   [KscaleW]{0.15:}
+   [KscaleH]{:0.075}
+   [spot]{0.25:0.6:0:1}
+   [z]{10000}
+  }
+ }
+}
+[nameboxR]
+ {
+   [inname]{}
+   [inkakko]{@name@=彼の扁桃腺:@kazu@=*12}
+   [format]{
+ [texture:window/namebox]
+  {
+   [message:LC]{@name@:@kazu@}
+   [KscaleW]{0.15:}
+   [KscaleH]{:0.075}
+   [spot]{0.75:0.6:1:1}
+   [z]{10000}
+  }
+ }
+}
+ [textbox]
+ {
+   [inname]{}
+   [inkakko]{@text@=アタシの胆のう:@kazu@=/40:@speed@=/1.88}
+   [format]{
+ [texture:window/textbox]
+ {
+  [message]{@text@:@kazu@:@speed@}
+  [KscaleW]{0.5:}
+  [KscaleH]{:0.4}
+  [spot]{0.25:0.6:0:0}
+  [z]{11000}
+  }
+ }
+ 
+ }
+}
+
+
+
+[100:tact]
+[boss4]
+{
+[0]
+{
+ [inami]
+ {
+  [pose]{inami/niou:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{20:0.5}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+最後のボスを倒したんだな
+ }
+}
+[1]
+{
+ [inami]
+ {
+  [pose]{inami/niou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/taiki}
+ }
+ 
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+お疲れさんというほかない
+ }
+}
+[2]
+{
+ [inami]
+ {
+  [pose]{inami/taiki}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/right}
+ }
+ 
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+完成版では仲間があと8体、   \n敵が6体増える予定だ    \n
+あとストーリーもしっかり作るさ
+ }
+}
+[4]
+{
+ [inami]
+ {
+  [pose]{inami/attention}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/ukeire}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+プレイしてくれてありがとう
+ }
+}
+
+}
+
+
+[boss3]
+{
+[0]
+{
+ [inami]
+ {
+  [pose]{inami/niou:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{20:0.5}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+三体目のボスを倒したみたいだな
+ }
+}
+[1]
+{
+ [inami]
+ {
+  [pose]{inami/niou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/attention}
+ }
+ 
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+一応言っとくけどさらに敵の強さが増したからな
+ }
+}
+[2]
+{
+ [inami]
+ {
+  [pose]{inami/attention}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/right}
+ }
+ 
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+そして、最後のボスが出現した
+ }
+}
+[4]
+{
+ [inami]
+ {
+  [pose]{inami/right}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/niou}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+……まぁ、完成された奴じゃないのだがな
+ }
+}
+[5]
+{
+ [inami]
+ {
+  [pose]{inami/niou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/taiki}
+  [motion:]{inami/syaberu50}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+間に合わないなやっぱり   \n時間が足りない
+ }
+}
+[6]
+{
+ [inami]
+ {
+  [pose]{inami/taiki}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/attention}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+ま、本当のラスボスじゃないけど、倒してみてくれ
+ }
+}
+
+[7]
+{
+ [inami]
+ {
+  [pose]{inami/attention}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/douda}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+さぁ、行け！
+ }
+}
+
+}
+
+
+[boss2]
+{
+[0]
+{
+ [inami]
+ {
+  [pose]{inami/niou:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{20:0.5}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+二体目のボスを倒したんだな
+ }
+}
+[1]
+{
+ [inami]
+ {
+  [pose]{inami/niou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/attention}
+ }
+ 
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+またしても敵の強さが上昇した   \n勝って兜の緒を締めよ、だ
+ }
+}
+[2]
+{
+ [inami]
+ {
+  [pose]{inami/attention}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/douda}
+  [motion:]{inami/syaberu50}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+次で最後のボスだ   \n行ってこい！
+ }
+}
+
+}
+
+
+[boss1]
+{
+[0]
+{
+ [inami]
+ {
+  [pose]{inami/niou:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{20:0.5}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+最初のボスを倒したんだな
+ }
+}
+[1]
+{
+ [inami]
+ {
+  [pose]{inami/niou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/attention}
+ }
+ 
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+これで敵の強さが上昇した   \n気を引き締めろよ
+ }
+}
+[2]
+{
+ [inami]
+ {
+  [pose]{inami/attention}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/nani}
+ }
+ 
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+あれ、これは事前に言ってなかったかな？
+ }
+}
+[3]
+{
+ [inami]
+ {
+  [pose]{inami/nani}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/douda}
+  [motion:]{inami/syaberu50}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+……まあいいさ   \n次！行ってこい！
+ }
+}
+[4]
+{
+ [inami]
+ {
+  [pose]{inami/douda}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/niou}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+……………………実はな
+ }
+}
+[5]
+{
+ [inami]
+ {
+  [pose]{inami/niou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/taiki}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+まだ全然作り終わってないんだ    \nまだ二分の一ぐらいだな
+ }
+}
+[6]
+{
+ [inami]
+ {
+  [pose]{inami/taiki}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/attention}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+だから、ボスはいるけど、本当のボスじゃない  \nはっきり言ってこれ以上やる意味はない
+ }
+}
+
+[7]
+{
+ [inami]
+ {
+  [pose]{inami/attention}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/niou}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+ま、一応ラスボス的なやつはいる   \nそいつでも倒して待っていてくれ
+ }
+}
+
+}
+
+[begingame]
+{
+[0]
+{
+ [inami]
+ {
+  [pose]{inami/niou:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{20:0.5}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+仲間が十分集まったみたいだな
+ }
+}
+[1]
+{
+ [inami]
+ {
+  [pose]{inami/niou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/omae}
+ }
+ 
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+試験のため、これからお前には用意した3体のボスを倒してもらう
+ }
+}
+[2]
+{
+ [inami]
+ {
+  [pose]{inami/omae}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/attention}
+ }
+ 
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+ボスの位置はマップのコンパスが指し示してくれている
+ }
+}
+[3]
+{
+ [inami]
+ {
+  [pose]{inami/attention}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/douda}
+  [motion:]{inami/syaberu50}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+ボスは普通の敵より強いが、まあ勝てるはずだ   \nさあ、行ってこい
+ }
+}
+
+}
+
+[commandtutorial]
+{
+
+[0]
+{
+ [inami]
+ {
+  [pose]{inami/niou:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{20:0.5}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+これから戦闘についてイントロダクションを始める
+ }
+}
+[1]
+{
+ [inami]
+ {
+  [pose]{inami/niou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/attention}
+ }
+ 
+ [wait:45]{
+ [character:tutitukumo]
+ {
+  [KscaleWH]{0.2:-1}
+  [flip]{}
+  [spot]{0.5:0.3:0.5:0.5}
+  [fadein]{20:0.5}
+ }}
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+お前のしもべたちには命令を出せる  \n今回は 特別に用意したこいつを使え
+ }
+}
+[2]
+{
+ [inami]
+ {
+  [pose]{inami/attention}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/right}
+ }
+ [character:tutitukumo]
+ {
+  [KscaleWH]{0.2:-1}
+  [flip]{}
+  [spot]{0.5:0.3:0.5:0.5}
+  [fade]{30:0}
+ }
+ [wait:20]{
+ [texture:tact/wep]
+ {
+  [KscaleWH]{0.4:-1}
+  [spot]{0.875:0.6:0.5:0.5:-90}
+  [fadein]{30:0}
+ }}
+ [wait:80]
+ {
+  [texture:commands/dodge]
+  {
+   [KscaleWH]{0.2:-1}
+   [z]{10}
+   [spot]{0.5:0.3:0.5:0.5:}
+   [fadein]{30:0}
+  }
+  [texture:commands/dodgeframe]
+  {
+   [KscaleWH]{0.2:-1}
+   [z]{11}
+   [spot]{0.5:0.3:0.5:0.5:}
+   [fadein]{30:0}
+   }
+  [texture:commands/centercircle]
+  {
+   [KscaleWH]{0.5:-1}
+   [z]{9}
+   [spot]{0.5:0.3:0.5:0.5:}
+   [fadein]{30:0}
+   }
+  }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+まずはしもべを移動させてみろ   \n持っているコントローラを使って命令を出すんだ   \n
+クリックするとこんなメニューが展開される
+ }
+}
+[3]
+{
+ [inami]
+ {
+  [pose]{inami/right}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/taiki}
+  [motion:]{inami/syaberu50}
+ }
+ [texture:tact/wep]
+ {
+  [KscaleWH]{0.4:-1}
+  [spot]{0.875:0.6:0.5:0.5:-90}
+ }
+  [texture:commands/dodge]
+  {
+   [KscaleWH]{0.2:-1}
+   [z]{10}
+   [spot]{0.5:0.3:0.5:0.5:}
+   [Qfadein]{30:0}
+   [wait:50]
+   {
+   [KscaleWH]{0.25:-1:1}
+   [slide]{1:-0.025:-0.025}
+   [playoto]{scroll2}
+    }
+  }
+  [texture:commands/dodgeframe]
+  {
+   [KscaleWH]{0.2:-1}
+   [z]{11}
+   [spot]{0.5:0.3:0.5:0.5:}
+   [Qfadein]{30:0}
+   }
+  [texture:commands/centercircle]
+  {
+   [KscaleWH]{0.5:-1}
+   [z]{9}
+   [spot]{0.5:0.3:0.5:0.5:}
+   [Qfadein]{30:0}
+   }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+コマンドメニューの真ん中を選び、クリックを離せば移動する命令が選択できる   \n移動地点はメニューを開いた地点だ
+ }
+}
+
+[4]
+{
+ [inami]
+ {
+  [pose]{inami/right}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/niou}
+ }
+ [texture:tact/wep]
+ {
+  [KscaleWH]{0.4:-1}
+  [spot]{0.875:0.6:0.5:0.5:-90}
+  [fade]{15:0}
+ }
+  [texture:commands/dodge]
+  {
+   [KscaleWH]{0.25:-1}
+   [z]{10}
+   [spot]{0.5:0.3:0.5:0.5:}
+  [wait:65]{
+   [slide]{40:0.38:0:::[fade]{30:0}[playoto]{ok}
+   [KscaleWH]{0.8:-1:30}
+   [slide]{30:-0.3:-0.3}
+   }
+   
+   }
+  }
+  [texture:commands/SoUnd]
+  {
+   [KscaleWH]{0.2:-1}
+   [z]{9}
+   [spot]{0.8:0.3:0.5:0.5:}
+   [fadein]{40:0}
+  }
+  [texture:commands/dodge]
+  {
+   [KscaleWH]{0.2:-1}
+   [z]{10}
+   [spot]{0.5:0.3:0.5:0.5:}
+   [fade]{15:0}
+  }
+  [texture:commands/dodgeframe]
+  {
+   [KscaleWH]{0.2:-1}
+   [z]{11}
+   [spot]{0.5:0.3:0.5:0.5:}
+   [fade]{15:0}
+   }
+  [texture:commands/centercircle]
+  {
+   [KscaleWH]{0.5:-1}
+   [z]{9}
+   [spot]{0.5:0.3:0.5:0.5:}
+   [fade]{15:0}
+   }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+選択された命令はこのシンボルに触れたときにしもべたちに発せられる    \nそれまでゆっくりしてるんだな
+ }
+}
+
+
+ お前のしもべたちには命令を出せる。　そういう機能がそのコントローラには備わっている まずは移動させてみろ　移動させたい地点を指定し、コマンドメニューの真ん中を選ぶんだ　しばらく動き回ってみろ
+}
+[attacktutorial]
+{
+[0]
+{
+ [inami]
+ {
+  [pose]{inami/niou:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{20:0.5}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+次は攻撃の命令だ   \n邪魔者を蹴散らすためには必須だな
+ }
+}
+[1]
+{
+ [inami]
+ {
+  [pose]{inami/niou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/attention}
+ }
+ 
+ [texture:commands/attack]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fadein]{30:0}
+ }
+ [texture:commands/attackframe]
+ {
+  [KscaleWH]{0.3:-1}
+  [z]{10}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fadein]{30:0}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+コマンドメニューの右、剣のマークを選べ
+ }
+}
+[2]
+{
+ [inami]
+ {
+  [pose]{inami/attention}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/yareyare}
+ }
+
+ [texture:commands/attack]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+ }
+ [texture:commands/attackframe]
+ {
+  [KscaleWH]{0.3:-1}
+  [z]{10}
+  [spot]{0.5:0.3:0.5:0.5:}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+もうわかってると思うが命令は時が来たら一斉に発せられるからな   \n切り替えの音がうるさいから静かに待っとけ
+ }
+}
+ 
+}
+[defencetutorial]
+{
+[0]
+{
+ [inami]
+ {
+  [pose]{inami/niou:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{20:0.5}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+敵の攻撃に対処したいのならば防御命令だ
+ }
+}
+[1]
+{
+ [inami]
+ {
+  [pose]{inami/niou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/attention}
+ }
+ [texture:effects/raincircle]
+ {
+  [KscaleWH]{0.25:-1}
+  [spot]{0.25:0.3:0.5:0.5:}
+  [fadein]{30:20}
+ }
+ [texture:jinbo/shield]
+ {
+  [KscaleWH]{0.25:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fadein]{30:35}
+ }
+ [texture:commands/defence]
+ {
+  [KscaleWH]{0.25:-1}
+  [spot]{0.75:0.3:0.5:0.5:}
+  [fadein]{30:65}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+行動によって防御方法は変わるが、 \n回復、  シールド、  防御力UP と様々だ
+ }
+}
+[2]
+{
+ [inami]
+ {
+  [pose]{inami/attention}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/right}
+ }
+  [texture:effects/raincircle]
+ {
+  [KscaleWH]{0.25:-1}
+  [spot]{0.25:0.3:0.5:0.5:}
+  [fade]{30:0}
+ }
+ [texture:jinbo/shield]
+ {
+  [KscaleWH]{0.25:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fade]{30:0}
+ }
+ [texture:commands/defence]
+ {
+  [KscaleWH]{0.25:-1}
+  [spot]{0.75:0.3:0.5:0.5:}
+  [fade]{30:0}
+ }
+ [texture:tutitukumo/body]
+ {
+  [KscaleWH]{0.20:-1}
+  [spot]{0.85:0.55:0.5:0.5:}
+  [fadein]{30:0}
+ } 
+[texture:nothing]
+ {
+  [KscaleWH]{0.20:-1}
+  [spot]{0.82:0.55:0.5:0.5:}
+  [message]{100:4::0:0:1} 
+  [z]{10}
+[fadein]{30:0}
+  
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+あと、アイコンの左上にある青い数字に注目だ   \nこの数字分だけダメージを受ける    \n50なら二分の一、  200なら二倍受けることになる
+ }
+}
+[3]
+{
+ 
+[inami]
+ {
+  [pose]{inami/right}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/yareyare}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [texture:tutitukumo/body]
+ {
+  [KscaleWH]{0.20:-1}
+  [spot]{0.85:0.55:0.5:0.5:}
+  [fade]{30:0}
+ } 
+[texture:nothing]
+ {
+  [KscaleWH]{0.20:-1}
+  [spot]{0.82:0.55:0.5:0.5:}
+  [message]{100:4::0:0:1} 
+  [z]{10}
+[fade]{30:0}
+  
+ }
+ [texture:commands/defence]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+ }
+ [texture:commands/defenceframe]
+ {
+  [KscaleWH]{0.3:-1}
+  [z]{10}
+  [spot]{0.5:0.3:0.5:0.5:}
+ }
+ [textbox:0]
+ {
+敵の攻撃が強そうなときは防御した方がいいな   \nコマンドメニューの左だからな
+ }
+}
+敵の攻撃に対処したいのならば防御命令だ。 行動によって防御方法は変わるが、回復したり、シールドを張ったりすることもある。 回復やシールドがなくても、ダメージを軽減する効果が働くから強い攻撃が来るときは防御した方がいい
+}
+
+[elementtutorial]
+{
+[0]
+{
+ [inami]
+ {
+  [pose]{inami/niou:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{20:0.5}
+  [motion]{inami/syaberu50}
+  [wait:50]{ [motion]{inami/syaberu50}}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+しかし、しもべどもにも意思がある   \nなんとなくわかったと思うが、命令どおりの行動を必ずとるわけではない
+ }
+}
+[1]
+{
+ [inami]
+ {
+  [pose]{inami/niou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/yareyare}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+防御と命令して攻撃するほどの馬鹿はいないが、自分の得意な行動……   \n属性行動をとることがある   \n攻撃を命令したときもそうだ
+ }
+}
+[2]
+{
+ [inami]
+ {
+  [pose]{inami/yareyare}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/right}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+だから、完全に行動を任せるという命令がある  \nコマンドメニューの下だ
+ }
+ [texture:commands/element]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fadein]{30:0}
+ }
+ [texture:commands/elementframe]
+ {
+  [KscaleWH]{0.3:-1}
+  [z]{10}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fadein]{30:0}
+ }
+}
+[3]
+{
+ [inami]
+ {
+  [pose]{inami/right}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/attention}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+任せたときにどの行動をとるかはパワーバランスってやつで決定される      \n
+攻撃・防御をいいバランスに整えれば 任せるだけで戦いに勝てるようになるかもな       \n
+後でこのバランスをいじれるから試してみろ
+ }
+
+ [texture:commands/element]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fade]{30:0}
+ }
+ [texture:commands/elementframe]
+ {
+  [KscaleWH]{0.3:-1}
+  [z]{10}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fade]{30:0}
+ }
+
+ [texture:commands/triangle2]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fadein]{30:25}
+ }
+}
+
+ しかし、しもべどもにも自我がある。 攻撃と命令しても必ず攻撃をしてくれるわけでは無い。 属性行動という個人の得意なことを行うこともある。防御の時でも同様だ。 しもべの自我に完全に任せる命令がコマンドメニューの下にある  楽だが、眺めっぱなしでは有利をとれないこともある　気をつけろ
+}
+[dodgetutorial]
+{
+[0]
+{
+ [inami]
+ {
+  [pose]{inami/niou:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{20:0.5}
+  [motion]{inami/syaberu50}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+実は敵の攻撃には避けれるものがある   \n次はその攻撃を避ける特訓だ
+ }
+}
+[1]
+{
+ [inami]
+ {
+  [pose]{inami/niou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/attention}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+方法は移動と同じだ    \nただ空の方を移動先と指定すればいい
+ }
+ [texture:commands/dodge]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fadein]{30:0}
+ }
+ [texture:commands/dodgeframe]
+ {
+  [KscaleWH]{0.3:-1}
+  [z]{10}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fadein]{30:0}
+ }
+}
+[2]
+{
+ [inami]
+ {
+  [pose]{inami/attention}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/migi}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+上みたいなやつは避けられない  \n下みたいなやつは飛ぶだけで簡単に避けられる  \n
+一応、合図を仕込んでおいたからどれが避けられる攻撃かはわかるだろ
+ }
+ [texture:commands/dodge]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fade]{30:0}
+ }
+ [texture:commands/dodgeframe]
+ {
+  [KscaleWH]{0.3:-1}
+  [z]{10}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fade]{30:0}
+ }
+ [tutitukumo]
+ {
+  [spot]{0.85:0.25:0.5:0.5:}
+  [motion]{tutitukumo/hissatu:1:1}
+  [fadein]{30:0}
+ }
+ [wait:30]{
+ [tutitukumo:1]
+ {
+  [z]{100}
+  [spot]{0.85:0.55:0.5:0.5:}
+  [motion]{tutitukumo/Kattack:1:1}
+  [fadein]{30:0}
+ }}
+}
+[3]
+{
+ [inami]
+ {
+  [pose]{inami/migi}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/niou}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+ジャンプのタイミングが合うかは気にするな  \n避けられる攻撃は必ずタイミングが合うように設計している
+ }
+ [tutitukumo]
+ {
+  [spot]{0.85:0.25:0.5:0.5:}
+  [motion]{tutitukumo/hissatu:1:1}
+  [fade]{30:0}
+ }
+ [tutitukumo:1]
+ {
+  [spot]{0.85:0.55:0.5:0.5:}
+  [motion]{tutitukumo/Kattack:1:1}
+  [fade]{30:0}
+  [z]{100}
+ }
+}
+
+S
+ 敵の攻撃には避けられるものがある 作法は移動と同じだ。　敵の予備動作を見て、回避を行え  ジャンプで避けれるなら高いところを指定してコマンドメニューの真ん中で避けるだ
+}
+
+[dancetutorial]
+{
+[0]
+{
+ [inami]
+ {
+  [pose]{inami/niou:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{20:0.5}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+次に教える行動もまた敵の行動に対処するためのものだ
+ }
+}
+[1]
+{
+ [inami]
+ {
+  [pose]{inami/niou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/attention}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+ダンスだ   ……ただの踊りだと侮るなよ  \nダンスは全ての状態異常を解消する
+ }
+ [texture:commands/dance]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fadein]{30:0}
+ }
+ [texture:commands/danceframe]
+ {
+  [KscaleWH]{0.3:-1}
+  [z]{10}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fadein]{30:0}
+ }
+}
+[2]
+{
+ [inami]
+ {
+  [pose]{inami/attention}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/migi}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+舞踊の熱狂は科学的に   \n電気的麻痺による 攻撃力低下   \n冷気による行動不能   \n炎による炎上   \nその他もろもろを解消する
+ }
+ [texture:commands/dance]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+ }
+ [texture:commands/danceframe]
+ {
+  [KscaleWH]{0.3:-1}
+  [z]{10}
+  [spot]{0.5:0.3:0.5:0.5:}
+ }
+ [texture:effects/thundered]
+ {
+  [KscaleWH]{0.2:-1}
+  [spot]{0.85:0.2:0.5:0.5:}
+  [fadein]{30:20}
+ }
+ [texture:effects/iced]
+ {
+  [KscaleWH]{0.2:-1}
+  [spot]{0.85:0.5:0.5:0.5:}
+  [fadein]{30:55}
+ }
+ [texture:effects/fired]
+ {
+  [KscaleWH]{0.2:-1}
+  [spot]{0.85:0.8:0.5:0.5:}
+  [fadein]{30:90}
+ }
+}
+
+[3]
+{
+ [inami]
+ {
+  [pose]{inami/migi}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/douda}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+今から燃やしてやるから、   \nコマンドメニュー右上からダンスしてみろ
+ }
+ [texture:commands/dance]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+ }
+ [texture:commands/danceframe]
+ {
+  [KscaleWH]{0.3:-1}
+  [z]{10}
+  [spot]{0.5:0.3:0.5:0.5:}
+ }
+ [texture:effects/thundered]
+ {
+  [KscaleWH]{0.2:-1}
+  [spot]{0.85:0.2:0.5:0.5:}
+ }
+ [texture:effects/iced]
+ {
+  [KscaleWH]{0.2:-1}
+  [spot]{0.85:0.5:0.5:0.5:}
+ }
+ [texture:effects/fired]
+ {
+  [KscaleWH]{0.2:-1}
+  [spot]{0.85:0.8:0.5:0.5:}
+ }
+}
+ これもまた敵の行動に対応するためのものだ お前の力で踊りとともに状態異常をかき消すことができる　敵の攻撃や天候によって燃やされたりだとか、力が出なくなったりするときに踊らせるといい　ちょっと燃やしてやるからやってみろ コマンドメニュー右上だ
+}
+[chargetutorial]
+{
+[0]
+{
+ [inami]
+ {
+  [pose]{inami/niou:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{20:0.5}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+これで最後の命令だな   \n最後の命令はお前にしかできない特殊なものだ
+ }
+}
+[1]
+{
+ [inami]
+ {
+  [pose]{inami/niou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/attention}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+チャージだ   \nチャージされた力は次の行動に持ち越される  \n
+威力が二倍…… 三倍になっていく    \nもし、  次の行動が強力な攻撃だったら？
+ }
+ [texture:commands/charge]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fadein]{30:0}
+ }
+ [texture:commands/chargeframe]
+ {
+  [KscaleWH]{0.3:-1}
+  [z]{10}
+  [spot]{0.5:0.3:0.5:0.5:}
+  [fadein]{30:0}
+ }
+}
+[2]
+{
+ [inami]
+ {
+  [pose]{inami/attention}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/douda}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+十数ターンごとにしか発動しない威力の必殺技に 溜められた力を乗せれば\nレベルの高い敵も倒すことができるだろう
+ }
+ [texture:commands/charge]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+ }
+ [texture:commands/chargeframe]
+ {
+  [KscaleWH]{0.3:-1}
+  [z]{10}
+  [spot]{0.5:0.3:0.5:0.5:}
+ }
+}
+[3]
+{
+ [inami]
+ {
+  [pose]{inami/douda}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/right}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+最大である3回までチャージして攻撃してみろ  \nそうすればあれを破壊できる     \n
+コマンドメニュー左上からチャージだ
+ }
+ [texture:commands/charge]
+ {
+  [KscaleWH]{0.3:-1}
+  [spot]{0.5:0.3:0.5:0.5:}
+ }
+ [texture:commands/chargeframe]
+ {
+  [KscaleWH]{0.3:-1}
+  [z]{10}
+  [spot]{0.5:0.3:0.5:0.5:}
+ }
+}
+
+ これで最後だな　お前にはしもべに力を溜めさせる機能がある　溜まった力は一度の行動に注がれ、爆発的な力を生み出す 最大まで力を溜めて攻撃してみろ。それでそこの泥人形を破壊できる　コマンドメニュー左上だ
+}
+[deadtutorial]
+{
+[-1]
+{
+ [inami]
+ {
+  [pose]{inami/attention:0}
+  [spot]{0.125:1.0:0.5:1}
+  [fadein]{20:0.5}
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+ちなみにだが、 敵の行動が避けられたり、  チャージすべきものであったりする場合、  警告が出るようにしている   \n邪魔なら後で消してくれ
+ }
+ [texture:commands/dodge]
+ {
+  [KscaleWH]{0.15:-1}
+  [spot]{0.2:0.3:0.5:0.5:}
+  [fadein]{30:15}
+ }
+ [texture:commands/charge]
+ {
+  [KscaleWH]{0.15:-1}
+  [spot]{0.4:0.3:0.5:0.5:}
+  [fadein]{30:25}
+ }
+ [texture:commands/dance]
+ {
+  [KscaleWH]{0.15:-1}
+  [spot]{0.6:0.3:0.5:0.5:}
+  [fadein]{30:35}
+ }
+ [texture:commands/defence]
+ {
+  [KscaleWH]{0.15:-1}
+  [spot]{0.8:0.3:0.5:0.5:}
+  [fadein]{30:45}
+ }
+}
+[0]
+{
+ [inami]
+ {
+  [pose]{inami/attention}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/niou}
+ }
+[tact]
+{
+  
+  [pose]{tact/taiki:0}
+  [flip]{}
+  [spot]{0.875:1.0:0.5:1}
+  [fadein]{20:30}
+}
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+で、最後に     \nもうわかっていると思うが、  お前の体は基本的にはムテキだ
+ }
+  [texture:commands/dodge]
+ {
+  [KscaleWH]{0.15:-1}
+  [spot]{0.2:0.3:0.5:0.5:}
+  [fade]{30:0}
+ }
+ [texture:commands/charge]
+ {
+  [KscaleWH]{0.15:-1}
+  [spot]{0.4:0.3:0.5:0.5:}
+  [fade]{30:0}
+ }
+ [texture:commands/dance]
+ {
+  [KscaleWH]{0.15:-1}
+  [spot]{0.6:0.3:0.5:0.5:}
+  [fade]{30:0}
+ }
+ [texture:commands/defence]
+ {
+  [KscaleWH]{0.15:-1}
+  [spot]{0.8:0.3:0.5:0.5:}
+  [fade]{30:0}
+ }
+}
+[1]
+{
+ [inami]
+ {
+  [pose]{inami/niou}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/taiki}
+  [motion:]{inami/syaberu50}
+
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+しかし、  しもべが全滅すればその力は失われる
+ }
+[tact]
+{
+  
+  [pose]{tact/taiki:0}
+  [flip]{}
+  [spot]{0.875:1.0:0.5:1}
+  [wait:30]{
+  [fade]{30:0}
+  }
+}
+}
+[2]
+{
+ [inami]
+ {
+  [pose]{inami/taiki}
+  [spot]{0.125:1.0:0.5:1}
+  [motion]{inami/douda}
+
+ }
+ [namebox]
+ {
+ イナミ
+ }
+ [textbox:0]
+ {
+最後にそれを体感してチュートリアルは終了だ    \n行ってこい
+ }
+}
+ で、最後に　お前はしもべが全滅するまでは無敵だ。　しもべが死んでしまえば戦力が減り、敵を倒せる出力が足りなくなってしまうだろう　残されたしもべが火事場の馬鹿力を発揮することもあるが、最後には計画性がモノを言う　火事場の馬鹿力すら計画的に使いこなして敵を粉砕しろ　じゃ、全滅を体感してチュートリアルは終了だ。　行ってこい
+
+}

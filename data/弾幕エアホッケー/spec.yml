@@ -1,0 +1,10 @@
+Id: danmakuairhokey
+Title: "弾幕エアホッケー"
+Genre: "ゲーム"
+ScreenshotPath: "タイトル.png"
+ExecutablePath: "弾幕エアホッケー.exe"
+Argument: 
+SourcePath: src\
+TimeLimit: 00:00:00
+Description: "矢印キーで移動します。Shift＋矢印キーで低速移動します。"
+IsLate: false

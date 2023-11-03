@@ -1,0 +1,10 @@
+Id: tokusyuosero
+Title: "特殊オセロ"
+Genre: "ゲーム"
+ScreenshotPath: osero.png
+ExecutablePath: "オセロ\\bin\\Release\\net6.0\\publish\\win-x86\\\\オセロ.exe"
+Argument: "pause"
+SourcePath: "オセロ\\"
+TimeLimit: 00:00:00
+Description: "ルール説明\r\nオセロの遊び方に踏まえたものになります\r\nスペシャルルールとして、挟まれたコマは次のターンに取られてしまいます。\r\nまた、二回連続動くスキルとコマを上書きするスキルがあります"
+IsLate: false

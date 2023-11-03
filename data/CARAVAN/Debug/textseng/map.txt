@@ -1,0 +1,215 @@
+[spawns]
+{
+ [0]
+ {
+  [x]{657}[y]{558}
+  [texture]{sougen}
+  [name]{Wide Wild Grassland}
+  [enems]{tutitukumo:jotto}
+ }
+ [0-1]
+ {
+  [x]{756}[y]{614}
+  [texture]{sougen}
+  [name]{Wide Wild Grassland}
+  [enems]{tutitukumo:jotto}
+ }
+ [0-2]
+ {
+  [x]{752}[y]{500}
+  [texture]{sougen}
+  [name]{Wide Wild Grassland}
+  [enems]{tutitukumo:jotto}
+ }
+ [1]
+ {
+  [x]{671}[y]{668}
+  [texture]{mori}
+  [name]{Dense Forest}
+  [enems]{tutitukumo:jotto}
+ }
+ [2]
+ {
+  [x]{481}[y]{780}
+  [texture]{setugen}
+  [name]{Cool Cold Snow Field}
+  [enems]{tutitukumo:jotto}
+ }
+ [4]
+ {
+  [x]{710}[y]{348}
+  [texture]{savanna}
+  [name]{UnFriendly Savanna}
+  [enems]{tutitukumo:jotto}
+ }
+ [5]
+ {
+  [x]{549}[y]{303}
+  [texture]{desert}
+  [name]{Dry-Dry Desert}
+  [enems]{tutitukumo:jotto}
+ }
+ [6]
+ {
+  [x]{347}[y]{157}
+  [texture]{pureland}
+  [name]{Pure Land}
+  [enems]{tutitukumo:jotto}
+ }
+ [7]
+ {
+  [x]{291}[y]{570}
+  [texture]{curseland}
+  [name]{Cursed Land}
+  [enems]{tutitukumo:jotto}
+ }
+ [8]
+ {
+  [x]{845}[y]{202}
+  [texture]{lightningplain}
+  [name]{Lightning Plain}
+  [enems]{tutitukumo:jotto}
+ }
+ [9]
+ {
+  [x]{355}[y]{375}
+  [texture]{windshome}
+  [name]{Wind's HomeTown}
+  [enems]{tutitukumo:jotto}
+ }
+ [10]
+ {
+  [x]{880}[y]{393}
+  [texture]{wilderness}
+  [name]{Wilderness}
+  [enems]{tutitukumo:jotto}
+ }
+ [11]
+ {
+  [x]{461}[y]{505}
+  [texture]{volcano}
+  [name]{Volcano}
+  [enems]{tutitukumo:jotto}
+ }
+ [12]
+ {
+  [x]{479}[y]{842}
+  [texture]{southhell}
+  [name]{South Hell}
+  [enems]{tutitukumo:jotto}
+ }
+ [12-1]
+ {
+  [x]{300}[y]{900}
+  [texture]{southhell}
+  [name]{South Hell}
+  [enems]{tutitukumo:jotto}
+ }
+ [12-2]
+ {
+  [x]{640}[y]{950}
+  [texture]{southhell}
+  [name]{South Hell}
+  [enems]{tutitukumo:jotto}
+ }
+ [13]
+ {
+  [x]{419}[y]{676}
+  [texture]{mountains}
+  [name]{Up Down Mountains}
+  [enems]{tutitukumo:jotto}
+ }
+ [14]
+ {
+  [x]{469}[y]{951}
+  [texture]{countryofsuntree}
+  [name]{Country of SunTree}
+  [enems]{tutitukumo:jotto}
+ }
+ [15]
+ {
+  [x]{519}[y]{150}
+  [texture]{jungle}
+  [name]{Dam-Damp Jungle}
+  [enems]{tutitukumo:jotto}
+ }
+ [16]
+ {
+  [x]{715}[y]{805}
+  [texture]{nanokuni}
+  [name]{Na no Kuni}
+  [enems]{tutitukumo:jotto}
+ }
+ [17]
+ {
+  [x]{688}[y]{132}
+  [texture]{flowergarden}
+  [name]{FlowerGarden}
+  [enems]{tutitukumo:jotto}
+ }
+ [18]
+ {
+  [x]{510}[y]{620}[pow]{1.6}
+  [texture]{believerscapital}
+  [name]{Believer's Capital}
+  [enems]{tutitukumo:jotto}  
+ }
+}
+[bosses]
+{
+ [0]{
+  [x]{329}[y]{156}
+  [texture]{pureland}
+  [name]{Sacred Basin}//光の破壊者
+  [enems]{pureland}
+ }
+ [1]{
+  [x]{942}[y]{88}
+  [texture]{lightningplain}
+  [name]{Isolated Island in the Arctic}ベルズ?
+  [enems]{tutitukumo}ここオリジナルのカエル池でお願い
+ }
+ [2]{
+  [x]{553}[y]{322}
+  [texture]{desert}
+  [name]{Desert Mirage}ファルム?
+  [enems]{tutitukumo}
+ }
+ [3]{
+  [x]{925}[y]{425}
+  [texture]{wilderness}
+  [name]{Island Monuments}
+  [enems]{tutitukumo}//大地の巨人
+ }
+ [4]{
+  [x]{282}[y]{503}
+  [texture]{curseland}
+  [name]{Tomb of the Ancestors}オミーヌ？
+  [enems]{tutitukumo}
+ }
+ [5]{
+  [x]{718}[y]{791}
+  [texture]{nanokuni}
+  [name]{Cold Village}
+  [enems]{tutitukumo}雲獅子?
+ }
+ [6]{
+  [x]{484}[y]{961}
+  [texture]{southhell}
+  [name]{Dragon's Claws}
+  [enems]{tutitukumo}//氷河の竜
+ }
+[6]{
+  [x]{642}[y]{458}
+  [texture]{mountains}
+  [name]{Tim Mountain}BIGTIM?
+  [enems]{tutitukumo}
+ }
+ [last]
+ {
+  [x]{671}[y]{572}
+  [texture]{sougen}
+  [name]{The Lake of Beginnings}//イナミ
+  [enems]{tutitukumo}
+ }
+}

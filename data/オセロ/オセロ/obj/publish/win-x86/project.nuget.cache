@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "aT/EZdhH+tbleB9RQJ9924TA65JGkLYFUNkSzDr9TkLtD/Ri0VxoygMylU/zWNOjZmLtDKrIJ1G/yn3Mv86ATw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ポン酢\\Desktop\\令和4年9月16日\\オセロ\\オセロ\\オセロ.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ポン酢\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\6.0.8\\microsoft.netcore.app.runtime.win-x86.6.0.8.nupkg.sha512",
+    "C:\\Users\\ポン酢\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\6.0.8\\microsoft.windowsdesktop.app.runtime.win-x86.6.0.8.nupkg.sha512",
+    "C:\\Users\\ポン酢\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.8\\microsoft.aspnetcore.app.runtime.win-x86.6.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}

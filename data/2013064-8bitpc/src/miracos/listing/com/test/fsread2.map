@@ -1,0 +1,53 @@
+Modules list:
+-------------
+fsread2.o:
+    CODE              Offs=000000  Size=0002B2  Align=00001  Fill=0000
+    RODATA            Offs=000000  Size=000000  Align=00001  Fill=0000
+    BSS               Offs=000000  Size=00000D  Align=00001  Fill=0000
+    DATA              Offs=000000  Size=0000C8  Align=00001  Fill=0000
+    ZEROPAGE          Offs=000000  Size=000000  Align=00001  Fill=0000
+    NULL              Offs=000000  Size=000000  Align=00001  Fill=0000
+
+
+Segment list:
+-------------
+Name                   Start     End    Size  Align
+----------------------------------------------------
+NULL                  000000  000000  000000  00001
+RODATA                000000  000000  000000  00001
+ZEROPAGE              000040  000040  000000  00001
+CODE                  000700  0009B1  0002B2  00001
+BSS                   0009B2  0009BE  00000D  00001
+DATA                  000A00  000AC7  0000C8  00001
+
+
+Exports list by name:
+---------------------
+__BSS_LOAD__              0009B2  LA    __BSS_RUN__               0009B2  LA    
+__BSS_SIZE__              00000D  EA    __CODE_LOAD__             000700  LA    
+__CODE_RUN__              000700  LA    __CODE_SIZE__             0002B2  EA    
+__DATA_LOAD__             000A00  LA    __DATA_RUN__              000A00  LA    
+__DATA_SIZE__             0000C8  EA    
+
+
+Exports list by value:
+----------------------
+__BSS_SIZE__              00000D  EA    __DATA_SIZE__             0000C8  EA    
+__CODE_SIZE__             0002B2  EA    __CODE_LOAD__             000700  LA    
+__CODE_RUN__              000700  LA    __BSS_LOAD__              0009B2  LA    
+__BSS_RUN__               0009B2  LA    __DATA_LOAD__             000A00  LA    
+__DATA_RUN__              000A00  LA    
+
+
+Imports list:
+-------------
+__BSS_LOAD__ ([linker generated]):
+__BSS_RUN__ ([linker generated]):
+__BSS_SIZE__ ([linker generated]):
+__CODE_LOAD__ ([linker generated]):
+__CODE_RUN__ ([linker generated]):
+__CODE_SIZE__ ([linker generated]):
+__DATA_LOAD__ ([linker generated]):
+__DATA_RUN__ ([linker generated]):
+__DATA_SIZE__ ([linker generated]):
+

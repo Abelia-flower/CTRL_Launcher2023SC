@@ -1,0 +1,72 @@
+﻿{
+  "Stage1": {
+    "Easy": false,
+    "Hard": false,
+    "Image": "MiniGameDisplay/FallingAnna.png",
+    "Normal": false,
+    "Picture": "MiniGameDisplay/FallingAnna.png",
+    "SceneName": "FallingAnna",
+    "Sentence": "<FallingAnna>\n岩を破壊してスコアを稼ぎながら落下\nするゲームです。\n詳しくは写真を拡大してください。",
+    "Stage": true
+  },
+  "Stage2": {
+    "Easy": false,
+    "Hard": false,
+    "Image": "MiniGameDisplay/HawkDropOut.png",
+    "Normal": false,
+    "Picture": "MiniGameDisplay/HawkDropOut.png",
+    "SceneName": "HawkDropOut",
+    "Sentence": "<HawkDropOut>\n地面に着かないように鷹を飛ばすゲーム\nです。\n上昇、加工ボタンを使って石をよけま\nしょう。\n肉を取るとアイテムをゲットできます。",
+    "Stage": true
+  },
+  "Stage3": {
+    "Easy": false,
+    "Hard": false,
+    "Image": "MiniGameDisplay/まんじゅうラッシュ.png",
+    "Normal": false,
+    "Picture": "MiniGameDisplay/まんじゅうラッシュ.png",
+    "SceneName": "ManjuRush",
+    "Sentence": "<まんじゅうラッシュ>\nジャンプ(↑)で迫りくるまんじゅうを\nよけるゲームです。",
+    "Stage": true
+  },
+  "Stage4": {
+    "Easy": false,
+    "Hard": false,
+    "Image": "MiniGameDisplay/MAZE.png",
+    "Normal": false,
+    "Picture": "MiniGameDisplay/MAZE.png",
+    "SceneName": "MAZE",
+    "Sentence": "<MAZE>\n迷路です。\nクッキーをチョコレート(ゴール)まで\n導きましょう。",
+    "Stage": true
+  },
+  "Stage5": {
+    "Easy": false,
+    "Hard": false,
+    "Image": "MiniGameDisplay/回転迷路.png",
+    "Normal": false,
+    "Picture": "MiniGameDisplay/回転迷路.png",
+    "SceneName": "MazeGame",
+    "Sentence": "<回転迷路>\n迷路を回転させてゴールを\n目指しましょう。",
+    "Stage": true
+  },
+  "Stage6": {
+    "Easy": false,
+    "Hard": false,
+    "Image": "example/windmill.png",
+    "Normal": false,
+    "Picture": "example/windmill.png",
+    "SceneName": "Mini_Game_Select",
+    "Sentence": "<ゲーム名6>\n説明文6",
+    "Stage": false
+  },
+  "Stage7": {
+    "Easy": false,
+    "Hard": false,
+    "Image": "example/windmill.png",
+    "Normal": false,
+    "Picture": "example/windmill.png",
+    "SceneName": "Mini_Game_Select",
+    "Sentence": "<ゲーム名7>\n説明文7",
+    "Stage": false
+  }
+}

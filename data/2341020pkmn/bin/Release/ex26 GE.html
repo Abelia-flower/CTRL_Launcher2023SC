@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>最終課題</title>
+<script type="text/javascript">
+
+alert("こうして…世田谷キャンパスの爆破は防がれた")
+alert("いままでありがとう　等々力キャンパス")
+alert("そして東京都市大よ永久に…")
+
+countdown = 3
+
+function bakuha() {
+for (let i = countdown; i >= 0; i--) {
+  alert("世田谷キャンパス爆発まで残り" + i + "・・・");//繰り返しを用いて時限爆弾のカウントダウンを再現
+}
+
+window.location.href = "ex24 爆破.html";
+
+
+}
+</script>
+</head>
+<body>
+<img src="東京都市大.jpg" width="500">
+<h1>GOOD　END</h1>
+<button onclick="bakuha()" id="b">都市大爆破</button>
+</body>
+</html>
